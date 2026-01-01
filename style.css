@@ -374,7 +374,6 @@ a {
 }
 
 .intro__subtitle--therapy {
-  color: var(--secondary-color);
   text-shadow: 0 1px 2px rgba(10, 147, 150, 0.2);
   font-family: "Noto Serif TC", "Noto Sans TC", serif;
   letter-spacing: 2px;
@@ -382,7 +381,6 @@ a {
 }
 
 .intro__subtitle--nursing {
-  color: var(--primary-color);
   text-shadow: 0 1px 2px rgba(0, 95, 115, 0.2);
   font-family: "Noto Serif TC", "Noto Sans TC", serif;
   letter-spacing: 2px;
@@ -418,10 +416,6 @@ a {
   color: var(--secondary-color);
   font-family: "Noto Serif TC", "Noto Sans TC", serif;
   letter-spacing: 1.5px;
-}
-
-.section-title--testimonials {
-  color: var(--secondary-color);
 }
 
 .section-title--rights {
@@ -564,6 +558,7 @@ a {
   font-size: 48px;
   margin-bottom: 20px;
   display: block;
+  color: var(--primary-color);
 }
 
 .process__title {
@@ -696,15 +691,12 @@ a {
   flex-shrink: 0;
   width: 56px;
   height: 56px;
-  background: linear-gradient(
-    135deg,
-    rgba(10, 147, 150, 0.15) 0%,
-    rgba(10, 147, 150, 0.25) 100%
-  );
+  background-color: var(--primary-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--white);
 }
 
 .nursing__label {
