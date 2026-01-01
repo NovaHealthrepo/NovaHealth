@@ -60,7 +60,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans TC", "PingFang HK", sans-serif;
+  font-family: "Noto Sans TC", "Noto Serif TC", sans-serif;
 }
 
 html {
@@ -374,16 +374,16 @@ a {
 }
 
 .intro__subtitle--therapy {
-  color: #cc8800;
-  text-shadow: 0 1px 2px rgba(255, 184, 77, 0.3);
+  color: var(--secondary-color);
+  text-shadow: 0 1px 2px rgba(10, 147, 150, 0.2);
   font-family: "Noto Serif TC", "Noto Sans TC", serif;
   letter-spacing: 2px;
   font-size: 32px;
 }
 
 .intro__subtitle--nursing {
-  color: #cc3366;
-  text-shadow: 0 1px 2px rgba(255, 145, 164, 0.3);
+  color: var(--primary-color);
+  text-shadow: 0 1px 2px rgba(0, 95, 115, 0.2);
   font-family: "Noto Serif TC", "Noto Sans TC", serif;
   letter-spacing: 2px;
   font-size: 32px;
@@ -402,7 +402,7 @@ a {
 }
 
 .section-tag--intro {
-  color: #2e8b90;
+  color: var(--secondary-color);
   font-family: "Noto Serif TC", "Noto Sans TC", serif;
 }
 
@@ -415,17 +415,17 @@ a {
 }
 
 .section-title--intro {
-  color: #2e8b90;
+  color: var(--secondary-color);
   font-family: "Noto Serif TC", "Noto Sans TC", serif;
   letter-spacing: 1.5px;
 }
 
 .section-title--testimonials {
-  color: #e67e22;
+  color: var(--secondary-color);
 }
 
 .section-title--rights {
-  color: #27ae60;
+  color: var(--primary-color);
 }
 
 .section-title--left {
@@ -457,7 +457,7 @@ a {
 }
 
 .features__item i {
-  color: #2e8b90;
+  color: var(--secondary-color);
   font-size: 18px;
   margin-top: 5px;
   flex-shrink: 0;
@@ -500,11 +500,7 @@ a {
 }
 
 .supervision__title--theme {
-  color: #8e44ad;
-}
-
-.supervision__title--theme {
-  color: #8e44ad;
+  color: var(--primary-color);
 }
 
 .supervision__description {
@@ -536,7 +532,7 @@ a {
   border-radius: var(--radius-lg);
   padding: 36px 32px;
   box-shadow: var(--shadow-md);
-  border-top: 5px solid #9b59b6;
+  border-top: 5px solid var(--secondary-color);
   text-align: center;
   transition: all var(--transition-base);
   height: 100%;
@@ -551,13 +547,17 @@ a {
   left: 0;
   width: 100%;
   height: 5px;
-  background: linear-gradient(90deg, #9b59b6, #8e44ad);
+  background: linear-gradient(
+    90deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
 }
 
 .process__card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 24px rgba(155, 89, 182, 0.2);
-  border-top-color: #8e44ad;
+  box-shadow: 0 8px 24px rgba(0, 95, 115, 0.2);
+  border-top-color: var(--primary-color);
 }
 
 .process__icon {
@@ -567,7 +567,7 @@ a {
 }
 
 .process__title {
-  color: #8e44ad;
+  color: var(--primary-color);
   font-size: 20px;
   margin-bottom: 12px;
   font-weight: 700;
@@ -598,14 +598,14 @@ a {
 }
 
 .services__card {
-  background: linear-gradient(135deg, #fffef8 0%, #ffffff 100%);
+  background: rgba(10, 147, 150, 0.03);
   padding: var(--spacing-md) var(--spacing-sm);
   text-align: center;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
-  border-left: 4px solid #ffb84d;
+  border-left: 4px solid var(--secondary-color);
   font-weight: 500;
-  color: #996600;
+  color: var(--primary-color);
   font-size: 18px;
   transition: all var(--transition-fast);
   display: flex;
@@ -628,7 +628,7 @@ a {
   display: block;
   font-size: 16px;
   font-weight: 600;
-  color: #996600;
+  color: var(--primary-color);
   font-family: "Zen Maru Gothic", "Noto Sans TC", sans-serif;
   letter-spacing: 0.5px;
 }
@@ -642,9 +642,9 @@ a {
 
 .services__card:hover {
   transform: translateY(-5px);
-  background: linear-gradient(135deg, #ffe5a0 0%, #fff9e6 100%);
-  box-shadow: 0 6px 20px rgba(255, 184, 77, 0.3);
-  border-left-color: #ffa500;
+  background: rgba(10, 147, 150, 0.08);
+  box-shadow: 0 6px 20px rgba(10, 147, 150, 0.25);
+  border-left-color: var(--primary-color);
 }
 
 /* ============================================================================
@@ -673,22 +673,22 @@ a {
 }
 
 .nursing__item {
-  background: linear-gradient(135deg, #fffbfc 0%, #ffffff 100%);
+  background: rgba(10, 147, 150, 0.03);
   padding: 24px 28px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   gap: 20px;
-  box-shadow: 0 2px 8px rgba(255, 145, 164, 0.12);
-  border: 2px solid #fff0f5;
+  box-shadow: 0 2px 8px rgba(10, 147, 150, 0.12);
+  border: 2px solid rgba(10, 147, 150, 0.15);
   transition: all var(--transition-base);
 }
 
 .nursing__item:hover {
-  border-color: #ff91a4;
+  border-color: var(--secondary-color);
   transform: translateX(8px);
-  box-shadow: 0 6px 24px rgba(255, 145, 164, 0.25);
-  background: linear-gradient(135deg, #ffe5ec 0%, #fff0f5 100%);
+  box-shadow: 0 6px 24px rgba(10, 147, 150, 0.25);
+  background: rgba(10, 147, 150, 0.08);
 }
 
 .nursing__icon {
@@ -696,7 +696,11 @@ a {
   flex-shrink: 0;
   width: 56px;
   height: 56px;
-  background: linear-gradient(135deg, #ffe5ec 0%, #ffc9d6 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(10, 147, 150, 0.15) 0%,
+    rgba(10, 147, 150, 0.25) 100%
+  );
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -706,9 +710,9 @@ a {
 .nursing__label {
   font-size: 17px;
   font-weight: 600;
-  color: #cc3366;
+  color: var(--primary-color);
   line-height: 1.4;
-  font-family: "Zen Maru Gothic", "Noto Sans TC", sans-serif;
+  font-family: "Noto Serif TC", "Noto Sans TC", serif;
   letter-spacing: 0.5px;
 }
 
@@ -771,14 +775,14 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-left: 4px solid #e67e22;
+  border-left: 4px solid var(--secondary-color);
   transition: all var(--transition-base);
 }
 
 .review:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(230, 126, 34, 0.15);
-  border-left-color: #d35400;
+  box-shadow: 0 6px 16px rgba(10, 147, 150, 0.2);
+  border-left-color: var(--primary-color);
 }
 
 .review__header {
@@ -795,7 +799,7 @@ a {
 .review__author {
   font-size: 14px;
   font-weight: 700;
-  color: #e67e22;
+  color: var(--secondary-color);
 }
 
 .review__text {
@@ -1099,7 +1103,7 @@ a {
 
 .footer__tagline {
   font-size: 14px;
-  color: #ffda75;
+  color: var(--accent-color);
   letter-spacing: 1px;
   font-family: "Zen Maru Gothic", "Noto Sans TC", sans-serif;
   font-weight: 500;
