@@ -29,7 +29,7 @@
     <title>
       Nova Health | 心凝物理治療及護理有限公司 - 專業上門復康護理服務
     </title>
-    <link rel="stylesheet" href="style.css?v=3" />
+    <link rel="stylesheet" href="css/main.css?v=4" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -43,7 +43,7 @@
     <!-- Header -->
     <header class="header" id="main-header">
       <div class="container header__container">
-        <a href="#" class="brand">
+        <a href="index.html" class="brand">
           <div class="brand__icon">
             <i class="fas fa-heartbeat"></i>
           </div>
@@ -59,24 +59,116 @@
 
         <nav class="nav" id="nav-menu">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">主頁</a></li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">關於我們</a>
+              <a href="index.html" class="nav__link">主頁</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">健康資訊</a>
+            <li class="nav__item nav__item--has-submenu">
+              <a href="#about" class="nav__link"
+                >關於我們 <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="#about" class="nav__submenu-link">關於我們</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#news" class="nav__submenu-link">最新消息</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#why-us" class="nav__submenu-link">為何選擇心凝</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">物理治療</a>
+            <li class="nav__item nav__item--has-submenu">
+              <a href="#" class="nav__link"
+                >健康資訊 <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">個案分享</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">健康專欄</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">職業及言語治療</a>
+            <li class="nav__item nav__item--has-submenu">
+              <a href="#" class="nav__link"
+                >物理治療 <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">服務模式</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">中風康復</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">認知障礙</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">術後康復</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">其他疾病</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">護理</a>
+            <li class="nav__item nav__item--has-submenu">
+              <a href="#" class="nav__link"
+                >職業及言語治療 <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">職業治療</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">言語治療</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">遊戲治療</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">溝通簿</a>
+                </li>
+              </ul>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">陪診及其他</a>
+            <li class="nav__item nav__item--has-submenu">
+              <a href="#" class="nav__link"
+                >護理 <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">慢性疾病管理</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">腹膜透析護理</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">術後護理</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">導管護理</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">藥物管理及注射治療</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">營養護理</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <a href="#" class="nav__link"
+                >陪診及其他 <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">陪診</a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="#" class="nav__submenu-link">其他服務</a>
+                </li>
+              </ul>
             </li>
             <li class="nav__item"><a href="#" class="nav__link">收費</a></li>
             <li class="nav__item">
@@ -765,6 +857,47 @@
               遞交查詢
             </button>
           </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Contact Section -->
+    <section class="quick-contact">
+      <div class="container">
+        <h2 class="quick-contact__title">與我們即時對話</h2>
+        <p class="quick-contact__subtitle">
+          還有其他問題嗎？我們的個案經理很樂意為您解答！
+        </p>
+        <div class="quick-contact__grid">
+          <article class="quick-contact__item">
+            <div class="quick-contact__icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3 class="quick-contact__label">致電我們</h3>
+            <p class="quick-contact__info">
+              電話：<a href="tel:+85221165726">(852) 2116 5726</a>
+            </p>
+          </article>
+          <article class="quick-contact__item">
+            <div class="quick-contact__icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3 class="quick-contact__label">發送電郵</h3>
+            <p class="quick-contact__info">
+              電郵：<a href="mailto:info@novahealth.hk">info@novahealth.hk</a>
+            </p>
+          </article>
+          <article class="quick-contact__item">
+            <div class="quick-contact__icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3 class="quick-contact__label">即時聯天</h3>
+            <p class="quick-contact__info">
+              WhatsApp：<a href="https://wa.me/85246255777" target="_blank"
+                >4625 5777</a
+              >
+            </p>
+          </article>
         </div>
       </div>
     </section>

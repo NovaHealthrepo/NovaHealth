@@ -22,6 +22,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Mobile Submenu Toggle
+  const submenuItems = document.querySelectorAll(".nav__item--has-submenu");
+  submenuItems.forEach((item) => {
+    const link = item.querySelector(".nav__link");
+    link.addEventListener("click", (e) => {
+      // Only prevent default and toggle on mobile
+      if (window.innerWidth <= 1200) {
+        e.preventDefault();
+        item.classList.toggle("active");
+      }
+    });
+  });
+
   // Smooth Scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
