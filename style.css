@@ -81,7 +81,7 @@
   --font-size-xxl: 28px;
   --font-size-hero: 42px;
 
-  /* Border & Shadow - 大厂级柔和阴影 */
+  /* Border & Shadow */
   --radius: 8px;
   --radius-sm: 6px;
   --radius-md: 12px;
@@ -1693,9 +1693,9 @@ a {
 }
 
 /* ============================================================================
-   Responsive Design - Tablet (< 900px)
+   Responsive Design - Tablet (< 1200px)
    ========================================================================== */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .header__menu-toggle {
     display: block;
     min-width: 44px;
@@ -1782,12 +1782,13 @@ a {
 @media (max-width: 480px) {
   .latest-news__header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
   }
 
   .latest-news__title {
     font-size: 20px;
+    align-self: flex-start;
   }
 
   .news-card__image {
