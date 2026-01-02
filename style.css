@@ -1749,6 +1749,11 @@ a {
     min-height: 44px;
   }
 
+  .intro__wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
   .intro,
   .rights,
   .contact,
