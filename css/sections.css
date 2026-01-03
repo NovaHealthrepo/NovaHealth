@@ -6,7 +6,10 @@
    Hero Section
    ========================================================================== */
 .hero {
-  background: url("../hero.jpg") center/cover no-repeat, var(--primary-color);
+  background: url("../images/hero.jpg") center/cover no-repeat,
+    var(--primary-color);
+  background: url("../images/hero.webp") center/cover no-repeat,
+    var(--primary-color);
   position: relative;
   min-height: 500px;
   display: flex;

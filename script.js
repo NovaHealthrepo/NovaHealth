@@ -52,8 +52,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // Smooth Scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
-      e.preventDefault();
       const targetId = this.getAttribute("href");
+
+      // Skip if it's just "#" (dropdown toggle) or parent has submenu
+      if (
+        targetId === "#" ||
+        this.parentElement.classList.contains("nav__item--has-submenu")
+      ) {
+        return;
+      }
+
+      e.preventDefault();
       const targetElement = document.querySelector(targetId);
 
       if (targetElement) {
@@ -100,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* Testimonials Infinite Loop Logic */
-  const track = document.querySelector(".testimonial-track");
+  const track = document.querySelector(".testimonials__track");
   if (track) {
     // Clone all children (cards) and append them to the end
     // This creates the [Set A][Set A] structure needed for infinite scrolling
@@ -130,12 +139,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Calculate max index based on screen size
     const getMaxIndex = () => {
-      return isMobile() ? totalCards - 1 : 1; // Mobile: show 1 at a time, Desktop: show 2 at a time
+      return isMobile() ? totalCards - 1 : Math.max(0, totalCards - 2); // Mobile: last card, Desktop: last pair
     };
 
     const updateSlider = () => {
       // Calculate transform based on current index
-      const cardWidth = 100; // Each card is 50% width on desktop, 100% on mobile
       const gap = isMobile() ? 0 : 2.4; // Gap percentage
       const moveAmount = isMobile()
         ? currentIndex * 100

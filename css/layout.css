@@ -102,6 +102,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  cursor: default;
 }
 
 .nav__item--has-submenu > .nav__link i {
@@ -255,7 +256,6 @@
 }
 
 .footer__contact-item a {
-  text-decoration: none;
   transition: color 0.3s ease;
 }
 
@@ -298,7 +298,6 @@
 }
 
 .footer__link {
-  text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
   white-space: nowrap;
