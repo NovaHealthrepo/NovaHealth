@@ -308,3 +308,398 @@
   font-size: 13px;
   color: var(--white-alpha-08);
 }
+
+/* ============================================================================
+   FAQ Section
+   ========================================================================== */
+.faq {
+  padding: 80px 0;
+  background-color: var(--bg-light);
+}
+
+.faq__list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ============================================================================
+   Contact Section
+   ========================================================================== */
+.contact {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.contact__form-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* ============================================================================
+   Quick Contact Section
+   ========================================================================== */
+.quick-contact {
+  padding: 60px 0;
+  background: var(--bg-gradient-light);
+}
+
+.quick-contact__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.quick-contact__subtitle {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 16px;
+  margin-bottom: 48px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quick-contact__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quick-contact__item {
+  flex: 0 1 calc(33.333% - 24px);
+  min-width: 280px;
+  background: var(--pure-white);
+  padding: 40px 24px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+  border: 2px solid transparent;
+}
+
+.quick-contact__item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-color);
+}
+
+.quick-contact__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  background: var(--bg-gradient-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: var(--primary-color);
+  transition: all var(--transition-base);
+}
+
+.quick-contact__item:hover .quick-contact__icon {
+  background: var(--primary-color);
+  color: var(--pure-white);
+  transform: scale(1.1);
+}
+
+.quick-contact__label {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.quick-contact__info {
+  font-size: 15px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.quick-contact__info a {
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.quick-contact__info a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* ============================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+/* ============================================================================
+   Tablet (< 1200px)
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .header__menu-toggle {
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .nav {
+    position: fixed;
+    top: var(--header-height, 80px);
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.98) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    );
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 3px solid var(--primary-color);
+    z-index: 999;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  .nav.active {
+    height: calc(100vh - var(--header-height, 80px));
+    padding: 16px 20px 32px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav__item {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background: transparent;
+    transition: background 0.2s ease;
+  }
+
+  .nav__item:hover {
+    background: rgba(14, 122, 125, 0.05);
+  }
+
+  .nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    min-height: 52px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-dark);
+    border-radius: 12px;
+    transition: all 0.2s ease;
+  }
+
+  .nav__link:hover {
+    color: var(--primary-color);
+    background: rgba(14, 122, 125, 0.08);
+  }
+
+  /* Mobile Submenu Styles */
+  .nav__submenu {
+    position: static;
+    opacity: 0;
+    visibility: hidden;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    border-left: 3px solid var(--secondary-color);
+    background: linear-gradient(
+      90deg,
+      rgba(14, 122, 125, 0.04) 0%,
+      transparent 100%
+    );
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 0 8px 8px 0;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.35s ease-out, visibility 0s 0.35s;
+  }
+
+  .nav__item--has-submenu.active .nav__submenu {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+    padding: 4px 0;
+    margin: 2px 0 0 0;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.35s ease-out, visibility 0s 0s;
+  }
+
+  .nav__item--has-submenu > .nav__link i {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .nav__item--has-submenu.active > .nav__link i {
+    transform: rotate(180deg);
+  }
+
+  .nav__submenu-item {
+    margin: 2px 0;
+  }
+
+  .nav__submenu-link {
+    padding: 10px 24px 10px 32px;
+    font-size: 15px;
+    color: var(--text-medium);
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    transition: all 0.2s ease;
+    position: relative;
+  }
+
+  .nav__submenu-link::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    width: 6px;
+    height: 6px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+  }
+
+  .nav__submenu-link:hover {
+    padding-left: 36px;
+    color: var(--primary-color);
+    background: rgba(14, 122, 125, 0.06);
+  }
+
+  .nav__submenu-link:hover::before {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+/* ============================================================================
+   Medium Tablet (< 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer__contact-item {
+    justify-content: center;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .faq__question {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .faq__item.active .faq__answer {
+    padding: 0 20px 20px 20px;
+  }
+
+  .faq__answer p {
+    font-size: 14px;
+  }
+
+  .whatsapp-float {
+    width: 56px;
+    height: 56px;
+    font-size: 28px;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+  }
+
+  .whatsapp-float:hover {
+    box-shadow: 0 3px 12px rgba(37, 211, 102, 0.4);
+  }
+}
+
+/* ============================================================================
+   Mobile (< 600px)
+   ========================================================================== */
+@media (max-width: 600px) {
+  .header {
+    min-height: 70px;
+    padding: 10px 0;
+  }
+
+  .brand__name {
+    font-size: 20px;
+  }
+
+  .brand__subtitle {
+    font-size: 12px;
+  }
+
+  .brand__icon {
+    font-size: 24px;
+  }
+}
+
+/* ============================================================================
+   Very Small Devices (< 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  .brand__name {
+    font-size: 18px;
+  }
+
+  .brand__subtitle {
+    font-size: 11px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+/* ============================================================================
+   Extra Small Devices (< 380px)
+   ========================================================================== */
+@media (max-width: 380px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .footer__link {
+    font-size: 13px;
+  }
+}

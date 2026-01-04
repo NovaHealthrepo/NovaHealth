@@ -1,4 +1,4 @@
-/* ============================================================================
+﻿/* ============================================================================
    Responsive.css - Responsive Design & Media Queries
    ========================================================================== */
 
@@ -17,7 +17,6 @@
     top: var(--header-height, 80px);
     left: 0;
     width: 100%;
-    height: 0;
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.98) 0%,
@@ -27,6 +26,7 @@
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 3px solid var(--primary-color);
     z-index: 999;
+    max-height: 0;
     padding: 0;
     overflow: hidden;
     overflow-y: auto;
@@ -37,8 +37,8 @@
   }
 
   .nav.active {
-    height: calc(100vh - var(--header-height, 80px));
-    padding: 16px 20px 32px;
+    max-height: 70vh;
+    padding: 32px 20px;
     opacity: 1;
     visibility: visible;
   }
@@ -185,7 +185,6 @@
   }
   .latest-news__track {
     grid-template-columns: repeat(3, 100%);
-    gap: 0;
   }
 }
 
@@ -197,7 +196,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* 平板/手机版：2列布局边框颜色 */
+  /* 撟單/???2??撅颲寞?憸 */
   .services__card:nth-child(3n + 1),
   .services__card:nth-child(3n + 2),
   .services__card:nth-child(3n + 3) {
@@ -389,7 +388,6 @@
 
   .review {
     width: 280px;
-    height: 260px;
     padding: 24px;
   }
 
@@ -410,7 +408,7 @@
 
   .form__input,
   .form__textarea {
-    font-size: 16px; /* 防止 iOS 自動縮放 */
+    font-size: 16px; /* ?脫迫 iOS ?芸?蝮格 */
   }
 }
 
@@ -499,7 +497,6 @@
   }
   .review {
     width: 260px;
-    height: 280px;
     padding: 20px;
   }
   .review__text {

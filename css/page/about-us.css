@@ -70,10 +70,10 @@
 .about-hero__content {
   position: relative;
   z-index: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 60px;
 }
 
 .about-hero__text {
@@ -142,9 +142,13 @@
 }
 
 .about-hero__actions {
+  position: relative;
+  z-index: 2;
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 40px;
 }
 
 .about-hero__actions .button {
@@ -198,10 +202,10 @@
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
   border-radius: 20px;
-  padding: 28px 24px;
+  padding: 24px 20px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
   border: 2px solid rgba(255, 255, 255, 0.25);
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -987,97 +991,8 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-  .about-hero__content {
-    gap: 60px;
-  }
 
-  .about-hero__title {
-    font-size: 44px;
-  }
-
-  .about-hero__title .noto-text {
-    font-size: 38px;
-  }
-
-  .stat-card__number {
-    font-size: 24px;
-  }
-
-  .stat-card__label {
-    font-size: 12px;
-  }
-
-  .values-section__title {
-    font-size: 36px;
-  }
-
-  .values-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .about-hero {
-    padding: 80px 0 140px;
-  }
-
-  .about-hero__content {
-    grid-template-columns: 1fr;
-    gap: 48px;
-  }
-
-  .about-hero__title {
-    font-size: 36px;
-  }
-
-  .about-hero__title .noto-text {
-    font-size: 32px;
-  }
-
-  .about-hero__subtitle {
-    font-size: 16px;
-  }
-
-  .about-hero__actions {
-    flex-direction: column;
-  }
-
-  .about-hero__actions .button {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .about-hero__stats {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .stat-card {
-    padding: 20px 18px;
-    gap: 16px;
-  }
-
-  .stat-card__icon {
-    width: 48px;
-    height: 48px;
-    font-size: 20px;
-  }
-
-  .stat-card__content {
-    gap: 6px;
-  }
-
-  .stat-card__number {
-    font-size: 20px;
-    font-weight: 700;
-  }
-
-  .stat-card__label {
-    font-size: 12px;
-    line-height: 1.4;
-  }
-
+@media (max-width: 1000px) {
   .values-section {
     padding: 80px 0;
   }
@@ -1098,7 +1013,7 @@
   }
 
   .values-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 
@@ -1106,14 +1021,6 @@
     width: 48px;
     height: 48px;
     font-size: 20px;
-  }
-
-  .about-hero__wave svg {
-    height: 60px;
-  }
-
-  .about-hero__subtitle {
-    font-size: 16px;
   }
 
   .company-intro__content {
@@ -1158,33 +1065,6 @@
 }
 
 @media (max-width: 480px) {
-  .about-hero__title {
-    font-size: 28px;
-  }
-
-  .about-hero__title .noto-text {
-    font-size: 26px;
-  }
-
-  .stat-card {
-    padding: 18px 16px;
-    gap: 14px;
-  }
-
-  .stat-card__icon {
-    width: 44px;
-    height: 44px;
-    font-size: 18px;
-  }
-
-  .stat-card__number {
-    font-size: 18px;
-  }
-
-  .stat-card__label {
-    font-size: 11px;
-  }
-
   .values-section {
     padding: 60px 0;
   }
@@ -1203,7 +1083,7 @@
   }
 
   .values-section__mission-vision {
-    padding: 40px 0;
+    padding: 20px 0;
   }
 
   .mission-card {
@@ -1274,5 +1154,143 @@
 
   .team-section__grid {
     grid-template-columns: 1fr;
+  }
+}
+/* ============================================================================
+   Hero Section Responsive
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .about-hero {
+    padding: 40px 0 120px;
+  }
+
+  .about-hero__content {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .about-hero__text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .about-hero__title {
+    font-size: 40px;
+  }
+
+  .about-hero__title .noto-text {
+    font-size: 36px;
+  }
+
+  .about-hero__subtitle {
+    max-width: 100%;
+  }
+
+  .about-hero__stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-hero__wave svg {
+    height: 60px;
+  }
+  .about-hero__actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    padding: 60px 0 100px;
+  }
+  .values-section__header {
+    margin-bottom: 0px;
+  }
+  .about-hero__title {
+    font-size: 32px;
+  }
+
+  .about-hero__title .noto-text {
+    font-size: 28px;
+  }
+
+  .about-hero__subtitle {
+    font-size: 16px;
+  }
+
+  .stat-card {
+    padding: 20px 18px;
+  }
+
+  .stat-card__icon {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+
+  .stat-card__number {
+    font-size: 24px;
+  }
+  .stat-card__label {
+    display: none;
+  }
+  .about-hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-hero__actions .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-hero__wave svg {
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 40px 0 80px;
+  }
+
+  .about-hero__tag {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+
+  .about-hero__title {
+    font-size: 28px;
+  }
+
+  .about-hero__title .noto-text {
+    font-size: 24px;
+  }
+
+  .about-hero__subtitle {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+
+  .stat-card {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .stat-card__icon {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+
+  .stat-card__number {
+    font-size: 16px;
+  }
+
+  .stat-card__label {
+    font-size: 12px;
+  }
+
+  .about-hero__wave svg {
+    height: 40px;
   }
 }
