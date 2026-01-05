@@ -1414,38 +1414,5 @@
 /* ============================================================================
    General Responsive Utilities
    ========================================================================== */
-@media (min-width: 1400px) {
-  .section-title {
-    font-size: 32px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .contact {
-    padding: 60px 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .section-title {
-    font-size: 24px;
-  }
-
-  .contact {
-    padding: 40px 0;
-  }
-
-  .form__input,
-  .form__textarea {
-    font-size: 16px; /* 防止 iOS 自動縮放 */
-  }
-}
-
-@media (max-width: 480px) {
-  .section-title {
-    font-size: 22px;
-    margin-bottom: 40px;
-  }
-}
 
 /* #endregion unclassified */

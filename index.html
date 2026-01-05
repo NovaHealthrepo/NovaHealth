@@ -334,7 +334,14 @@
               <!-- News Item 2 -->
               <article class="news-card">
                 <div class="news-card__image">
-                  <img src="images/news-2.jpg" alt="新年優惠" loading="lazy" />
+                  <picture>
+                    <source srcset="images/news-2.webp" type="image/webp" />
+                    <img
+                      src="images/news-2.jpg"
+                      alt="新年優惠"
+                      loading="lazy"
+                    />
+                  </picture>
                   <span class="news-card__badge news-card__badge--promo"
                     >優惠</span
                   >
@@ -439,20 +446,26 @@
             <div class="template-gallery">
               <h3 class="template-gallery__title">心凝月度報告範例</h3>
               <div class="template-gallery__container">
-                <img
-                  src="images/template1.jpg"
-                  alt="Template 1"
-                  class="template-gallery__image active"
-                  data-template="1"
-                  loading="lazy"
-                />
-                <img
-                  src="images/template2.jpg"
-                  alt="Template 2"
-                  class="template-gallery__image"
-                  data-template="2"
-                  loading="lazy"
-                />
+                <picture>
+                  <source srcset="images/template1.webp" type="image/webp" />
+                  <img
+                    src="images/template1.jpg"
+                    alt="Template 1"
+                    class="template-gallery__image active"
+                    data-template="1"
+                    loading="lazy"
+                  />
+                </picture>
+                <picture>
+                  <source srcset="images/template2.webp" type="image/webp" />
+                  <img
+                    src="images/template2.jpg"
+                    alt="Template 2"
+                    class="template-gallery__image"
+                    data-template="2"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
               <div class="template-gallery__controls">
                 <button
@@ -822,7 +835,7 @@
         <div class="testimonials__track">
           <article class="review">
             <header class="review__header">
-              <div class="review__stars" aria-label="5星評價">
+              <div class="review__stars" role="img" aria-label="5星評價">
                 <span aria-hidden="true">★★★★★</span>
               </div>
               <span class="review__author"
@@ -835,7 +848,7 @@
           </article>
           <article class="review">
             <header class="review__header">
-              <div class="review__stars" aria-label="5星評價">
+              <div class="review__stars" role="img" aria-label="5星評價">
                 <span aria-hidden="true">★★★★★</span>
               </div>
               <span class="review__author">李伯伯女兒 (壓瘡傷口處理)</span>
@@ -846,7 +859,7 @@
           </article>
           <article class="review">
             <header class="review__header">
-              <div class="review__stars" aria-label="5星評價">
+              <div class="review__stars" role="img" aria-label="5星評價">
                 <span aria-hidden="true">★★★★★</span>
               </div>
               <span class="review__author">張太 (鼻胃管與個人化營養管理)</span>
@@ -857,7 +870,7 @@
           </article>
           <article class="review">
             <header class="review__header">
-              <div class="review__stars" aria-label="5星評價">
+              <div class="review__stars" role="img" aria-label="5星評價">
                 <span aria-hidden="true">★★★★★</span>
               </div>
               <span class="review__author">黃生 (中風復康)</span>
@@ -868,7 +881,7 @@
           </article>
           <article class="review">
             <header class="review__header">
-              <div class="review__stars" aria-label="5星評價">
+              <div class="review__stars" role="img" aria-label="5星評價">
                 <span aria-hidden="true">★★★★★</span>
               </div>
               <span class="review__author">吳小姐 (家居復康儀器租借)</span>
