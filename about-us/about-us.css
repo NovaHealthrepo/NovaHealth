@@ -359,8 +359,6 @@
 }
 
 .values-section__title {
-  font-size: 48px;
-  font-weight: 800;
   background: linear-gradient(
     135deg,
     var(--primary-color) 0%,
@@ -369,8 +367,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 16px;
-  line-height: 1.2;
 }
 
 .values-section__subtitle {
@@ -445,10 +441,6 @@
 }
 
 .mission-card__title {
-  font-size: 22px;
-  color: var(--primary-color);
-  margin-bottom: 14px;
-  font-weight: 700;
   position: relative;
   padding-bottom: 12px;
 }
@@ -573,13 +565,6 @@
   );
   color: var(--pure-white);
   transform: scale(1.1);
-}
-
-.value-card__title {
-  font-size: 20px;
-  color: var(--primary-color);
-  margin-bottom: 12px;
-  font-weight: 700;
 }
 
 .value-card__text {
@@ -765,13 +750,6 @@
   text-align: center;
 }
 
-.founder-quote__name {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-bottom: 6px;
-}
-
 .founder-quote__role {
   font-size: 14px;
   color: var(--text-gray);
@@ -828,7 +806,7 @@
 
 /* 引用文字 - 使用衬线字体 */
 .founder-quote__text {
-  font-family: "Noto Serif TC", Georgia, serif;
+  font-family: Georgia, serif;
   font-size: 18px;
   line-height: 2;
   color: #3a3a3a;
@@ -975,13 +953,6 @@
   font-size: 48px;
   color: var(--primary-color);
   margin-bottom: 20px;
-}
-
-.team-card__title {
-  font-size: 18px;
-  color: var(--primary-color);
-  margin-bottom: 16px;
-  font-weight: 700;
 }
 
 .team-card__text {
