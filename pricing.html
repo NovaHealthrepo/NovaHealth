@@ -14,8 +14,576 @@
     <meta name="author" content="Nova Health 心凝物理治療及護理有限公司" />
     <meta name="robots" content="index, follow" />
     <title>收費 | Nova Health 心凝物理治療及護理有限公司</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="action.css" />
+    <link rel="stylesheet" href="pricing.css" />
+    <style>
+      /* Detailed Nursing & Support Services Pricing Section Styles */
+      .detailed-pricing {
+        padding: 4rem 0;
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .detailed-pricing::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: 
+          radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+          radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+          radial-gradient(circle at 40% 40%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+        pointer-events: none;
+      }
+      
+      .detailed-pricing__header {
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .detailed-pricing__title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1e293b;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #3b82f6, #10b981);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .detailed-pricing__subtitle {
+        font-size: 1.125rem;
+        color: #64748b;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      
+      .detailed-pricing__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .detailed-pricing-card {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: all 0.3s ease;
+        border: 1px solid #e2e8f0;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .detailed-pricing-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #3b82f6, #10b981, #8b5cf6);
+      }
+      
+      .detailed-pricing-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+      
+      .detailed-pricing-card__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+      
+      .detailed-pricing-card__icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      }
+      
+      .detailed-pricing-card__icon i {
+        color: white;
+        font-size: 1.25rem;
+      }
+      
+      .detailed-pricing-card:nth-child(2) .detailed-pricing-card__icon {
+        background: linear-gradient(135deg, #10b981, #059669);
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+      }
+      
+      .detailed-pricing-card:nth-child(3) .detailed-pricing-card__icon {
+        background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+        box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+      }
+      
+      .detailed-pricing-card__title {
+        font-size: 1.375rem;
+        font-weight: 600;
+        color: #1e293b;
+        margin: 0;
+        line-height: 1.2;
+      }
+      
+      .pricing-table {
+        background: #f8fafc;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+        border: 1px solid #e2e8f0;
+      }
+      
+      .pricing-row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        padding: 1rem 1.25rem;
+        border-bottom: 1px solid #e2e8f0;
+      }
+      
+      .pricing-row:last-child {
+        border-bottom: none;
+      }
+      
+      .pricing-row--header {
+        background: linear-gradient(135deg, #1e293b, #374151);
+        color: white;
+        font-weight: 600;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      
+      .pricing-row--highlighted {
+        background: #f0f9ff;
+        border-left: 3px solid #3b82f6;
+      }
+      
+      .pricing-row--best {
+        background: #ecfdf5;
+        border-left: 3px solid #10b981;
+      }
+      
+      .pricing-cell--price {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #1e293b;
+      }
+      
+
+      
+      .detailed-pricing__note {
+        background: linear-gradient(135deg, #fef3c7, #fde68a);
+        border-radius: 12px;
+        padding: 1.5rem;
+        border-left: 4px solid #f59e0b;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .detailed-pricing__note-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      
+      .detailed-pricing__note-content i {
+        color: #d97706;
+        font-size: 1.25rem;
+        margin-top: 0.125rem;
+        flex-shrink: 0;
+      }
+      
+      .detailed-pricing__note-content p {
+        margin: 0;
+        font-size: 0.875rem;
+        color: #92400e;
+        line-height: 1.6;
+      }
+      
+      /* Promotion Section Styles */
+      .promotion {
+        padding: 4rem 0;
+        background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0f9ff 100%);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .promotion::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: 
+          radial-gradient(circle at 15% 85%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+          radial-gradient(circle at 85% 15%, rgba(16, 185, 129, 0.08) 0%, transparent 50%);
+        pointer-events: none;
+      }
+      
+      .promotion__header {
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .promotion__title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #1e293b;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #3b82f6, #10b981);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .promotion__subtitle {
+        font-size: 1.125rem;
+        color: #64748b;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      
+      .promotion__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .promotion-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 8px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .promotion-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: linear-gradient(90deg, #3b82f6, #10b981, #8b5cf6);
+      }
+      
+      .promotion-card--special {
+        background: linear-gradient(135deg, #fef3c7, #fde68a);
+        border-color: #f59e0b;
+      }
+      
+      .promotion-card--special::before {
+        background: linear-gradient(90deg, #f59e0b, #d97706, #f59e0b);
+      }
+      
+      .promotion-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px -3px rgba(0, 0, 0, 0.15), 0 8px 15px -2px rgba(0, 0, 0, 0.08);
+      }
+      
+      .promotion-card__badge {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      }
+      
+      .promotion-card--special .promotion-card__badge {
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+      }
+      
+      .promotion-card__header {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-top: 1rem;
+      }
+      
+      .promotion-card__icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+      }
+      
+      .promotion-card__icon i {
+        color: white;
+        font-size: 1.5rem;
+      }
+      
+      .promotion-card--special .promotion-card__icon {
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+      }
+      
+      .promotion-card__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1e293b;
+        margin-bottom: 1rem;
+      }
+      
+      .promotion-card__price {
+        margin-bottom: 0.5rem;
+      }
+      
+      .promotion-card__price-original {
+        font-size: 0.875rem;
+        color: #64748b;
+        text-decoration: line-through;
+        display: block;
+        margin-bottom: 0.25rem;
+      }
+      
+      .promotion-card__price-new {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #10b981;
+        display: block;
+      }
+      
+      .promotion-card--special .promotion-card__price-new {
+        color: #f59e0b;
+      }
+      
+      .promotion-card__service {
+        font-size: 1rem;
+        color: #64748b;
+        margin: 0;
+      }
+      
+      .promotion-card__body {
+        margin-bottom: 2rem;
+      }
+      
+      .promotion-card__features {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1.5rem 0;
+      }
+      
+      .promotion-card__feature {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0;
+        font-size: 0.875rem;
+        color: #374151;
+        line-height: 1.4;
+      }
+      
+      .promotion-card__feature i {
+        color: #10b981;
+        margin-right: 0.75rem;
+        font-size: 0.875rem;
+        flex-shrink: 0;
+      }
+      
+      .promotion-card__note {
+        background: rgba(59, 130, 246, 0.1);
+        border-left: 3px solid #3b82f6;
+        padding: 0.75rem;
+        border-radius: 6px;
+        font-size: 0.75rem;
+        color: #1e40af;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+      
+      .promotion-card--special .promotion-card__note {
+        background: rgba(245, 158, 11, 0.15);
+        border-left-color: #f59e0b;
+        color: #92400e;
+      }
+      
+      .promotion-card__note i {
+        margin-top: 0.125rem;
+        flex-shrink: 0;
+      }
+      
+      .promotion-card__footer {
+        text-align: center;
+      }
+      
+      .promotion-card__btn {
+        display: inline-block;
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        color: white;
+        padding: 0.875rem 2rem;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.875rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+      }
+      
+      .promotion-card__btn:hover {
+        background: linear-gradient(135deg, #1d4ed8, #1e40af);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+        color: white;
+        text-decoration: none;
+      }
+      
+      .promotion-card__btn--special {
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+      }
+      
+      .promotion-card__btn--special:hover {
+        background: linear-gradient(135deg, #d97706, #b45309);
+        box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+      }
+      
+      .promotion__terms {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        border: 1px solid #e2e8f0;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .promotion__terms-title {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #1e293b;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      .promotion__terms-title i {
+        color: #64748b;
+      }
+      
+      .promotion__terms-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .promotion__terms-list li {
+        padding: 0.5rem 0;
+        font-size: 0.875rem;
+        color: #64748b;
+        border-bottom: 1px solid #f1f5f9;
+        position: relative;
+        padding-left: 1.5rem;
+      }
+      
+      .promotion__terms-list li:last-child {
+        border-bottom: none;
+      }
+      
+      .promotion__terms-list li::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: #3b82f6;
+        font-weight: bold;
+      }
+      
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .promotion {
+          padding: 2rem 0;
+        }
+        
+        .promotion__title {
+          font-size: 2rem;
+        }
+        
+        .promotion__grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+        
+        .promotion-card {
+          padding: 1.5rem;
+        }
+        
+        .promotion__terms {
+          padding: 1.5rem;
+        }
+        
+        .detailed-pricing {
+          padding: 2rem 0;
+        }
+        
+        .detailed-pricing__title {
+          font-size: 2rem;
+        }
+        
+        .detailed-pricing__grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+        
+        .detailed-pricing-card {
+          padding: 1.5rem;
+        }
+        
+        .pricing-row {
+          padding: 0.75rem 1rem;
+        }
+        
+        .pricing-row--best::after {
+          position: relative;
+          right: auto;
+          top: auto;
+          transform: none;
+          margin-left: 0.5rem;
+          margin-top: 0.25rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Header -->
@@ -275,10 +843,10 @@
                 </div>
                 <h3 class="pricing-card__title">物理治療</h3>
                 <div class="pricing-card__price">
-                  $800
-                  <span class="pricing-card__price-unit">起</span>
+                  $963
+                  <span class="pricing-card__price-unit">每小時</span>
                 </div>
-                <p class="pricing-card__duration">每節 60 分鐘</p>
+                <p class="pricing-card__duration">每節最少 1.5 小時</p>
               </div>
               <div class="pricing-card__body">
                 <ul class="pricing-card__features">
@@ -309,48 +877,6 @@
               </div>
             </article>
 
-            <!-- Nursing Card -->
-            <article class="pricing-card">
-              <div class="pricing-card__header">
-                <div class="pricing-card__icon">
-                  <i class="fas fa-user-nurse"></i>
-                </div>
-                <h3 class="pricing-card__title">專業護理</h3>
-                <div class="pricing-card__price">
-                  $600
-                  <span class="pricing-card__price-unit">起</span>
-                </div>
-                <p class="pricing-card__duration">每次服務</p>
-              </div>
-              <div class="pricing-card__body">
-                <ul class="pricing-card__features">
-                  <li class="pricing-card__feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>註冊護士到戶護理服務</span>
-                  </li>
-                  <li class="pricing-card__feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>傷口護理及換症</span>
-                  </li>
-                  <li class="pricing-card__feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>藥物管理及注射治療</span>
-                  </li>
-                  <li class="pricing-card__feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>導管護理（尿喉、胃喉等）</span>
-                  </li>
-                  <li class="pricing-card__feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>健康監察及評估</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="pricing-card__footer">
-                <a href="contact.html" class="pricing-card__btn">立即預約</a>
-              </div>
-            </article>
-
             <!-- Occupational Therapy Card -->
             <article class="pricing-card">
               <div class="pricing-card__header">
@@ -359,10 +885,10 @@
                 </div>
                 <h3 class="pricing-card__title">職業治療</h3>
                 <div class="pricing-card__price">
-                  $850
-                  <span class="pricing-card__price-unit">起</span>
+                  $963
+                  <span class="pricing-card__price-unit">每小時</span>
                 </div>
-                <p class="pricing-card__duration">每節 60 分鐘</p>
+                <p class="pricing-card__duration">每節最少 1.5 小時</p>
               </div>
               <div class="pricing-card__body">
                 <ul class="pricing-card__features">
@@ -401,10 +927,10 @@
                 </div>
                 <h3 class="pricing-card__title">言語治療</h3>
                 <div class="pricing-card__price">
-                  $900
-                  <span class="pricing-card__price-unit">起</span>
+                  $963
+                  <span class="pricing-card__price-unit">每小時</span>
                 </div>
-                <p class="pricing-card__duration">每節 60 分鐘</p>
+                <p class="pricing-card__duration">每節最少 1 小時</p>
               </div>
               <div class="pricing-card__body">
                 <ul class="pricing-card__features">
@@ -434,90 +960,287 @@
                 <a href="contact.html" class="pricing-card__btn">立即預約</a>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
 
-            <!-- Medical Escort Card -->
-            <article class="pricing-card">
-              <div class="pricing-card__header">
-                <div class="pricing-card__icon">
+      <!-- Promotion Section -->
+      <section class="promotion">
+        <div class="container">
+          <div class="promotion__header">
+            <h2 class="promotion__title">限時優惠</h2>
+            <p class="promotion__subtitle">
+              把握機會體驗我們的專業服務，立即預約享受優惠價格
+            </p>
+          </div>
+
+          <div class="promotion__grid">
+            <!-- Stroke Patient Free Assessment -->
+            <article class="promotion-card promotion-card--special">
+              <div class="promotion-card__badge">
+                <i class="fas fa-star"></i>
+                特別優惠
+              </div>
+              <div class="promotion-card__header">
+                <div class="promotion-card__icon">
+                  <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="promotion-card__title">中風病人專享</h3>
+                <div class="promotion-card__price">
+                  <span class="promotion-card__price-original">原價 $250</span>
+                  <span class="promotion-card__price-new">免費</span>
+                </div>
+                <p class="promotion-card__service">首次物理治療評估</p>
+              </div>
+              <div class="promotion-card__body">
+                <ul class="promotion-card__features">
+                  <li class="promotion-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>專業註冊物理治療師評估</span>
+                  </li>
+                  <li class="promotion-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>詳細功能及活動能力分析</span>
+                  </li>
+                  <li class="promotion-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>個人化復康計劃建議</span>
+                  </li>
+                  <li class="promotion-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>家居安全及環境評估</span>
+                  </li>
+                </ul>
+                <p class="promotion-card__note">
+                  <i class="fas fa-info-circle"></i>
+                  適用於中風後六個月內的病人，需出示醫生證明
+                </p>
+              </div>
+              <div class="promotion-card__footer">
+                <a href="contact.html" class="promotion-card__btn promotion-card__btn--special">
+                  立即預約免費評估
+                </a>
+              </div>
+            </article>
+
+            <!-- General First Assessment -->
+            <article class="promotion-card">
+              <div class="promotion-card__badge">
+                <i class="fas fa-tag"></i>
+                首次優惠
+              </div>
+              <div class="promotion-card__header">
+                <div class="promotion-card__icon">
+                  <i class="fas fa-user-md"></i>
+                </div>
+                <h3 class="promotion-card__title">首次體驗優惠</h3>
+                <div class="promotion-card__price">
+                  <span class="promotion-card__price-original">原價 $963</span>
+                  <span class="promotion-card__price-new">$250</span>
+                </div>
+                <p class="promotion-card__service">物理治療評估</p>
+              </div>
+              <div class="promotion-card__body">
+                <ul class="promotion-card__features">
+                  <li class="promotion-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>全面身體功能評估</span>
+                  </li>
+                  <li class="promotion-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>詳細病歷及症狀分析</span>
+                  </li>
+                  <li class="promotion-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>專業治療建議及計劃</span>
+                  </li>
+                  <li class="promotion-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>運動及復康指導</span>
+                  </li>
+                </ul>
+                <p class="promotion-card__note">
+                  <i class="fas fa-clock"></i>
+                  評估時間約 1-1.5 小時，包括詳細報告
+                </p>
+              </div>
+              <div class="promotion-card__footer">
+                <a href="contact.html" class="promotion-card__btn">
+                  立即預約評估
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="promotion__terms">
+            <h4 class="promotion__terms-title">
+              <i class="fas fa-file-alt"></i>
+              條款及細則
+            </h4>
+            <ul class="promotion__terms-list">
+              <li>優惠只適用於新客戶首次預約服務</li>
+              <li>中風病人免費評估需提供相關醫療證明文件</li>
+              <li>優惠不可與其他折扣同時使用</li>
+              <li>預約時請註明使用優惠，並於服務前確認資格</li>
+              <li>本公司保留優惠條款的最終解釋權</li>
+              <li>優惠期至另行通知為止</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Detailed Pricing Section for Nursing and Support Services -->
+      <section class="detailed-pricing">
+        <div class="container">
+          <div class="detailed-pricing__header">
+            <h2 class="detailed-pricing__title">護理及支援服務收費詳情</h2>
+            <p class="detailed-pricing__subtitle">
+              透明收費表，按服務時數享有不同優惠
+            </p>
+          </div>
+
+          <div class="detailed-pricing__grid">
+            <!-- Nursing Pricing Card -->
+            <article class="detailed-pricing-card">
+              <div class="detailed-pricing-card__header">
+                <div class="detailed-pricing-card__icon">
+                  <i class="fas fa-user-nurse"></i>
+                </div>
+                <h3 class="detailed-pricing-card__title">護士</h3>
+              </div>
+              <div class="detailed-pricing-card__body">
+                <div class="pricing-table">
+                  <div class="pricing-row pricing-row--header">
+                    <div class="pricing-cell">服務時數</div>
+                    <div class="pricing-cell">每小時收費</div>
+                  </div>
+                  <div class="pricing-row">
+                    <div class="pricing-cell">基本服務</div>
+                    <div class="pricing-cell pricing-cell--price">$926</div>
+                  </div>
+                  <div class="pricing-row pricing-row--highlighted">
+                    <div class="pricing-cell">4 小時或以上</div>
+                    <div class="pricing-cell pricing-cell--price">$397.5</div>
+                  </div>
+                  <div class="pricing-row pricing-row--best">
+                    <div class="pricing-cell">8 小時或以上</div>
+                    <div class="pricing-cell pricing-cell--price">$305</div>
+                  </div>
+                </div>
+                <ul class="pricing-card__features">
+                  <li class="pricing-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>傷口護理及換症</span>
+                  </li>
+                  <li class="pricing-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>藥物管理及注射</span>
+                  </li>
+                  <li class="pricing-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>導管護理</span>
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Health Worker / Care Assistant Pricing Card -->
+            <article class="detailed-pricing-card">
+              <div class="detailed-pricing-card__header">
+                <div class="detailed-pricing-card__icon">
+                  <i class="fas fa-hands-helping"></i>
+                </div>
+                <h3 class="detailed-pricing-card__title">保健員 | 物理治療助理</h3>
+              </div>
+              <div class="detailed-pricing-card__body">
+                <div class="pricing-table">
+                  <div class="pricing-row pricing-row--header">
+                    <div class="pricing-cell">服務時數</div>
+                    <div class="pricing-cell">每小時收費</div>
+                  </div>
+                  <div class="pricing-row">
+                    <div class="pricing-cell">基本服務</div>
+                    <div class="pricing-cell pricing-cell--price">$243</div>
+                  </div>
+                  <div class="pricing-row pricing-row--highlighted">
+                    <div class="pricing-cell">4 小時或以上</div>
+                    <div class="pricing-cell pricing-cell--price">$198</div>
+                  </div>
+                  <div class="pricing-row pricing-row--best">
+                    <div class="pricing-cell">8 小時或以上</div>
+                    <div class="pricing-cell pricing-cell--price">$135</div>
+                  </div>
+                </div>
+                <ul class="pricing-card__features">
+                  <li class="pricing-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>基本護理服務</span>
+                  </li>
+                  <li class="pricing-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>日常起居照顧</span>
+                  </li>
+                  <li class="pricing-card__feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>陪伴及支援</span>
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Physiotherapy Assistant / Medical Escort Pricing Card -->
+            <article class="detailed-pricing-card">
+              <div class="detailed-pricing-card__header">
+                <div class="detailed-pricing-card__icon">
                   <i class="fas fa-ambulance"></i>
                 </div>
-                <h3 class="pricing-card__title">陪診服務</h3>
-                <div class="pricing-card__price">
-                  $500
-                  <span class="pricing-card__price-unit">起</span>
-                </div>
-                <p class="pricing-card__duration">每次服務</p>
+                <h3 class="detailed-pricing-card__title">起居照顧員 | 陪診</h3>
               </div>
-              <div class="pricing-card__body">
+              <div class="detailed-pricing-card__body">
+                <div class="pricing-table">
+                  <div class="pricing-row pricing-row--header">
+                    <div class="pricing-cell">服務時數</div>
+                    <div class="pricing-cell">每小時收費</div>
+                  </div>
+                  <div class="pricing-row">
+                    <div class="pricing-cell">基本服務</div>
+                    <div class="pricing-cell pricing-cell--price">$243</div>
+                  </div>
+                  <div class="pricing-row pricing-row--highlighted">
+                    <div class="pricing-cell">4 小時或以上</div>
+                    <div class="pricing-cell pricing-cell--price">$198</div>
+                  </div>
+                  <div class="pricing-row pricing-row--best">
+                    <div class="pricing-cell">8 小時或以上</div>
+                    <div class="pricing-cell pricing-cell--price">$135</div>
+                  </div>
+                </div>
                 <ul class="pricing-card__features">
                   <li class="pricing-card__feature">
                     <i class="fas fa-check-circle"></i>
-                    <span>專業醫護人員陪同就診</span>
+                    <span>物理治療輔助</span>
                   </li>
                   <li class="pricing-card__feature">
                     <i class="fas fa-check-circle"></i>
-                    <span>協助溝通及記錄醫囑</span>
+                    <span>專業陪診服務</span>
                   </li>
                   <li class="pricing-card__feature">
                     <i class="fas fa-check-circle"></i>
-                    <span>照顧病人就診期間需要</span>
-                  </li>
-                  <li class="pricing-card__feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>代辦取藥等事宜</span>
-                  </li>
-                  <li class="pricing-card__feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>提供就診後跟進建議</span>
+                    <span>協助溝通記錄</span>
                   </li>
                 </ul>
               </div>
-              <div class="pricing-card__footer">
-                <a href="contact.html" class="pricing-card__btn">立即預約</a>
-              </div>
             </article>
+          </div>
 
-            <!-- Package Card -->
-            <article class="pricing-card">
-              <div class="pricing-card__header">
-                <div class="pricing-card__icon">
-                  <i class="fas fa-box-open"></i>
-                </div>
-                <h3 class="pricing-card__title">套餐計劃</h3>
-                <div class="pricing-card__price">
-                  優惠價
-                  <span class="pricing-card__price-unit"></span>
-                </div>
-                <p class="pricing-card__duration">靈活組合</p>
-              </div>
-              <div class="pricing-card__body">
-                <ul class="pricing-card__features">
-                  <li class="pricing-card__feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>多種服務組合選擇</span>
-                  </li>
-                  <li class="pricing-card__feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>療程折扣優惠（10節或以上）</span>
-                  </li>
-                  <li class="pricing-card__feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>長期護理優惠計劃</span>
-                  </li>
-                  <li class="pricing-card__feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>專屬個案經理跟進</span>
-                  </li>
-                  <li class="pricing-card__feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>度身訂造個人化方案</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="pricing-card__footer">
-                <a href="contact.html" class="pricing-card__btn">查詢詳情</a>
-              </div>
-            </article>
+          <div class="detailed-pricing__note">
+            <div class="detailed-pricing__note-content">
+              <i class="fas fa-info-circle"></i>
+              <p><strong>注意事項：</strong> 
+                時數優惠以單次服務計算，可累積計算連續預約。所有收費已包括基本護理用品及交通費（港九新界主要地區）。
+                偏遠地區或公眾假期可能需要額外收費，詳情請於預約時查詢。
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -650,82 +1373,6 @@
                 >立即查詢</a
               >
             </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Additional Info Section -->
-      <section class="pricing-info">
-        <div class="container">
-          <h2 class="pricing-info__title">收費詳情及說明</h2>
-          <div class="pricing-info__grid">
-            <div class="pricing-info__card">
-              <h3 class="pricing-info__card-title">
-                <i class="fas fa-info-circle"></i>
-                收費包含
-              </h3>
-              <p class="pricing-info__card-text">
-                所有服務收費已包括以下項目，讓您安心使用：
-              </p>
-              <ul class="pricing-info__card-list">
-                <li>專業人員上門服務費用</li>
-                <li>基本治療或護理儀器使用</li>
-                <li>詳細評估及進度報告</li>
-                <li>專業建議及家居訓練指導</li>
-                <li>一般消耗品及物料</li>
-              </ul>
-            </div>
-
-            <div class="pricing-info__card">
-              <h3 class="pricing-info__card-title">
-                <i class="fas fa-plus-circle"></i>
-                額外收費
-              </h3>
-              <p class="pricing-info__card-text">
-                以下情況可能產生額外費用，我們會事先告知：
-              </p>
-              <ul class="pricing-info__card-list">
-                <li>特殊治療儀器或輔助器材</li>
-                <li>偏遠地區交通附加費</li>
-                <li>公眾假期服務（+30%）</li>
-                <li>緊急預約服務（24小時內）</li>
-                <li>專科評估報告撰寫</li>
-              </ul>
-            </div>
-
-            <div class="pricing-info__card">
-              <h3 class="pricing-info__card-title">
-                <i class="fas fa-calendar-check"></i>
-                預約及付款
-              </h3>
-              <p class="pricing-info__card-text">
-                為了提供優質服務，請注意以下事項：
-              </p>
-              <ul class="pricing-info__card-list">
-                <li>建議提前 2-3 天預約服務</li>
-                <li>接受現金、轉數快、銀行轉帳</li>
-                <li>可使用醫療保險（視乎保單條款）</li>
-                <li>提供正式收據供保險索償</li>
-                <li>取消預約請提前 24 小時通知</li>
-              </ul>
-            </div>
-
-            <div class="pricing-info__card">
-              <h3 class="pricing-info__card-title">
-                <i class="fas fa-gift"></i>
-                優惠計劃
-              </h3>
-              <p class="pricing-info__card-text">
-                我們為不同需要的客戶提供多種優惠：
-              </p>
-              <ul class="pricing-info__card-list">
-                <li>首次體驗優惠（指定服務 9 折）</li>
-                <li>10 節套票享 9 折優惠</li>
-                <li>20 節套票享 85 折優惠</li>
-                <li>長者及學生優惠（憑證 9 折）</li>
-                <li>轉介優惠（轉介雙方各享優惠）</li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
