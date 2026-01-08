@@ -9,6 +9,7 @@
     <meta name="robots" content="index, follow" />
     <title>健康專欄 | Nova Health 芯凝物理治療及護理有限公司</title>
     <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="article.css" />
   </head>
   <body>
     <!-- Header -->
@@ -241,7 +242,54 @@
 
     <!-- Main Content Area -->
     <main>
-      <!-- Add your page content here -->
+      <!-- Hero Section -->
+      <section class="article-hero">
+        <div class="container">
+          <div class="article-hero__content">
+            <h1 class="article-hero__title">健康專欄</h1>
+            <p class="article-hero__subtitle">專業醫療團隊分享最新健康資訊與護理知識</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Filter Section -->
+      <section class="article-filter">
+        <div class="container">
+          <div class="article-filter__controls">
+            <button class="article-filter__btn article-filter__btn--active" data-category="all">
+              全部文章
+            </button>
+            <button class="article-filter__btn" data-category="physiotherapy">
+              物理治療
+            </button>
+            <button class="article-filter__btn" data-category="nursing">
+              護理
+            </button>
+            <button class="article-filter__btn" data-category="health-tips">
+              健康貼士
+            </button>
+            <button class="article-filter__btn" data-category="rehabilitation">
+              復康資訊
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Articles Grid -->
+      <section class="articles">
+        <div class="container">
+          <div class="articles__grid" id="articles-grid">
+            <!-- Articles will be loaded here -->
+          </div>
+          
+          <!-- Load More Button -->
+          <div class="articles__load-more">
+            <button class="button button--secondary" id="load-more-btn">
+              載入更多文章
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Quick Contact Section -->
@@ -364,5 +412,6 @@
     </footer>
 
     <script src="../script.js"></script>
+    <script src="article.js"></script>
   </body>
 </html>
