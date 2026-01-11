@@ -349,6 +349,8 @@ html {
   font-weight: 700;
   color: var(--primary-color);
   margin: 24px 0 12px;
+  text-align: left;
+  margin-top: 1em;
 }
 
 .news__text p {

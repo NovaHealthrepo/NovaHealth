@@ -14,7 +14,22 @@
     <meta name="author" content="Nova Health 芯凝物理治療及護理有限公司" />
     <meta name="robots" content="index, follow" />
     <title>為何選擇芯凝 | Nova Health 芯凝物理治療及護理有限公司</title>
+    <link
+      rel="preload"
+      href="../fonts/noto-serif-tc/NotoSerifTC-SemiBold-Subset.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../fonts/fontawesome/fa-solid-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="our-strengths.css" />
   </head>
   <body>
     <!-- Header -->
@@ -42,9 +57,9 @@
               <a href="../index.html" class="nav__link">主頁</a>
             </li>
             <li class="nav__item nav__item--has-submenu">
-              <a class="nav__link"
-                >關於我們 <i class="fas fa-chevron-down"></i
-              ></a>
+              <div class="nav__link">
+                關於我們 <i class="fas fa-chevron-down"></i>
+              </div>
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a href="about-us.html" class="nav__submenu-link">關於我們</a>
@@ -60,9 +75,9 @@
               </ul>
             </li>
             <li class="nav__item nav__item--has-submenu">
-              <a class="nav__link"
-                >健康資訊 <i class="fas fa-chevron-down"></i
-              ></a>
+              <div class="nav__link">
+                健康資訊 <i class="fas fa-chevron-down"></i>
+              </div>
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a
@@ -81,9 +96,9 @@
               </ul>
             </li>
             <li class="nav__item nav__item--has-submenu">
-              <a class="nav__link"
-                >物理治療 <i class="fas fa-chevron-down"></i
-              ></a>
+              <div class="nav__link">
+                物理治療 <i class="fas fa-chevron-down"></i>
+              </div>
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a
@@ -123,9 +138,9 @@
               </ul>
             </li>
             <li class="nav__item nav__item--has-submenu">
-              <a class="nav__link"
-                >職業及言語治療 <i class="fas fa-chevron-down"></i
-              ></a>
+              <div class="nav__link">
+                職業及言語治療 <i class="fas fa-chevron-down"></i>
+              </div>
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a
@@ -158,7 +173,9 @@
               </ul>
             </li>
             <li class="nav__item nav__item--has-submenu">
-              <a class="nav__link">護理 <i class="fas fa-chevron-down"></i></a>
+              <div class="nav__link">
+                護理 <i class="fas fa-chevron-down"></i>
+              </div>
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a
@@ -203,9 +220,9 @@
               </ul>
             </li>
             <li class="nav__item nav__item--has-submenu">
-              <a class="nav__link"
-                >陪診及其他 <i class="fas fa-chevron-down"></i
-              ></a>
+              <div class="nav__link">
+                陪診及其他 <i class="fas fa-chevron-down"></i>
+              </div>
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a
@@ -241,7 +258,430 @@
 
     <!-- Main Content Area -->
     <main>
-      <!-- Add your page content here -->
+      <!-- Hero Section -->
+      <section class="strengths-hero">
+        <div class="container">
+          <div class="strengths-hero__content">
+            <span class="strengths-hero__tag">
+              <i class="fas fa-award"></i> 您的信賴之選
+            </span>
+            <h1 class="strengths-hero__title">為何選擇芯凝</h1>
+            <p class="strengths-hero__subtitle">
+              數據驅動復康 · 科技賦能護理 · 透明追蹤進度
+            </p>
+            <div class="strengths-hero__cta">
+              <a href="../contact.html" class="button button--primary">
+                <i class="fas fa-calendar-check"></i> 立即預約
+              </a>
+              <a href="#strengths" class="button button--outline">
+                <i class="fas fa-arrow-down"></i> 了解我們的優勢
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Background Animation Patterns -->
+        <div class="strengths-hero__pattern">
+          <div class="pattern-shape pattern-shape--1"></div>
+          <div class="pattern-shape pattern-shape--2"></div>
+          <div class="pattern-shape pattern-shape--3"></div>
+          <div class="pattern-shape pattern-shape--4"></div>
+          <div class="pattern-shape pattern-shape--5"></div>
+        </div>
+      </section>
+
+      <!-- Core Strengths Section -->
+      <section class="strengths" id="strengths">
+        <div class="container">
+          <div class="section-divider"></div>
+          <h2 class="section-title">芯凝五大核心優勢</h2>
+          <p class="section-subtitle">點擊卡片了解詳情</p>
+
+          <div class="strengths__grid">
+            <!-- 優勢1: 專科專配 -->
+            <article class="strength-card" data-strength="1">
+              <div class="strength-card__inner">
+                <div class="strength-card__front">
+                  <div class="strength-card__icon">
+                    <i class="fas fa-user-md"></i>
+                  </div>
+                  <h3 class="strength-card__title">專科專配</h3>
+                  <p class="strength-card__desc">專業對口，非一般派員</p>
+                  <button class="strength-card__toggle" aria-label="展開詳情">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="strength-card__back">
+                  <button class="strength-card__close" aria-label="關閉詳情">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  <ul class="strength-card__details">
+                    <li>由理工大學物理治療師或註冊護士擔任個案經理</li>
+                    <li>根據病情配對具備相關專業背景的治療師</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- 優勢2: 透明化記錄系統 -->
+            <article class="strength-card" data-strength="2">
+              <div class="strength-card__inner">
+                <div class="strength-card__front">
+                  <div class="strength-card__icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <h3 class="strength-card__title">記錄系統</h3>
+                  <p class="strength-card__desc">進度一目了然</p>
+                  <button class="strength-card__toggle" aria-label="展開詳情">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="strength-card__back">
+                  <button class="strength-card__close" aria-label="關閉詳情">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  <ul class="strength-card__details">
+                    <li>系統化記錄每日進度、運動次數及維生指數</li>
+                    <li>月度、季度報告自動生成，圖表化呈現</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- 優勢3: 目標導向復康 -->
+            <article class="strength-card" data-strength="3">
+              <div class="strength-card__inner">
+                <div class="strength-card__front">
+                  <div class="strength-card__icon">
+                    <i class="fas fa-bullseye"></i>
+                  </div>
+                  <h3 class="strength-card__title">目標導向</h3>
+                  <p class="strength-card__desc">明確方向，持續進步</p>
+                  <button class="strength-card__toggle" aria-label="展開詳情">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="strength-card__back">
+                  <button class="strength-card__close" aria-label="關閉詳情">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  <ul class="strength-card__details">
+                    <li>為每位客戶制定三項專屬長期目標（三個月）</li>
+                    <li>每季度評估進度，調整康復方向</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- 優勢4: 創新科技應用 -->
+            <article class="strength-card" data-strength="4">
+              <div class="strength-card__inner">
+                <div class="strength-card__front">
+                  <div class="strength-card__icon">
+                    <i class="fas fa-laptop-medical"></i>
+                  </div>
+                  <h3 class="strength-card__title">創新科技</h3>
+                  <p class="strength-card__desc">科技賦能康復</p>
+                  <button class="strength-card__toggle" aria-label="展開詳情">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="strength-card__back">
+                  <button class="strength-card__close" aria-label="關閉詳情">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  <ul class="strength-card__details">
+                    <li>遙距視像護理諮詢服務，隨時解答疑問</li>
+                    <li>智能復康儀器租借，居家訓練更有效</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- 優勢5: 個人化方案 -->
+            <article class="strength-card" data-strength="5">
+              <div class="strength-card__inner">
+                <div class="strength-card__front">
+                  <div class="strength-card__icon">
+                    <i class="fas fa-users-cog"></i>
+                  </div>
+                  <h3 class="strength-card__title">個人化方案</h3>
+                  <p class="strength-card__desc">量身打造，貼心服務</p>
+                  <button class="strength-card__toggle" aria-label="展開詳情">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="strength-card__back">
+                  <button class="strength-card__close" aria-label="關閉詳情">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  <ul class="strength-card__details">
+                    <li>1對1定制復康計劃，非標準化套餐</li>
+                    <li>根據病情、生活習慣、家居環境量身打造</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Transparent System Section -->
+      <section class="transparent-system">
+        <div class="container">
+          <div class="transparent-system__grid">
+            <!-- Gallery -->
+            <div class="transparent-system__gallery">
+              <div class="gallery-slider">
+                <!-- Placeholder 1: 月度報告 -->
+                <div class="gallery-slide active">
+                  <div class="placeholder-image" data-size="600x400">
+                    <i class="fas fa-file-medical-alt"></i>
+                    <p>月度復康報告示例</p>
+                  </div>
+                </div>
+                <!-- Placeholder 2: 目標追蹤圖表 -->
+                <div class="gallery-slide">
+                  <div class="placeholder-image" data-size="600x400">
+                    <i class="fas fa-chart-bar"></i>
+                    <p>目標追蹤圖表</p>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-controls">
+                <button class="gallery-control active" data-slide="0">
+                  <i class="fas fa-file-medical-alt"></i> 月度報告
+                </button>
+                <button class="gallery-control" data-slide="1">
+                  <i class="fas fa-chart-bar"></i> 目標追蹤
+                </button>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="transparent-system__content">
+              <h2>透明化記錄系統</h2>
+              <h3>數據化追蹤，讓康復進度清晰可見</h3>
+
+              <div class="feature-list">
+                <div class="feature-item">
+                  <div class="feature-item__icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <div class="feature-item__content">
+                    <h4>數據化追蹤的好處</h4>
+                    <p>
+                      每月自動生成圖表化報告，肌力、平衡、日常活動能力一目了然。家屬可隨時了解康復情況，醫生也能參考數據調整治療方案，實現多方協作。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-item__icon">
+                    <i class="fas fa-bullseye"></i>
+                  </div>
+                  <div class="feature-item__content">
+                    <h4>目標設定的必要</h4>
+                    <p>
+                      明確的康復目標提供前進方向，增強患者動力與信心。可量化的目標讓進步看得見，每次達成都是對努力的肯定，激勵持續改善。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-item__icon">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="feature-item__content">
+                    <h4>芯凝的強項</h4>
+                    <p>
+                      我們擁有成熟的系統化記錄機制，專業的報告格式符合醫療標準。定期更新確保數據時效性，透明化流程建立醫患互信。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Process Section -->
+      <section class="service-process">
+        <div class="container">
+          <div class="section-divider"></div>
+          <h2 class="section-title">服務流程</h2>
+          <p class="section-subtitle">從諮詢到持續跟進，每一步專業用心</p>
+
+          <!-- Linear Process 1-3 -->
+          <div class="process-linear">
+            <div class="process-step">
+              <div class="process-step__number">1</div>
+              <h3 class="process-step__name">諮詢</h3>
+            </div>
+            <div class="process-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="process-step">
+              <div class="process-step__number">2</div>
+              <h3 class="process-step__name">Intake</h3>
+            </div>
+            <div class="process-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="process-step">
+              <div class="process-step__number">3</div>
+              <h3 class="process-step__name">設立計劃</h3>
+            </div>
+          </div>
+
+          <!-- Cycle Process 4-6 -->
+          <div class="process-cycle">
+            <div class="cycle-container">
+              <svg class="cycle-svg" viewBox="0 0 400 400">
+                <!-- Background Circle -->
+                <circle
+                  cx="200"
+                  cy="200"
+                  r="100"
+                  stroke="#e5e7eb"
+                  stroke-width="3"
+                  fill="none"
+                  stroke-dasharray="8 4"
+                />
+
+                <!-- Animated Path -->
+                <path
+                  d="M 200,100 A 100,100 0 1,1 199.9,100"
+                  stroke="#00847d"
+                  stroke-width="4"
+                  fill="none"
+                  stroke-linecap="round"
+                  class="cycle-path"
+                />
+
+                <!-- Step 4: 服務 (Top) -->
+                <g class="cycle-step" data-step="4">
+                  <circle cx="200" cy="100" r="30" fill="#00847d" />
+                  <text
+                    x="200"
+                    y="108"
+                    text-anchor="middle"
+                    fill="white"
+                    font-size="20"
+                    font-weight="bold"
+                  >
+                    4
+                  </text>
+                </g>
+
+                <!-- Step 5: 季度評估 (Bottom Right) -->
+                <g class="cycle-step" data-step="5">
+                  <circle cx="286" cy="250" r="30" fill="#00847d" />
+                  <text
+                    x="286"
+                    y="258"
+                    text-anchor="middle"
+                    fill="white"
+                    font-size="20"
+                    font-weight="bold"
+                  >
+                    5
+                  </text>
+                </g>
+
+                <!-- Step 6: 更新目標 (Bottom Left) -->
+                <g class="cycle-step" data-step="6">
+                  <circle cx="114" cy="250" r="30" fill="#00847d" />
+                  <text
+                    x="114"
+                    y="258"
+                    text-anchor="middle"
+                    fill="white"
+                    font-size="20"
+                    font-weight="bold"
+                  >
+                    6
+                  </text>
+                </g>
+              </svg>
+
+              <!-- Labels -->
+              <div class="cycle-label cycle-label--top">服務</div>
+              <div class="cycle-label cycle-label--right">季度評估</div>
+              <div class="cycle-label cycle-label--left">更新目標</div>
+
+              <!-- Center -->
+              <div class="cycle-center">
+                <i class="fas fa-sync-alt"></i>
+                <p>持續循環</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Process Details -->
+          <div class="process-details">
+            <div class="process-detail" data-step="1">
+              <div class="process-detail__badge">1</div>
+              <div class="process-detail__content">
+                <h4>諮詢</h4>
+                <p>
+                  致電或 WhatsApp
+                  聯繫我們，個案經理了解您的需求、病情及家居環境，提供初步建議。
+                </p>
+              </div>
+            </div>
+
+            <div class="process-detail" data-step="2">
+              <div class="process-detail__badge">2</div>
+              <div class="process-detail__content">
+                <h4>護士/物理治療師 Intake</h4>
+                <p>
+                  專業治療師上門進行全面評估，包括身體狀況、活動能力、認知功能及家居安全檢查。
+                </p>
+              </div>
+            </div>
+
+            <div class="process-detail" data-step="3">
+              <div class="process-detail__badge">3</div>
+              <div class="process-detail__content">
+                <h4>設立/更新計劃</h4>
+                <p>
+                  根據評估結果，制定個人化復康計劃，設定三項長期目標（三個月），並配對最合適的專業人員。
+                </p>
+              </div>
+            </div>
+
+            <div class="process-detail" data-step="4">
+              <div class="process-detail__badge">4</div>
+              <div class="process-detail__content">
+                <h4>服務</h4>
+                <p>
+                  專業團隊定期上門提供物理治療、護理或言語治療服務，每次詳細記錄進度及維生指數。
+                </p>
+              </div>
+            </div>
+
+            <div class="process-detail" data-step="5">
+              <div class="process-detail__badge">5</div>
+              <div class="process-detail__content">
+                <h4>季度評估</h4>
+                <p>
+                  每三個月進行全面復康評估，生成詳細季度報告，對比肌力、平衡、日常活動能力等指標變化。
+                </p>
+              </div>
+            </div>
+
+            <div class="process-detail" data-step="6">
+              <div class="process-detail__badge">6</div>
+              <div class="process-detail__content">
+                <h4>更新目標</h4>
+                <p>
+                  根據評估結果調整康復目標及訓練計劃，確保持續進步，適應不同康復階段的需求。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Quick Contact Section -->
@@ -364,5 +804,6 @@
     </footer>
 
     <script src="../script.js"></script>
+    <script src="our-strengths.js"></script>
   </body>
 </html>
