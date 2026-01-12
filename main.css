@@ -1290,6 +1290,7 @@ p {
 }
 
 /* 標題共用設定 */
+h1,
 h2,
 h3,
 h4 {
@@ -1315,6 +1316,10 @@ h2 {
   margin-bottom: 1.25rem; /* 20px */
 }
 
+h1 {
+  font-size: 2.5rem; /* 30px */
+  margin-bottom: 1.3rem;
+}
 /* 平板版 */
 @media screen and (min-width: 768px) {
   p {
