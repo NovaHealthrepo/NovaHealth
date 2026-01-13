@@ -51,18 +51,18 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 24px;
+  padding: 100px 24px;
   width: 100%;
 }
 @media (min-width: 768px) {
   .container {
-    padding: 80px 36px;
+    padding: 140px 36px;
   }
 }
 @media (min-width: 1201px) {
   .container {
     min-width: 1300px;
-        padding: 80px 48px;
+    padding: 180px 48px;
   }
 }
 /* Focus-visible, reduced-motion, high-contrast */
@@ -1313,8 +1313,8 @@ h3 {
 }
 
 h2 {
-  font-size: 1.875rem; /* 30px */
-  margin-bottom: 1.25rem; /* 20px */
+  font-size: 2rem; /* 30px */
+  margin-bottom: 1.5rem; /* 20px */
 }
 
 /* 平板版 */
@@ -1337,7 +1337,7 @@ h2 {
 
   h2 {
     font-size: 2.25rem; /* 36px */
-    margin-bottom: 1.5rem; /* 24px */
+    margin-bottom: 1.75rem; /* 24px */
   }
 }
 
@@ -1361,23 +1361,30 @@ h2 {
 
   h2 {
     font-size: 2.5rem; /* 40px */
-    margin-bottom: 1.75rem; /* 28px */
+    margin-bottom: 2rem; /* 28px */
   }
 }
 
 /* #endregion */
-.hero{
-  padding: 24px 0
+
+.two-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
 }
 
 @media (min-width: 768px) {
-  .hero{
-    padding: 32px 0
+  .two-grid {
+    gap: 32px;
   }
 }
 
 @media (min-width: 1200px) {
-  .hero{
-    padding: 48px 0
+  .two-grid {
+    gap: 60px;
   }
 }
