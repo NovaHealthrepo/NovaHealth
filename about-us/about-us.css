@@ -1,22 +1,9 @@
 /* #region hero*/
-.about-hero {
-  padding: 48px 0;
+.hero {
   background: linear-gradient(145deg, #004d47 0%, #00847d 50%, #006d66 100%);
   color: white;
-  text-align: center;
 }
 
-@media (min-width: 768px) {
-  .about-hero {
-    padding: 64px 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .about-hero {
-    padding: 80px 0;
-  }
-}
 
 .about-hero__content {
   display: flex;
@@ -31,7 +18,6 @@
   align-items: center;
   gap: 8px;
   background: rgba(45, 203, 189, 0.25);
-  backdrop-filter: blur(10px);
   padding: 8px 20px;
   border-radius: 50px;
   font-size: 13px;
@@ -43,7 +29,7 @@
 
 @media (min-width: 768px) {
   .about-hero__tag {
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 24px;
   }
 }
