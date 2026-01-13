@@ -51,18 +51,18 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 24px;
+  padding: 80px 24px;
   width: 100%;
 }
 @media (min-width: 768px) {
   .container {
-    padding: 140px 36px;
+    padding: 120px 36px;
   }
 }
 @media (min-width: 1201px) {
   .container {
     min-width: 1300px;
-    padding: 180px 48px;
+    padding: 160px 48px;
   }
 }
 /* Focus-visible, reduced-motion, high-contrast */
