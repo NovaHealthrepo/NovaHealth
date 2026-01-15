@@ -51,18 +51,17 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 24px;
+  padding: 40px 24px;
   width: 100%;
 }
 @media (min-width: 768px) {
   .container {
-    padding: 80px 36px;
+    padding: 60px 36px;
   }
 }
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
   .container {
     min-width: 1300px;
-    padding: 100px 48px;
   }
 }
 /* Focus-visible, reduced-motion, high-contrast */
@@ -1008,55 +1007,62 @@ a {
 /* #endregion */
 /* #region Quick Contact Section */
 .quick-contact {
-  padding: 60px 0;
   background: var(--bg-gradient-light);
 }
 .quick-contact__subtitle {
   text-align: center;
   color: var(--text-light);
-  font-size: 16px;
-  margin-bottom: 48px;
+  font-size: 14px;
+  margin-bottom: 24px;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+.quick-contact__item h3{
+  font-size:16px;
 }
 .quick-contact__grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 32px;
+  gap: 12px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .quick-contact__item {
-  flex: 0 1 calc(33.333% - 24px);
-  min-width: 280px;
+  flex: 0 1 calc(33.333% - 8px);
+  min-width: 0;
   background: var(--pure-white);
-  padding: 40px 24px;
-  border-radius: var(--radius-md);
+  padding: 16px 8px;
+  border-radius: var(--radius-sm);
   text-align: center;
   transition: all var(--transition-base);
   box-shadow: var(--shadow-sm);
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 
 .quick-contact__item:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-md);
   border-color: var(--primary-color);
 }
 
+.quick-contact__item h4 {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
 .quick-contact__icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 20px;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 8px;
   background: var(--bg-gradient-light);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
+  font-size: 16px;
   color: var(--primary-color);
   transition: all var(--transition-base);
 }
@@ -1068,19 +1074,119 @@ a {
 }
 
 .quick-contact__info {
-  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 11px;
   color: var(--text-light);
+  word-break: break-word;
+}
+
+.quick-contact__info strong {
+  font-size: 10px;
+  color: var(--text-dark);
 }
 
 .quick-contact__info a {
   color: var(--primary-color);
   font-weight: 500;
+  font-size: 10px;
   transition: color var(--transition-fast);
 }
 
 .quick-contact__info a:hover {
   color: var(--secondary-color);
   text-decoration: underline;
+}
+
+/* Tablet - 768px+ */
+@media (min-width: 768px) {
+  .quick-contact__subtitle {
+    font-size: 15px;
+    margin-bottom: 36px;
+  }
+  
+  .quick-contact__grid {
+    gap: 20px;
+  }
+  
+  .quick-contact__item {
+    flex: 0 1 calc(33.333% - 14px);
+    padding: 28px 16px;
+    border-radius: var(--radius-md);
+    border-width: 2px;
+  }
+  
+  .quick-contact__item h4 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .quick-contact__icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 16px;
+    font-size: 22px;
+  }
+  
+  .quick-contact__info {
+    gap: 6px;
+    font-size: 14px;
+  }
+  
+  .quick-contact__info strong {
+    font-size: 13px;
+  }
+  
+  .quick-contact__info a {
+    font-size: 14px;
+  }
+}
+
+/* Desktop - 1200px+ */
+@media (min-width: 1200px) {
+  .quick-contact__subtitle {
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+  
+  .quick-contact__grid {
+    gap: 32px;
+  }
+  
+  .quick-contact__item {
+    flex: 0 1 calc(33.333% - 24px);
+    padding: 40px 24px;
+  }
+  
+  .quick-contact__item:hover {
+    transform: translateY(-4px);
+  }
+  
+  .quick-contact__item h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .quick-contact__icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .quick-contact__info {
+    gap: 8px;
+    font-size: 15px;
+  }
+  
+  .quick-contact__info strong {
+    font-size: 14px;
+  }
+  
+  .quick-contact__info a {
+    font-size: 15px;
+  }
 }
 /* #endregion */
 /* #region FAQ Accordion Styles */
@@ -1318,6 +1424,7 @@ h4 {
   font-weight: 700;
   line-height: 1.2;
   color: var(--primary-color);
+  text-align: center;
 }
 
 /* 個別標題大小 - 手機版 */
