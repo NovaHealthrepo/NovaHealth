@@ -833,9 +833,13 @@ a {
   padding: 0 20px;
   text-align: center;
 }
-.footer h4{
-  color:white
+.footer h4, .footer h3 {
+  color:white;
 }
+@media (min-width: 768px) {
+.footer h4, .footer h3 {
+  text-align: left;
+}}
 .footer__copyright p{
   color:white
 }
@@ -973,6 +977,9 @@ a {
     padding: 40px 48px;
   }
 }
+.footer .container{
+  padding-bottom: 1px;
+} 
 /* #endregion*/
 /* #region FAQ*/
 .faq {
@@ -1020,6 +1027,7 @@ a {
 }
 .quick-contact__item h3{
   font-size:16px;
+  margin-bottom: 0.7rem;
 }
 .quick-contact__grid {
   display: flex;
@@ -1034,7 +1042,7 @@ a {
   flex: 0 1 calc(33.333% - 8px);
   min-width: 0;
   background: var(--pure-white);
-  padding: 16px 8px;
+  padding: 16px 8px 12px;
   border-radius: var(--radius-sm);
   text-align: center;
   transition: all var(--transition-base);
@@ -1080,6 +1088,7 @@ a {
   font-size: 11px;
   color: var(--text-light);
   word-break: break-word;
+  margin: 0;
 }
 
 .quick-contact__info strong {
@@ -1116,11 +1125,7 @@ a {
     border-radius: var(--radius-md);
     border-width: 2px;
   }
-  
-  .quick-contact__item h4 {
-    font-size: 1rem;
-    margin-bottom: 0.75rem;
-  }
+
   
   .quick-contact__icon {
     width: 52px;
@@ -1161,11 +1166,6 @@ a {
   
   .quick-contact__item:hover {
     transform: translateY(-4px);
-  }
-  
-  .quick-contact__item h4 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
   }
   
   .quick-contact__icon {
