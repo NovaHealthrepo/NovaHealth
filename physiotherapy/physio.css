@@ -214,6 +214,95 @@
 .fa-wheelchair::before {
   content: "\f193";
 }
+.fa-bolt::before {
+  content: "\f0e7";
+}
+
+/* Additional icons for stroke-severe page */
+.fa-shield-alt::before {
+  content: "\f3ed";
+}
+.fa-hand-rock::before {
+  content: "\f255";
+}
+.fa-tint::before {
+  content: "\f043";
+}
+.fa-network-wired::before {
+  content: "\f6ff";
+}
+.fa-user-alt::before {
+  content: "\f406";
+}
+.fa-male::before {
+  content: "\f183";
+}
+.fa-hands-helping::before {
+  content: "\f4c4";
+}
+.fa-exchange-alt::before {
+  content: "\f362";
+}
+.fa-shield-virus::before {
+  content: "\e06c";
+}
+.fa-wave-square::before {
+  content: "\f83e";
+}
+.fa-zap::before {
+  content: "\f0e7";
+}
+.fa-microchip::before {
+  content: "\f2db";
+}
+.fa-balance-scale::before {
+  content: "\f24e";
+}
+.fa-arrows-alt::before {
+  content: "\f0b2";
+}
+.fa-arrow-up::before {
+  content: "\f062";
+}
+.fa-hands::before {
+  content: "\f4c2";
+}
+.fa-redo::before {
+  content: "\f01e";
+}
+.fa-hand-point-right::before {
+  content: "\f0a4";
+}
+.fa-bed::before {
+  content: "\f236";
+}
+.fa-chair::before {
+  content: "\f6c0";
+}
+.fa-archway::before {
+  content: "\f557";
+}
+.fa-list-ol::before {
+  content: "\f0cb";
+}
+.fa-expand-arrows-alt::before {
+  content: "\f31e";
+}
+.fa-procedures::before {
+  content: "\f487";
+}
+.fa-shoe-prints::before {
+  content: "\f54b";
+}
+.fa-socks::before {
+  content: "\f696";
+}
+.fa-sync::before {
+  content: "\f021";
+}
+.fa-user::before {
+  content: "\f007";
+}
 
 /* ========================================
    CSS VARIABLES

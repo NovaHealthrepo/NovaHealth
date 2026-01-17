@@ -19,6 +19,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+li {
+  list-style: none;
+}
 @font-face {
   font-family: "Noto Serif TC";
   src: url("fonts/noto-serif-tc/NotoSerifTC-SemiBold-Subset.woff2")
@@ -361,7 +364,8 @@ a {
   --spacing-section: 100px;
 
   /* Typography */
-  --font: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei",
+  --font:
+    -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei",
     "微軟正黑體", "Helvetica Neue", Arial, sans-serif;
   --font-noto: "Noto Serif TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
 
@@ -557,8 +561,10 @@ a {
   max-height: 0;
   overflow: hidden;
   border-radius: 0 10px 10px 0;
-  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.35s ease-out, visibility 0s 0.4s;
+  transition:
+    max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.35s ease-out,
+    visibility 0s 0.4s;
   list-style: none;
   z-index: 100;
 }
@@ -568,8 +574,10 @@ a {
   visibility: visible;
   padding: 6px 0;
   margin: 4px 0 0 0;
-  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.35s ease-out, visibility 0s 0s;
+  transition:
+    max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.35s ease-out,
+    visibility 0s 0s;
 }
 .nav__submenu-item {
   list-style: none;
@@ -1216,7 +1224,9 @@ a {
 .faq__answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+  transition:
+    max-height 0.4s ease-out,
+    padding 0.4s ease-out;
   padding: 0 20px;
 }
 
