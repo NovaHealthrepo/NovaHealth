@@ -35,7 +35,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(
+  background-image:
+    radial-gradient(
       circle at 20% 50%,
       rgba(255, 255, 255, 0.1) 0%,
       transparent 50%
@@ -49,7 +50,8 @@
 }
 
 @keyframes heroPattern {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0);
   }
   50% {
@@ -208,12 +210,17 @@
   width: 100%;
   height: 240px;
   overflow: hidden;
-  background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%), 
-              linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), 
-              linear-gradient(45deg, transparent 75%, #f0f0f0 75%), 
-              linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+  background:
+    linear-gradient(45deg, #f0f0f0 25%, transparent 25%),
+    linear-gradient(-45deg, #f0f0f0 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #f0f0f0 75%),
+    linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
   background-size: 20px 20px;
-  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  background-position:
+    0 0,
+    0 10px,
+    10px -10px,
+    -10px 0px;
 }
 
 .article-card__image img {
@@ -287,6 +294,7 @@
   margin-bottom: 24px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -382,7 +390,8 @@
 }
 
 @keyframes cardLoading {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.6;
   }
   50% {
@@ -448,13 +457,13 @@
   .articles__load-more {
     display: none;
   }
-  
+
   .article-card {
     break-inside: avoid;
     box-shadow: none;
     border: 1px solid #ddd;
   }
-  
+
   .article-card:hover {
     transform: none;
   }

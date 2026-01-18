@@ -95,7 +95,6 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 0 1.5rem;
-  min-height: auto;
 }
 
 .layout-grid {
@@ -114,8 +113,6 @@ body {
   overflow-x: scroll;
   overflow-y: hidden;
   padding: 0 1rem 1rem;
-  scrollbar-width: thin;
-  scrollbar-color: var(--secondary-color-mid) var(--bg-light);
 }
 
 .nav-list-wrapper::-webkit-scrollbar {
@@ -213,7 +210,9 @@ body {
   height: 100%;
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .case-detail[style*="display: block"] {
@@ -632,8 +631,6 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     padding: 0 1.5rem 0 0;
-    scrollbar-width: thin;
-    scrollbar-color: var(--secondary-color-mid) transparent;
   }
 
   .nav-list-wrapper::-webkit-scrollbar {
