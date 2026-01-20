@@ -1,12 +1,12 @@
 /* #region hero */
 .hero {
-  background: url("images/hero.webp") center/cover no-repeat,
+  background:
+    url("images/hero.webp") center/cover no-repeat,
     var(--primary-color);
   position: relative;
   min-height: 350px;
   display: flex;
   align-items: center;
-  color: var(--pure-white);
   padding: 30px 0;
 }
 
@@ -46,6 +46,7 @@
   letter-spacing: 1px;
   display: inline-block;
   margin-bottom: 24px;
+  color: var(--pure-white);
 }
 
 .hero__title {
@@ -53,6 +54,7 @@
   margin-bottom: 28px;
   font-weight: 700;
   line-height: 1.2;
+  color: var(--pure-white);
 }
 
 .hero__subtitle {
@@ -61,6 +63,7 @@
   opacity: 0.9;
   font-weight: 300;
   max-width: 600px;
+  color: var(--pure-white);
 }
 
 .hero .button {
@@ -75,6 +78,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  color: white;
 }
 
 .hero__actions {
@@ -937,9 +941,13 @@
     var(--secondary-color),
     var(--primary-color)
   );
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   mask-composite: exclude;
   opacity: 0;
   transition: opacity var(--transition-base);

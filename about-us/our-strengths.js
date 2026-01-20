@@ -6,7 +6,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize all modules
   initCardFlip();
-  initGallery();
+  initTemplateGallery();
   initSmoothScroll();
   initScrollAnimations();
   initKeyboardNavigation();
@@ -103,38 +103,125 @@ function unflipCard(card) {
 }
 
 /* ============================================================================
-   Gallery Slider
+   Template Gallery
    ========================================================================== */
 
-function initGallery() {
-  const galleryControls = document.querySelectorAll(".gallery-control");
-  const gallerySlides = document.querySelectorAll(".gallery-slide");
+function initTemplateGallery() {
+  const templateImages = document.querySelectorAll(".template-gallery__image");
+  const prevArrow = document.querySelector(".template-gallery__arrow--left");
+  const nextArrow = document.querySelector(".template-gallery__arrow--right");
+  const indicators = document.querySelectorAll(".template-gallery__indicator");
+  const galleryContainer = document.querySelector(
+    ".template-gallery__container",
+  );
 
-  if (galleryControls.length === 0 || gallerySlides.length === 0) return;
+  let currentTemplateIndex = 0;
 
-  galleryControls.forEach((control) => {
-    control.addEventListener("click", () => {
-      const slideIndex = parseInt(control.dataset.slide, 10);
-      switchSlide(slideIndex, galleryControls, gallerySlides);
+  function showTemplate(index) {
+    // Remove active class from all images and indicators
+    templateImages.forEach((img) => img.classList.remove("active"));
+    indicators.forEach((ind) => ind.classList.remove("active"));
+
+    // Add active class to current image and indicator
+    if (templateImages[index]) {
+      templateImages[index].classList.add("active");
+    }
+    if (indicators[index]) {
+      indicators[index].classList.add("active");
+    }
+
+    currentTemplateIndex = index;
+  }
+
+  function nextTemplate() {
+    const nextIndex = (currentTemplateIndex + 1) % templateImages.length;
+    showTemplate(nextIndex);
+  }
+
+  function prevTemplate() {
+    const nextIndex =
+      (currentTemplateIndex - 1 + templateImages.length) %
+      templateImages.length;
+    showTemplate(nextIndex);
+  }
+
+  // Arrow button events
+  if (nextArrow) {
+    nextArrow.addEventListener("click", nextTemplate);
+  }
+
+  if (prevArrow) {
+    prevArrow.addEventListener("click", prevTemplate);
+  }
+
+  // Indicator click events
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener("click", () => {
+      showTemplate(index);
     });
   });
 
-  // Auto-play gallery (optional - uncomment to enable)
-  // let currentSlide = 0;
-  // setInterval(() => {
-  //   currentSlide = (currentSlide + 1) % gallerySlides.length;
-  //   switchSlide(currentSlide, galleryControls, gallerySlides);
-  // }, 5000);
-}
+  // Keyboard navigation for template gallery
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") {
+      if (prevArrow) prevTemplate();
+    } else if (e.key === "ArrowRight") {
+      if (nextArrow) nextTemplate();
+    }
+  });
 
-function switchSlide(index, controls, slides) {
-  // Remove active class from all
-  controls.forEach((c) => c.classList.remove("active"));
-  slides.forEach((s) => s.classList.remove("active"));
+  // Click to enlarge
+  if (galleryContainer) {
+    galleryContainer.addEventListener("click", () => {
+      const activeImage = document.querySelector(
+        ".template-gallery__image.active",
+      );
+      if (activeImage) {
+        openModal(activeImage.src, activeImage.alt);
+      }
+    });
+  }
 
-  // Add active class to current
-  if (controls[index]) controls[index].classList.add("active");
-  if (slides[index]) slides[index].classList.add("active");
+  // Modal functionality
+  function openModal(src, alt) {
+    // Create modal if it doesn't exist
+    let modal = document.querySelector(".template-modal");
+    if (!modal) {
+      modal = document.createElement("div");
+      modal.className = "template-modal";
+      modal.innerHTML = `
+        <button class="template-modal__close" aria-label="關閉">&times;</button>
+        <img class="template-modal__content" src="" alt="">
+      `;
+      document.body.appendChild(modal);
+
+      // Close modal on click
+      const closeBtn = modal.querySelector(".template-modal__close");
+      closeBtn.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+
+      // Close modal on background click
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
+
+      // Close modal on Escape key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.classList.contains("active")) {
+          modal.classList.remove("active");
+        }
+      });
+    }
+
+    // Set image and show modal
+    const modalImg = modal.querySelector(".template-modal__content");
+    modalImg.src = src;
+    modalImg.alt = alt;
+    modal.classList.add("active");
+  }
 }
 
 /* ============================================================================
@@ -201,7 +288,7 @@ function initScrollAnimations() {
 
   // Observe elements that should animate on scroll
   const animatedElements = document.querySelectorAll(
-    ".strength-card, .feature-item, .process-detail, .process-step"
+    ".strength-card, .feature-item, .process-detail, .process-step",
   );
 
   animatedElements.forEach((el, index) => {
@@ -237,7 +324,7 @@ function initScrollAnimations() {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     cycleObserver.observe(cycleContainer);
@@ -270,27 +357,6 @@ function initKeyboardNavigation() {
 
       if (e.key === "Escape") {
         unflipCard(card);
-      }
-    });
-  });
-
-  // Gallery keyboard navigation
-  const galleryControls = document.querySelectorAll(".gallery-control");
-  galleryControls.forEach((control, index) => {
-    control.addEventListener("keydown", (e) => {
-      if (e.key === "ArrowRight" || e.key === "ArrowDown") {
-        e.preventDefault();
-        const nextIndex = (index + 1) % galleryControls.length;
-        galleryControls[nextIndex].click();
-        galleryControls[nextIndex].focus();
-      }
-
-      if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
-        e.preventDefault();
-        const prevIndex =
-          (index - 1 + galleryControls.length) % galleryControls.length;
-        galleryControls[prevIndex].click();
-        galleryControls[prevIndex].focus();
       }
     });
   });

@@ -219,7 +219,7 @@
             </li>
             <li class="nav__item nav__item--has-submenu">
               <div class="nav__link">
-                陪診及其他 <i class="fas fa-chevron-down"></i>
+                其他服務 <i class="fas fa-chevron-down"></i>
               </div>
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
@@ -427,30 +427,51 @@
       <section class="transparent-system">
         <div class="container">
           <div class="transparent-system__grid">
-            <!-- Gallery -->
-            <div class="transparent-system__gallery">
-              <div class="gallery-slider">
-                <!-- Placeholder 1: 月度報告 -->
-                <div class="gallery-slide active">
-                  <div class="placeholder-image" data-size="600x400">
-                    <i class="fas fa-file-medical-alt"></i>
-                    <p>月度復康報告示例</p>
-                  </div>
-                </div>
-                <!-- Placeholder 2: 目標追蹤圖表 -->
-                <div class="gallery-slide">
-                  <div class="placeholder-image" data-size="600x400">
-                    <i class="fas fa-chart-bar"></i>
-                    <p>目標追蹤圖表</p>
-                  </div>
-                </div>
+            <!-- Template Gallery -->
+            <div class="template-gallery">
+              <h3 class="template-gallery__title">芯凝月度報告範例</h3>
+              <div class="template-gallery__container">
+                <img
+                  src="../images/template1.webp"
+                  alt="Template 1"
+                  width="400"
+                  height="566"
+                  class="template-gallery__image active"
+                  data-template="1"
+                  loading="lazy"
+                />
+                <img
+                  src="../images/template2.webp"
+                  alt="Template 2"
+                  width="400"
+                  height="566"
+                  class="template-gallery__image"
+                  data-template="2"
+                  loading="lazy"
+                />
               </div>
-              <div class="gallery-controls">
-                <button class="gallery-control active" data-slide="0">
-                  <i class="fas fa-file-medical-alt"></i> 月度報告
+              <div class="template-gallery__controls">
+                <button
+                  class="template-gallery__arrow template-gallery__arrow--left"
+                  aria-label="上一張"
+                >
+                  <i class="fas fa-chevron-left"></i>
                 </button>
-                <button class="gallery-control" data-slide="1">
-                  <i class="fas fa-chart-bar"></i> 目標追蹤
+                <div class="template-gallery__indicators">
+                  <span
+                    class="template-gallery__indicator active"
+                    data-index="0"
+                  ></span>
+                  <span
+                    class="template-gallery__indicator"
+                    data-index="1"
+                  ></span>
+                </div>
+                <button
+                  class="template-gallery__arrow template-gallery__arrow--right"
+                  aria-label="下一張"
+                >
+                  <i class="fas fa-chevron-right"></i>
                 </button>
               </div>
             </div>
