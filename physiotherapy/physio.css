@@ -473,9 +473,6 @@
 .fa-running::before {
   content: "\f70c";
 }
-.fa-book::before {
-  content: "\f02d";
-}
 
 /* ========================================
    CSS VARIABLES
