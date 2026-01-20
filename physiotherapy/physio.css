@@ -455,6 +455,9 @@
 .fa-shoulder::before {
   content: "\f553";
 }
+.fa-book::before{
+  content: "\f02d";
+}
 .fa-angle-double-up::before {
   content: "\f102";
 }
@@ -472,6 +475,12 @@
 }
 .fa-running::before {
   content: "\f70c";
+}
+.fa-lock::before {
+  content: "\f023";
+}
+.fa-stopwatch::before {
+  content: "\f2f2";
 }
 
 /* ========================================
