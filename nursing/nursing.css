@@ -1,11 +1,593 @@
-/* ===========================================
-   NURSING PAGES STYLES
-   Mobile First Design Pattern
-   =========================================== */
+.fa,
+.fas,
+.fa-solid {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-style: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  line-height: 1;
+}
 
-/* ----------------------------------------
-   HERO SECTION - Matching physio.css exactly
-   ---------------------------------------- */
+.far,
+.fa-regular {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+  font-style: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  line-height: 1;
+}
+
+.fab,
+.fa-brands {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+  font-style: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  line-height: 1;
+}
+
+/* Icon definitions used in pages */
+.fa-brain::before {
+  content: "\f5dc";
+}
+.fa-heartbeat::before {
+  content: "\f21e";
+}
+.fa-bars::before {
+  content: "\f0c9";
+}
+.fa-chevron-down::before {
+  content: "\f078";
+}
+.fa-chevron-right::before {
+  content: "\f054";
+}
+.fa-phone::before {
+  content: "\f095";
+}
+.fa-envelope::before {
+  content: "\f0e0";
+}
+.fa-whatsapp::before {
+  content: "\f232";
+}
+.fa-facebook-f::before {
+  content: "\f39e";
+}
+.fa-instagram::before {
+  content: "\f16d";
+}
+.fa-home::before {
+  content: "\f015";
+}
+.fa-arrow-right::before {
+  content: "\f061";
+}
+.fa-arrow-left::before {
+  content: "\f060";
+}
+.fa-check::before {
+  content: "\f00c";
+}
+.fa-check-circle::before {
+  content: "\f058";
+}
+.fa-times-circle::before {
+  content: "\f057";
+}
+.fa-exclamation-circle::before {
+  content: "\f06a";
+}
+.fa-info-circle::before {
+  content: "\f05a";
+}
+.fa-question-circle::before {
+  content: "\f059";
+}
+.fa-lightbulb::before {
+  content: "\f0eb";
+}
+.fa-star::before {
+  content: "\f005";
+}
+.fa-clock::before {
+  content: "\f017";
+}
+.fa-layer-group::before {
+  content: "\f5fd";
+}
+.fa-project-diagram::before {
+  content: "\f542";
+}
+.fa-road::before {
+  content: "\f018";
+}
+.fa-random::before {
+  content: "\f074";
+}
+.fa-infinity::before {
+  content: "\f534";
+}
+.fa-battery-empty::before {
+  content: "\f244";
+}
+.fa-battery-half::before {
+  content: "\f242";
+}
+.fa-battery-full::before {
+  content: "\f240";
+}
+.fa-link::before {
+  content: "\f0c1";
+}
+.fa-hand-paper::before {
+  content: "\f256";
+}
+.fa-walking::before {
+  content: "\f554";
+}
+.fa-bullseye::before {
+  content: "\f140";
+}
+.fa-weight-hanging::before {
+  content: "\f5cd";
+}
+.fa-compress-arrows-alt::before {
+  content: "\f78c";
+}
+.fa-bone::before {
+  content: "\f5d7";
+}
+.fa-tasks::before {
+  content: "\f0ae";
+}
+.fa-hand-holding-water::before {
+  content: "\f4c1";
+}
+.fa-toilet::before {
+  content: "\f7d8";
+}
+.fa-house-user::before {
+  content: "\e1b0";
+}
+.fa-couch::before {
+  content: "\f4b8";
+}
+.fa-sync-alt::before {
+  content: "\f2f1";
+}
+.fa-check-double::before {
+  content: "\f560";
+}
+.fa-puzzle-piece::before {
+  content: "\f12e";
+}
+.fa-compress-alt::before {
+  content: "\f422";
+}
+.fa-bookmark::before {
+  content: "\f02e";
+}
+.fa-wheelchair::before {
+  content: "\f193";
+}
+.fa-bolt::before {
+  content: "\f0e7";
+}
+
+/* Additional icons for page */
+.fa-shield-alt::before {
+  content: "\f3ed";
+}
+.fa-hand-rock::before {
+  content: "\f255";
+}
+.fa-tint::before {
+  content: "\f043";
+}
+.fa-network-wired::before {
+  content: "\f6ff";
+}
+.fa-user-alt::before {
+  content: "\f406";
+}
+.fa-male::before {
+  content: "\f183";
+}
+.fa-hands-helping::before {
+  content: "\f4c4";
+}
+.fa-exchange-alt::before {
+  content: "\f362";
+}
+.fa-shield-virus::before {
+  content: "\e06c";
+}
+.fa-wave-square::before {
+  content: "\f83e";
+}
+.fa-zap::before {
+  content: "\f0e7";
+}
+.fa-microchip::before {
+  content: "\f2db";
+}
+.fa-balance-scale::before {
+  content: "\f24e";
+}
+.fa-arrows-alt::before {
+  content: "\f0b2";
+}
+.fa-arrow-up::before {
+  content: "\f062";
+}
+.fa-hands::before {
+  content: "\f4c2";
+}
+.fa-redo::before {
+  content: "\f01e";
+}
+.fa-hand-point-right::before {
+  content: "\f0a4";
+}
+.fa-bed::before {
+  content: "\f236";
+}
+.fa-chair::before {
+  content: "\f6c0";
+}
+.fa-archway::before {
+  content: "\f557";
+}
+.fa-list-ol::before {
+  content: "\f0cb";
+}
+.fa-expand-arrows-alt::before {
+  content: "\f31e";
+}
+.fa-procedures::before {
+  content: "\f487";
+}
+.fa-shoe-prints::before {
+  content: "\f54b";
+}
+.fa-socks::before {
+  content: "\f696";
+}
+.fa-sync::before {
+  content: "\f021";
+}
+.fa-user::before {
+  content: "\f007";
+}
+.fa-unlock::before {
+  content: "\f09c";
+}
+.fa-angle-up::before {
+  content: "\f106";
+}
+.fa-fingerprint::before {
+  content: "\f577";
+}
+.fa-hand-point-up::before {
+  content: "\f0a6";
+}
+.fa-circle::before {
+  content: "\f111";
+}
+.fa-coins::before {
+  content: "\f51e";
+}
+.fa-tools::before {
+  content: "\f7d9";
+}
+.fa-thumbs-up::before {
+  content: "\f164";
+}
+.fa-wrench::before {
+  content: "\f0ad";
+}
+.fa-user-check::before {
+  content: "\f4fc";
+}
+.fa-eye::before {
+  content: "\f06e";
+}
+.fa-dollar-sign::before {
+  content: "\f155";
+}
+.fa-user-friends::before {
+  content: "\f500";
+}
+.fa-hand-holding::before {
+  content: "\f4bd";
+}
+.fa-calendar::before {
+  content: "\f133";
+}
+.fa-chart-line::before {
+  content: "\f201";
+}
+.fa-stethoscope::before {
+  content: "\f0f1";
+}
+.fa-notes-medical::before {
+  content: "\f481";
+}
+.fa-file-medical::before {
+  content: "\f477";
+}
+.fa-hospital-user::before {
+  content: "\f80d";
+}
+.fa-briefcase-medical::before {
+  content: "\f469";
+}
+.fa-user-injured::before {
+  content: "\f728";
+}
+.fa-house-medical::before {
+  content: "\e3b2";
+}
+.fa-calendar-days::before {
+  content: "\f073";
+}
+.fa-chart-simple::before {
+  content: "\e473";
+}
+.fa-trophy::before {
+  content: "\f091";
+}
+.fa-medal::before {
+  content: "\f5a2";
+}
+.fa-id-card::before {
+  content: "\f2c2";
+}
+.fa-birthday-cake::before {
+  content: "\f1fd";
+}
+.fa-venus-mars::before {
+  content: "\f228";
+}
+.fa-clipboard-list::before {
+  content: "\f46d";
+}
+.fa-gamepad::before {
+  content: "\f11b";
+}
+.fa-music::before {
+  content: "\f001";
+}
+.fa-crosshairs::before {
+  content: "\f05b";
+}
+.fa-bath::before {
+  content: "\f2cd";
+}
+.fa-broom::before {
+  content: "\f51a";
+}
+.fa-crutch::before {
+  content: "\f7f7";
+}
+.fa-moon::before {
+  content: "\f186";
+}
+.fa-people-carry::before {
+  content: "\f4ce";
+}
+.fa-spa::before {
+  content: "\f5bb";
+}
+.fa-hand-holding-heart::before {
+  content: "\f4be";
+}
+.fa-phone-alt::before {
+  content: "\f879";
+}
+.fa-tired::before {
+  content: "\f5c8";
+}
+.fa-user-slash::before {
+  content: "\f506";
+}
+.fa-times::before {
+  content: "\f00d";
+}
+.fa-cogs::before {
+  content: "\f085";
+}
+.fa-door-open::before {
+  content: "\f52b";
+}
+.fa-stairs::before {
+  content: "\e289";
+}
+.fa-arrow-down::before {
+  content: "\f063";
+}
+.fa-square::before {
+  content: "\f0c8";
+}
+.fa-mountain::before {
+  content: "\f6fc";
+}
+.fa-tree::before {
+  content: "\f1bb";
+}
+.fa-dumbbell::before {
+  content: "\f44b";
+}
+.fa-angle-double-down::before {
+  content: "\f103";
+}
+.fa-coffee::before {
+  content: "\f0f4";
+}
+.fa-shopping-bag::before {
+  content: "\f290";
+}
+.fa-arrows-alt-v::before {
+  content: "\f338";
+}
+.fa-map-marker-alt::before {
+  content: "\f3c5";
+}
+.fa-clone::before {
+  content: "\f24d";
+}
+.fa-hand-sparkles::before {
+  content: "\e05d";
+}
+.fa-snowflake::before {
+  content: "\f2dc";
+}
+.fa-hand-holding-medical::before {
+  content: "\e05c";
+}
+.fa-shoulder::before {
+  content: "\f553";
+}
+.fa-angle-double-up::before {
+  content: "\f102";
+}
+.fa-grip-lines::before {
+  content: "\f7a4";
+}
+.fa-expand-alt::before {
+  content: "\f424";
+}
+.fa-exclamation-triangle::before {
+  content: "\f071";
+}
+.fa-ban::before {
+  content: "\f05e";
+}
+.fa-running::before {
+  content: "\f70c";
+}
+
+/* ========================================
+   CSS VARIABLES
+   ======================================== */
+:root {
+  --nursing-primary: #2c5282;
+  --nursing-primary-light: #4299e1;
+  --nursing-primary-dark: #1a365d;
+  --nursing-secondary: #38a169;
+  --nursing-secondary-light: #68d391;
+  --nursing-accent: #ed8936;
+  --nursing-accent-light: #fbd38d;
+  --nursing-danger: #e53e3e;
+  --nursing-warning: #d69e2e;
+  --nursing-info: #3182ce;
+  --nursing-success: #38a169;
+
+  --nursing-gray-50: #f7fafc;
+  --nursing-gray-100: #edf2f7;
+  --nursing-gray-200: #e2e8f0;
+  --nursing-gray-300: #cbd5e0;
+  --nursing-gray-400: #a0aec0;
+  --nursing-gray-500: #718096;
+  --nursing-gray-600: #4a5568;
+  --nursing-gray-700: #2d3748;
+  --nursing-gray-800: #1a202c;
+
+  --nursing-gradient: linear-gradient(
+    135deg,
+    var(--nursing-primary) 0%,
+    var(--nursing-primary-light) 100%
+  );
+  --nursing-gradient-warm: linear-gradient(
+    135deg,
+    var(--nursing-accent) 0%,
+    #f6ad55 100%
+  );
+  --nursing-gradient-success: linear-gradient(
+    135deg,
+    var(--nursing-secondary) 0%,
+    var(--nursing-secondary-light) 100%
+  );
+
+  --nursing-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --nursing-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --nursing-shadow-md:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --nursing-shadow-lg:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  --nursing-radius-sm: 0.375rem;
+  --nursing-radius: 0.5rem;
+  --nursing-radius-lg: 1rem;
+  --nursing-radius-xl: 1.5rem;
+
+  --nursing-transition: all 0.3s ease;
+}
+
+/* ========================================
+   BREADCRUMB
+   ======================================== */
+
+.breadcrumb {
+  background: white;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--nursing-gray-200);
+}
+
+.breadcrumb .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.breadcrumb__item:not(:last-child)::after {
+  content: "/";
+  margin-left: 0.5rem;
+  color: var(--nursing-gray-400);
+}
+
+.breadcrumb__link {
+  color: var(--nursing-primary);
+  text-decoration: none;
+  transition: var(--nursing-transition);
+}
+
+.breadcrumb__link:hover {
+  color: var(--nursing-primary-dark);
+  text-decoration: underline;
+}
+
+.breadcrumb__item--active span {
+  color: var(--nursing-gray-500);
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
 .nursing-hero {
   background: linear-gradient(135deg, #0d3b4c 0%, #1a5276 50%, #1e6f7a 100%);
   color: #ffffff;
@@ -48,10 +630,10 @@
   margin-bottom: 1rem;
   color: #ffffff;
   opacity: 0.9;
-  animation: nursing-pulse 2s ease-in-out infinite;
+  animation: pulse 2s ease-in-out infinite;
 }
 
-@keyframes nursing-pulse {
+@keyframes pulse {
   0%,
   100% {
     transform: scale(1);
@@ -79,7 +661,1169 @@
   opacity: 0.95;
 }
 
-/* Responsive - Mobile */
+/* ========================================
+   NAVIGATION SECTION
+   ======================================== */
+
+.nursing-nav {
+  padding: 3rem 0;
+  background: var(--nursing-gray-50);
+}
+
+.nursing-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nursing-nav__item {
+  background: white;
+  border-radius: var(--nursing-radius-lg);
+  box-shadow: var(--nursing-shadow);
+  overflow: hidden;
+  transition: var(--nursing-transition);
+}
+
+.nursing-nav__item:hover {
+  box-shadow: var(--nursing-shadow-md);
+  transform: translateY(-2px);
+}
+
+.nursing-nav__item--parent:hover {
+  transform: none;
+}
+
+.nursing-nav__link {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  color: var(--nursing-gray-700);
+  font-weight: 500;
+  transition: var(--nursing-transition);
+}
+
+.nursing-nav__link:hover {
+  background: var(--nursing-gray-50);
+  color: var(--nursing-primary);
+}
+
+.nursing-nav__link--parent {
+  cursor: default;
+  background: var(--nursing-primary);
+  color: white;
+}
+
+.nursing-nav__link--parent:hover {
+  background: var(--nursing-primary);
+  color: white;
+}
+
+.nursing-nav__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--nursing-gradient);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.nursing-nav__link--parent .nursing-nav__number {
+  background: white;
+  color: var(--nursing-primary);
+}
+
+.nursing-nav__text {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Sublist Styles */
+.nursing-nav__sublist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: var(--nursing-gray-50);
+  border-top: 1px solid var(--nursing-gray-200);
+}
+
+.nursing-nav__subitem {
+  border-bottom: 1px solid var(--nursing-gray-200);
+}
+
+.nursing-nav__subitem:last-child {
+  border-bottom: none;
+}
+
+.nursing-nav__sublink {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem 1rem 2rem;
+  text-decoration: none;
+  color: var(--nursing-gray-600);
+  transition: var(--nursing-transition);
+}
+
+.nursing-nav__sublink:hover {
+  background: white;
+  color: var(--nursing-primary);
+  padding-left: 2.5rem;
+}
+
+.nursing-nav__subnumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  background: var(--nursing-gray-200);
+  color: var(--nursing-gray-600);
+  border-radius: 50%;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  transition: var(--nursing-transition);
+}
+
+.nursing-nav__sublink:hover .nursing-nav__subnumber {
+  background: var(--nursing-primary-light);
+  color: white;
+}
+
+.nursing-nav__subtext {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* ========================================
+   COMPONENTS SECTIONS
+   ======================================== */
+
+.section--alt {
+  background: var(--nursing-gray-50);
+}
+
+.section__header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section__icon {
+  width: 4rem;
+  height: 4rem;
+  background: var(--nursing-gradient);
+  color: white;
+  border-radius: var(--nursing-radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  flex-shrink: 0;
+  box-shadow: var(--nursing-shadow);
+}
+
+.section__title-wrap {
+  flex: 1;
+}
+
+.section__title {
+  font-size: 1.75rem;
+  color: var(--nursing-gray-800);
+  margin: 0;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.section__intro {
+  font-size: 1.1rem;
+  color: var(--nursing-gray-600);
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: var(--nursing-radius-lg);
+  box-shadow: var(--nursing-shadow);
+  overflow: hidden;
+  transition: var(--nursing-transition);
+}
+
+.card:hover {
+  box-shadow: var(--nursing-shadow-md);
+}
+
+.card--wide {
+  grid-column: 1 / -1;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--nursing-gray-50);
+  border-bottom: 1px solid var(--nursing-gray-200);
+}
+
+.card__icon {
+  font-size: 1.5rem;
+  color: var(--nursing-primary);
+}
+
+.card__title {
+  font-size: 1.25rem;
+  color: var(--nursing-gray-800);
+  margin: 0;
+}
+
+.card__body {
+  padding: 1.5rem;
+}
+
+.card__lead {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--nursing-primary);
+  margin-bottom: 1rem;
+}
+
+.card__body p {
+  color: var(--nursing-gray-600);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.card__body p:last-child {
+  margin-bottom: 0;
+}
+
+.card__conclusion {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--nursing-primary);
+  color: white;
+  border-radius: var(--nursing-radius);
+  margin-top: 1.5rem;
+}
+
+.card__conclusion i {
+  font-size: 1.25rem;
+  margin-top: 0.1rem;
+}
+
+.highlight {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: var(--nursing-radius);
+  margin: 1.5rem 0;
+}
+
+.highlight__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.highlight__content {
+  flex: 1;
+}
+
+.highlight__content h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.highlight__content h4::before {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight__content p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.highlight--hope {
+  background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 100%);
+  border-left: 4px solid var(--nursing-info);
+}
+
+.highlight--hope .highlight__content h4::before {
+  content: "\f0eb";
+  background: var(--nursing-info);
+  color: white;
+}
+
+.highlight--hope .highlight__content h4 {
+  color: var(--nursing-info);
+}
+
+.highlight--important {
+  background: linear-gradient(135deg, #fffaf0 0%, #fefcbf 100%);
+  border-left: 4px solid var(--nursing-warning);
+}
+
+.highlight--important .highlight__content h4::before {
+  content: "\f06a";
+  background: var(--nursing-warning);
+  color: white;
+}
+
+.highlight--important .highlight__content h4 {
+  color: var(--nursing-warning);
+}
+
+.highlight--info {
+  background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
+  border-left: 4px solid var(--nursing-success);
+}
+
+.highlight--info .highlight__content h4::before {
+  content: "\f05a";
+  background: var(--nursing-success);
+  color: white;
+}
+
+.highlight--info .highlight__content h4 {
+  color: var(--nursing-success);
+}
+
+.visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  background: var(--nursing-gray-50);
+  border-radius: var(--nursing-radius);
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.visual__item {
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.visual__icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 0.75rem;
+}
+
+.visual__icon--before {
+  background: var(--nursing-secondary-light);
+  color: var(--nursing-secondary);
+}
+
+.visual__icon--damage {
+  background: #fed7d7;
+  color: var(--nursing-danger);
+}
+
+.visual__icon--recovery {
+  background: var(--nursing-accent-light);
+  color: var(--nursing-accent);
+}
+
+.visual__label {
+  font-weight: 600;
+  color: var(--nursing-gray-700);
+  margin-bottom: 0.25rem;
+}
+
+.visual__desc {
+  font-size: 0.85rem;
+  color: var(--nursing-gray-500);
+  margin: 0;
+}
+
+.visual__arrow {
+  color: var(--nursing-gray-400);
+  font-size: 1.5rem;
+}
+
+.timeline {
+  margin: 1.5rem 0;
+}
+
+.timeline__bar {
+  display: flex;
+  height: 2.5rem;
+  border-radius: var(--nursing-radius);
+  overflow: hidden;
+  box-shadow: var(--nursing-shadow-sm);
+}
+
+.timeline__segment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.timeline__segment--golden {
+  flex: 2;
+  background: var(--nursing-gradient-warm);
+}
+
+.timeline__segment--continue {
+  flex: 3;
+  background: var(--nursing-gradient-success);
+}
+
+.timeline__markers {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--nursing-gray-500);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.column {
+  padding: 1.25rem;
+  background: var(--nursing-gray-50);
+  border-radius: var(--nursing-radius);
+}
+
+.column h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--nursing-primary);
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column li {
+  padding: 0.5rem 0;
+  color: var(--nursing-gray-600);
+  border-bottom: 1px solid var(--nursing-gray-200);
+}
+
+.column li:last-child {
+  border-bottom: none;
+}
+
+.stage-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.stage-card {
+  background: white;
+  border-radius: var(--nursing-radius-lg);
+  box-shadow: var(--nursing-shadow);
+  overflow: hidden;
+  position: relative;
+}
+
+.stage-card__number {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--nursing-radius);
+}
+
+.stage-card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  color: white;
+}
+
+.stage-card__header i {
+  font-size: 2rem;
+}
+
+.stage-card__header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.stage-card__header--flaccid {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stage-card__header--spastic {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.stage-card__header--isolated {
+  background: var(--nursing-gradient-success);
+}
+
+.stage-card__body {
+  padding: 1.5rem;
+}
+
+.stage-card__desc {
+  font-weight: 600;
+  color: var(--nursing-gray-700);
+  margin-bottom: 1rem;
+}
+
+.stage-card__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.stage-card__features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  color: var(--nursing-gray-600);
+}
+
+.stage-card__features i {
+  color: var(--nursing-success);
+  margin-top: 0.2rem;
+}
+
+.stage-card__goal {
+  padding: 1rem;
+  background: var(--nursing-gray-50);
+  border-radius: var(--nursing-radius);
+  font-size: 0.9rem;
+  color: var(--nursing-gray-600);
+}
+
+.synergy-demo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.synergy-demo__item {
+  padding: 1.5rem;
+  background: var(--nursing-gray-50);
+  border-radius: var(--nursing-radius);
+}
+
+.synergy-demo__item h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--nursing-primary);
+  margin: 0 0 1rem;
+}
+
+.synergy-demo__item p {
+  color: var(--nursing-gray-600);
+  margin-bottom: 0.75rem;
+}
+
+.synergy-demo__item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.synergy-demo__item li {
+  padding: 0.35rem 0 0.35rem 1.5rem;
+  position: relative;
+  color: var(--nursing-gray-600);
+}
+
+.synergy-demo__item li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--nursing-accent);
+}
+
+.synergy-demo__note {
+  font-style: italic;
+  color: var(--nursing-gray-500);
+  font-size: 0.9rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--nursing-gray-300);
+}
+
+.principle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.principle-card {
+  background: white;
+  border-radius: var(--nursing-radius-lg);
+  box-shadow: var(--nursing-shadow);
+  padding: 2rem;
+  text-align: center;
+  transition: var(--nursing-transition);
+}
+
+.principle-card:hover {
+  box-shadow: var(--nursing-shadow-md);
+  transform: translateY(-4px);
+}
+
+.principle-card__icon {
+  width: 5rem;
+  height: 5rem;
+  background: var(--nursing-gradient);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 1.5rem;
+}
+
+.principle-card__title {
+  font-size: 1.25rem;
+  color: var(--nursing-gray-800);
+  margin: 0 0 0.25rem;
+}
+
+.principle-card__subtitle {
+  font-size: 0.875rem;
+  color: var(--nursing-gray-500);
+  margin-bottom: 1.5rem;
+}
+
+.principle-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.principle-card__list li {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--nursing-gray-100);
+}
+
+.principle-card__list li:last-child {
+  border-bottom: none;
+}
+
+.principle-card__list li i {
+  color: var(--nursing-primary);
+  font-size: 1.25rem;
+  margin-top: 0.1rem;
+}
+
+.principle-card__list li strong {
+  display: block;
+  color: var(--nursing-gray-700);
+  margin-bottom: 0.25rem;
+}
+
+.principle-card__list li p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--nursing-gray-500);
+}
+
+.step-chart {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.step-chart__example {
+  background: white;
+  border-radius: var(--nursing-radius-lg);
+  box-shadow: var(--nursing-shadow);
+  padding: 2rem;
+}
+
+.step-chart__title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--nursing-primary);
+  margin: 0 0 1.5rem;
+  font-size: 1.25rem;
+}
+
+.step-chart__steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.step-chart__step {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--nursing-gray-50);
+  border-radius: var(--nursing-radius);
+  flex: 1;
+  min-width: 150px;
+}
+
+.step-chart__step-num {
+  width: 2rem;
+  height: 2rem;
+  background: var(--nursing-gradient);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-chart__step-content h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--nursing-gray-700);
+  text-align: left;
+}
+
+.step-chart__step-content p {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  color: var(--nursing-gray-500);
+}
+
+.step-chart__arrow {
+  color: var(--nursing-gray-400);
+  font-size: 1.25rem;
+}
+
+.step-chart__remarks {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  background: var(--nursing-gradient-success);
+  color: white;
+  border-radius: var(--nursing-radius);
+}
+
+.step-chart__remarks i {
+  font-size: 2rem;
+}
+
+.step-chart__remarks h4 {
+  margin: 0 0 0.25rem;
+  text-align: left;
+}
+
+.step-chart__remarks p {
+  margin: 0;
+  opacity: 0.95;
+}
+
+.step-chart__benefits {
+  background: white;
+  border-radius: var(--nursing-radius-lg);
+  box-shadow: var(--nursing-shadow);
+  padding: 2rem;
+}
+
+.step-chart__benefits h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--nursing-accent);
+  margin: 0 0 1.5rem;
+}
+
+.step-chart__benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.step-chart__benefits li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  color: var(--nursing-gray-600);
+  border-bottom: 1px solid var(--nursing-gray-100);
+}
+
+.step-chart__benefits li:last-child {
+  border-bottom: none;
+}
+
+.step-chart__benefits i {
+  color: var(--nursing-success);
+}
+
+.myth-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.myth-card {
+  background: white;
+  border-radius: var(--nursing-radius-lg);
+  box-shadow: var(--nursing-shadow);
+  padding: 1.5rem;
+  transition: var(--nursing-transition);
+}
+
+.myth-card:hover {
+  box-shadow: var(--nursing-shadow-md);
+}
+
+.myth-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.myth-card__header--myth {
+  color: var(--nursing-danger);
+}
+
+.myth-card__header--fact {
+  color: var(--nursing-success);
+}
+
+.myth-card__myth {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--nursing-gray-700);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed var(--nursing-gray-300);
+}
+
+.myth-card__fact {
+  color: var(--nursing-gray-600);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ========================================
+   THEORY SUMMARY
+   ======================================== */
+
+.summary {
+  padding: 4rem 0;
+  background: var(--nursing-gradient);
+  color: white;
+}
+
+.summary__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.summary__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.summary__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: white;
+  border-radius: var(--nursing-radius);
+  box-shadow: var(--nursing-shadow-md);
+}
+
+.summary__num {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--nursing-accent);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+.summary__item p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--nursing-gray-700);
+  flex: 1;
+}
+
+.summary__item strong {
+  color: var(--nursing-primary);
+  font-weight: 600;
+}
+
+.cta {
+  padding: 4rem 0;
+  background: var(--nursing-gray-50);
+  text-align: center;
+}
+
+.cta__title {
+  font-size: 1.5rem;
+  color: var(--nursing-gray-800);
+  margin-bottom: 2rem;
+}
+
+.cta__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-radius: var(--nursing-radius);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--nursing-transition);
+}
+
+.cta__btn--primary {
+  background: var(--nursing-gradient);
+  color: white;
+}
+
+.cta__btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--nursing-shadow-md);
+}
+
+.cta__btn--secondary {
+  background: var(--nursing-gradient-success);
+  color: white;
+}
+
+.cta__btn--secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--nursing-shadow-md);
+}
+
+.cta__btn--outline {
+  background: white;
+  color: var(--nursing-primary);
+  border: 2px solid var(--nursing-primary);
+}
+
+.cta__btn--outline:hover {
+  background: var(--nursing-primary);
+  color: white;
+}
+
+/* ========================================
+   REFERENCES SECTION
+   ======================================== */
+
+.references {
+  padding: 3rem 0;
+  background: var(--nursing-gray-100);
+  border-top: 1px solid var(--nursing-gray-200);
+}
+
+.references__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.references__icon {
+  width: 3rem;
+  height: 3rem;
+  background: var(--nursing-gray-600);
+  color: white;
+  border-radius: var(--nursing-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.references__title {
+  font-size: 1.25rem;
+  color: var(--nursing-gray-700);
+  margin: 0;
+}
+
+.references__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: reference-counter;
+}
+
+.references__item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: white;
+  border-radius: var(--nursing-radius);
+  margin-bottom: 0.75rem;
+  box-shadow: var(--nursing-shadow-sm);
+  transition: var(--nursing-transition);
+  counter-increment: reference-counter;
+}
+
+.references__item:last-child {
+  margin-bottom: 0;
+}
+
+.references__item:hover {
+  box-shadow: var(--nursing-shadow);
+}
+
+.references__item::before {
+  content: counter(reference-counter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  background: var(--nursing-gray-200);
+  color: var(--nursing-gray-600);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.references__text {
+  flex: 1;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--nursing-gray-600);
+}
+
+.references__text a {
+  color: var(--nursing-primary);
+  text-decoration: none;
+  word-break: break-all;
+  transition: var(--nursing-transition);
+}
+
+.references__text a:hover {
+  color: var(--nursing-primary-dark);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .references {
+    padding: 2rem 0;
+  }
+
+  .references__item {
+    padding: 0.875rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .references__text {
+    font-size: 0.85rem;
+  }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
 @media (max-width: 768px) {
   .nursing-hero__icon {
     font-size: 3rem;
@@ -92,313 +1836,191 @@
   .nursing-hero__tagline {
     font-size: 1rem;
   }
+
+  .section__icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+
+  .section__title {
+    font-size: 1.5rem;
+  }
+
+  .visual {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .visual__arrow {
+    transform: rotate(90deg);
+  }
+
+  .timeline__segment {
+    font-size: 0.7rem;
+  }
+
+  .timeline__markers {
+    font-size: 0.7rem;
+  }
+
+  .stage-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .principle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .step-chart__steps {
+    flex-direction: column;
+  }
+
+  .step-chart__step {
+    width: 100%;
+  }
+
+  .step-chart__arrow {
+    transform: rotate(90deg);
+  }
+
+  .myth-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta__btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
 }
 
-/* ----------------------------------------
-   MAIN CONTENT - Mobile Base (< 768px)
-   ---------------------------------------- */
-.nursing-main {
-  padding: 32px 16px;
-  max-width: 100%;
-  margin: 0 auto;
+/* Case Profile */
+.case-profile {
+  margin-bottom: 1.5rem;
 }
 
-.nursing-section {
-  margin-bottom: 36px;
-}
-
-.nursing-section__title {
-  font-size: 1.25rem;
-  color: var(--primary-color);
-  border-left: 3px solid var(--secondary-color);
-  padding-left: 12px;
-  margin-bottom: 16px;
-  font-weight: 700;
-  text-align: left;
-  line-height: 1.3;
-}
-
-.nursing-section__intro {
-  font-size: 1rem;
-  line-height: 1.75;
-  color: var(--text-body);
-  margin-bottom: 20px;
-}
-
-/* Service Details Cards - Mobile */
-.nursing-details {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.nursing-details__item {
-  background: var(--bg-light);
-  border-radius: var(--radius-sm);
-  padding: 16px;
-  border-left: 3px solid var(--secondary-color);
-  transition: all var(--transition-base);
-}
-
-.nursing-details__item:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
-
-.nursing-details__item strong {
-  color: var(--primary-color);
-  display: block;
-  margin-bottom: 6px;
-  font-size: 1rem;
-}
-
-.nursing-details__item p {
-  margin: 0;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  color: var(--text-gray);
-}
-
-/* Target Audience Tags - Mobile */
-.nursing-audience {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nursing-audience__item {
-  background: var(--bg-light);
-  padding: 12px 16px;
-  border-radius: var(--radius-sm);
-  font-size: 0.9375rem;
-  color: var(--text-body);
-  border: 1px solid rgba(0, 95, 115, 0.1);
-  transition: all var(--transition-base);
-  line-height: 1.5;
-}
-
-.nursing-audience__item:hover {
-  background: var(--primary-color);
-  color: var(--pure-white);
-  border-color: var(--primary-color);
-}
-
-/* Team Badges - Mobile */
-.nursing-team {
+.case-profile__info {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-light);
+  border-radius: var(--radius-md);
 }
 
-.nursing-team__member {
+.case-profile__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 120px;
+}
+
+.case-profile__item i {
+  width: 40px;
+  height: 40px;
   background: var(--primary-color);
   color: var(--pure-white);
-  padding: 8px 16px;
-  border-radius: var(--radius-sm);
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-/* Pricing Box - Mobile */
-.nursing-pricing {
-  background: var(--bg-light);
-  border: 2px solid var(--secondary-color);
-  border-radius: var(--radius-md);
-  padding: 20px 16px;
-}
-
-.nursing-pricing__list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px 0;
-}
-
-.nursing-pricing__item {
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(0, 95, 115, 0.1);
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  color: var(--text-body);
-}
-
-.nursing-pricing__item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-/* CTA Button - Mobile */
-.nursing-cta {
-  display: inline-flex;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  background: var(--accent-color);
-  color: var(--text-dark);
-  padding: 14px 24px;
-  border-radius: var(--radius-pill);
-  text-decoration: none;
-  font-weight: 600;
   font-size: 1rem;
-  transition: all var(--transition-base);
-  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
 }
 
-.nursing-cta:hover {
-  background: var(--accent-color-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+.case-profile__item strong {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.125rem;
 }
 
-/* ----------------------------------------
-   TABLET BREAKPOINT (min-width: 768px)
-   ---------------------------------------- */
+.case-profile__item p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
 @media (min-width: 768px) {
-  /* Main Content - Tablet */
-  .nursing-main {
-    padding: 48px 36px;
-    max-width: 800px;
+  .case-profile__info {
+    padding: 1.5rem;
+    gap: 2rem;
   }
 
-  .nursing-section {
-    margin-bottom: 48px;
+  .case-profile__item i {
+    width: 48px;
+    height: 48px;
+    font-size: 1.125rem;
   }
 
-  .nursing-section__title {
-    font-size: 1.5rem;
-    border-left-width: 4px;
-    padding-left: 16px;
-    margin-bottom: 20px;
+  .case-profile__item strong {
+    font-size: 0.8125rem;
   }
 
-  .nursing-section__intro {
-    font-size: 1.0625rem;
-    margin-bottom: 24px;
+  .case-profile__item p {
+    font-size: 1.125rem;
   }
+}
 
-  /* Details - Tablet */
-  .nursing-details {
-    gap: 16px;
-  }
+/* Equipment Layout */
+.equipment-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
-  .nursing-details__item {
-    padding: 20px;
-    border-radius: var(--radius-md);
-    border-left-width: 4px;
-  }
+.equipment-layout__image {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: var(--nursing-radius);
+}
 
-  .nursing-details__item strong {
-    font-size: 1.0625rem;
-    margin-bottom: 8px;
-  }
+.equipment-layout__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 400px;
+}
 
-  .nursing-details__item p {
-    font-size: 1rem;
-  }
+.equipment-layout__content {
+  flex: 1;
+}
 
-  /* Audience Tags - Tablet */
-  .nursing-audience {
+@media (min-width: 768px) {
+  .equipment-layout {
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 12px;
+    align-items: flex-start;
   }
 
-  .nursing-audience__item {
-    padding: 12px 20px;
-    border-radius: var(--radius-pill);
-    font-size: 0.95rem;
+  .equipment-layout__image {
+    flex: 0 0 45%;
+    max-width: 45%;
   }
 
-  /* Team - Tablet */
-  .nursing-team {
-    gap: 12px;
-  }
-
-  .nursing-team__member {
-    padding: 10px 20px;
-    font-size: 0.9375rem;
-  }
-
-  /* Pricing - Tablet */
-  .nursing-pricing {
-    padding: 28px 24px;
-    border-radius: var(--radius-lg);
-  }
-
-  .nursing-pricing__item {
-    padding: 14px 0;
-    font-size: 1rem;
-  }
-
-  /* CTA - Tablet */
-  .nursing-cta {
-    width: auto;
-    padding: 14px 36px;
+  .equipment-layout__content {
+    flex: 1;
   }
 }
 
-/* ----------------------------------------
-   DESKTOP BREAKPOINT (min-width: 1200px)
-   ---------------------------------------- */
-@media (min-width: 1200px) {
-  /* Main Content - Desktop */
-  .nursing-main {
-    padding: 64px 48px;
-    max-width: 1000px;
+@media (min-width: 1024px) {
+  .equipment-layout__image {
+    flex: 0 0 40%;
+    max-width: 40%;
   }
-
-  .nursing-section {
-    margin-bottom: 56px;
-  }
-
-  .nursing-section__title {
-    font-size: 1.75rem;
-  }
-
-  .nursing-section__intro {
-    font-size: 1.125rem;
-  }
-
-  /* Details - Desktop */
-  .nursing-details {
-    gap: 20px;
-  }
-
-  .nursing-details__item {
-    padding: 24px;
-  }
-
-  .nursing-details__item strong {
-    font-size: 1.125rem;
-  }
-
-  .nursing-details__item p {
-    font-size: 1.0625rem;
-  }
-
-  /* Pricing - Desktop */
-  .nursing-pricing {
-    padding: 32px;
-  }
-
-  .nursing-pricing__item {
-    padding: 16px 0;
-    font-size: 1.0625rem;
-  }
-
-  /* CTA - Desktop */
-  .nursing-cta {
-    padding: 16px 40px;
-    font-size: 1.0625rem;
-  }
-}
-
-/* Add to main.css if not already present */
-.fa-utensils::before {
-  content: "\f2e7";
 }
