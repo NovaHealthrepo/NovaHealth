@@ -72,6 +72,7 @@
   margin-bottom: 16px;
   line-height: 1.1;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  color: #f0f0f0;
 }
 
 .article-hero__subtitle {
@@ -80,6 +81,7 @@
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
+  color: #f0f0f0;
 }
 
 /* Filter Section */
