@@ -649,6 +649,81 @@
 .fa-wind::before {
   content: "\f72e";
 }
+.fa-tshirt::before {
+  content: "\f553";
+}
+.fa-ear-listen::before {
+  content: "\f2a2";
+}
+.fa-hands-clapping::before {
+  content: "\e1a8";
+}
+.fa-bullhorn::before {
+  content: "\f0a1";
+}
+.fa-file-alt::before {
+  content: "\f15c";
+}
+.fa-body::before {
+  content: "\e000";
+}
+.fa-concierge-bell::before {
+  content: "\f562";
+}
+.fa-memory::before {
+  content: "\f538";
+}
+.fa-compass::before {
+  content: "\f14e";
+}
+.fa-leaf::before {
+  content: "\f06c";
+}
+.fa-heart-broken::before {
+  content: "\f7a9";
+}
+.fa-fist-raised::before {
+  content: "\f6de";
+}
+.fa-cane::before {
+  content: "\e3b2";
+}
+.fa-grip-vertical::before {
+  content: "\f58e";
+}
+.fa-wine-bottle::before {
+  content: "\f72f";
+}
+.fa-phone-volume::before {
+  content: "\f2a0";
+}
+.fa-grip::before {
+  content: "\f58d";
+}
+.fa-stopwatch::before {
+  content: "\f2f2";
+}
+.fa-balance-scale-left::before {
+  content: "\f515";
+}
+.fa-pencil-alt::before {
+  content: "\f303";
+}
+.fa-volume-up::before {
+  content: "\f028";
+}
+.fa-plus-circle::before {
+  content: "\f055";
+}
+.fa-arm-muscle::before {
+  content: "\e4a1";
+}
+.fa-minus::before {
+  content: "\f068";
+}
+.fa-eye-slash::before {
+  content: "\f070";
+}
 
 /* ========================================
    CSS VARIABLES

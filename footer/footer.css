@@ -542,3 +542,26 @@ h3 {
     font-size: 20px;
   }
 }
+
+/* FontAwesome Icon Definitions */
+.fa-info-circle::before {
+  content: "\f05a";
+}
+.fa-exclamation-triangle::before {
+  content: "\f071";
+}
+.fa-shield-alt::before {
+  content: "\f3ed";
+}
+.fa-arrow-up::before {
+  content: "\f062";
+}
+.fa-question-circle::before {
+  content: "\f059";
+}
+.fa-exclamation-circle::before {
+  content: "\f06a";
+}
+.fa-copyright::before {
+  content: "\f1f9";
+}

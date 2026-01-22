@@ -655,6 +655,81 @@
 .fa-wind::before {
   content: "\f72e";
 }
+.fa-chalkboard-teacher::before {
+  content: "\f51c";
+}
+.fa-car::before {
+  content: "\f1b9";
+}
+.fa-balance-scale-left::before {
+  content: "\f515";
+}
+.fa-child::before {
+  content: "\f1ae";
+}
+.fa-spoon::before {
+  content: "\f2e5";
+}
+.fa-blender::before {
+  content: "\f517";
+}
+.fa-comment-dots::before {
+  content: "\f4ad";
+}
+.fa-ear-listen::before {
+  content: "\f2a2";
+}
+.fa-image::before {
+  content: "\f03e";
+}
+.fa-book-open::before {
+  content: "\f518";
+}
+.fa-radiation::before {
+  content: "\f7b9";
+}
+.fa-lips::before {
+  content: "\f600";
+}
+.fa-head-side-cough::before {
+  content: "\e061";
+}
+.fa-comment-slash::before {
+  content: "\f4b3";
+}
+.fa-deaf::before {
+  content: "\f2a4";
+}
+.fa-microphone-alt::before {
+  content: "\f3c9";
+}
+.fa-volume-down::before {
+  content: "\f027";
+}
+.fa-long-arrow-alt-up::before {
+  content: "\f30c";
+}
+.fa-heart-broken::before {
+  content: "\f7a9";
+}
+.fa-sad-tear::before {
+  content: "\f5b4";
+}
+.fa-comment::before {
+  content: "\f075";
+}
+.fa-microphone::before {
+  content: "\f130";
+}
+.fa-repeat::before {
+  content: "\f363";
+}
+.fa-tablet-alt::before {
+  content: "\f3fa";
+}
+.fa-mobile-alt::before {
+  content: "\f3cd";
+}
 
 /* ========================================
    CSS VARIABLES

@@ -649,6 +649,15 @@
 .fa-wind::before {
   content: "\f72e";
 }
+.fa-images::before {
+  content: "\f302";
+}
+.fa-tshirt::before {
+  content: "\f553";
+}
+.fa-kiss-wink-heart::before {
+  content: "\f598";
+}
 
 /* ========================================
    CSS VARIABLES

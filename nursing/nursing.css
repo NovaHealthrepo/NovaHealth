@@ -649,6 +649,15 @@
 .fa-wind::before {
   content: "\f72e";
 }
+.fa-nose::before {
+  content: "\e5bd";
+}
+.fa-mouth::before {
+  content: "\f000";
+}
+.fa-table::before {
+  content: "\f0ce";
+}
 
 /* ========================================
    CSS VARIABLES

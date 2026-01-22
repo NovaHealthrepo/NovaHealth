@@ -510,3 +510,8 @@
 .contact-card h3 {
   text-align: left;
 }
+
+/* FontAwesome Icon Definitions */
+.fa-paper-plane::before {
+  content: "\f1d8";
+}

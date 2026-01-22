@@ -660,3 +660,29 @@
     text-align: left;
   }
 }
+
+/* FontAwesome Icon Definitions */
+.fa-certificate::before {
+  content: "\f0a3";
+}
+.fa-user-shield::before {
+  content: "\f505";
+}
+.fa-graduation-cap::before {
+  content: "\f19d";
+}
+.fa-file-medical::before {
+  content: "\f477";
+}
+.fa-pills::before {
+  content: "\f484";
+}
+.fa-hands-helping::before {
+  content: "\f4c4";
+}
+.fa-clipboard-check::before {
+  content: "\f46c";
+}
+.fa-shield-alt::before {
+  content: "\f3ed";
+}
