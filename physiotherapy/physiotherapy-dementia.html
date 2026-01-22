@@ -1,14 +1,21 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="zh-Hant-HK">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="認知障礙治療" />
-    <meta name="keywords" content="認知障礙,物理治療" />
-    <meta name="author" content="Nova Health 芯凝物理治療及護理有限公司" />
+    <meta
+      name="description"
+      content="認知障礙症上門物理治療，專業運動訓練延緩退化，改善身體功能及生活質素"
+    />
+    <meta
+      name="keywords"
+      content="認知障礙症,腦退化症,老人痴呆,物理治療,運動治療,上門物理治療"
+    />
+    <meta name="author" content="Nova Health 芯凝護理及物理治療有限公司" />
     <meta name="robots" content="index, follow" />
-    <title>認知障礙 | Nova Health 芯凝物理治療及護理有限公司</title>
+    <title>認知障礙症 | Nova Health 芯凝護理及物理治療有限公司</title>
     <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="physio.css" />
   </head>
   <body>
     <!-- Header -->
@@ -20,7 +27,7 @@
           </div>
           <div class="brand__text">
             <span class="brand__name">NOVA HEALTH</span>
-            <span class="brand__subtitle">芯凝物理治療及護理</span>
+            <span class="brand__subtitle">芯凝護理及物理治療</span>
           </div>
         </a>
 
@@ -85,35 +92,33 @@
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a
-                    href="../physiotherapy/physiotherapy-services.html"
+                    href="physiotherapy-services.html"
                     class="nav__submenu-link"
                     >服務模式</a
                   >
                 </li>
                 <li class="nav__submenu-item">
-                  <a
-                    href="../physiotherapy/physiotherapy-stroke.html"
-                    class="nav__submenu-link"
+                  <a href="physiotherapy-stroke.html" class="nav__submenu-link"
                     >中風康復</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../physiotherapy/physiotherapy-dementia.html"
+                    href="physiotherapy-parkinson.html"
                     class="nav__submenu-link"
-                    >認知障礙</a
+                    >柏金遜症</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../physiotherapy/physiotherapy-post-operation.html"
+                    href="physiotherapy-post-operation.html"
                     class="nav__submenu-link"
                     >術後康復</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../physiotherapy/physiotherapy-other-diseases.html"
+                    href="physiotherapy-other-diseases.html"
                     class="nav__submenu-link"
                     >其他疾病</a
                   >
@@ -204,21 +209,21 @@
             </li>
             <li class="nav__item nav__item--has-submenu">
               <div class="nav__link">
-                其他服務 <i class="fas fa-chevron-down"></i>
+                護理員 <i class="fas fa-chevron-down"></i>
               </div>
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a
-                    href="../other-services/medical-escort.html"
+                    href="../home-care-worker/medical-escort.html"
                     class="nav__submenu-link"
                     >陪診</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../other-services/other-services.html"
+                    href="../home-care-worker/home-care-worker.html"
                     class="nav__submenu-link"
-                    >其他服務</a
+                    >護理員</a
                   >
                 </li>
               </ul>
@@ -241,7 +246,837 @@
 
     <!-- Main Content Area -->
     <main>
-      <!-- Add your page content here -->
+      <!-- Hero Section -->
+      <section class="physio-hero">
+        <div class="container physio-hero__content">
+          <i class="fas fa-brain physio-hero__icon"></i>
+          <h1 class="physio-hero__title">認知障礙症</h1>
+          <p class="physio-hero__tagline">
+            運動介入延緩退化，維持身體功能與生活質素
+          </p>
+        </div>
+      </section>
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="麵包屑導航">
+        <div class="container">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a
+                href="physiotherapy-other-diseases.html"
+                class="breadcrumb__link"
+              >
+                <i class="fas fa-home"></i> 其他疾病
+              </a>
+            </li>
+            <li class="breadcrumb__item breadcrumb__item--active">
+              <span>認知障礙症</span>
+            </li>
+          </ol>
+        </div>
+      </nav>
+
+      <!-- Section 1: What is Dementia -->
+      <section class="section" id="what-is-dementia">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__icon">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="section__title-wrap">
+              <h2 class="section__title">什麼是認知障礙症？</h2>
+            </div>
+          </div>
+
+          <p class="section__intro">
+            認知障礙症（又稱腦退化症、老人痴呆症）是一組影響記憶、思維、行為及日常生活能力的腦部疾病。隨著病情發展，患者的身體功能亦會逐漸衰退。
+          </p>
+
+          <div class="section__content">
+            <article class="card">
+              <div class="card__header">
+                <i class="fas fa-question-circle card__icon"></i>
+                <h3 class="card__title">常見類型</h3>
+              </div>
+              <div class="card__body">
+                <div class="columns">
+                  <div class="column">
+                    <h4><i class="fas fa-brain"></i> 阿茲海默症</h4>
+                    <ul>
+                      <li>最常見類型，約佔 60-70%</li>
+                      <li>早期以記憶力衰退為主</li>
+                      <li>逐漸影響語言、判斷力及行為</li>
+                      <li>病程緩慢但持續惡化</li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <h4><i class="fas fa-tint"></i> 其他類型</h4>
+                    <ul>
+                      <li>
+                        <strong>血管性認知障礙：</strong>與中風或腦血管疾病相關
+                      </li>
+                      <li>
+                        <strong>路易氏體認知障礙：</strong>常伴隨柏金遜症狀
+                      </li>
+                      <li><strong>額顳葉認知障礙：</strong>影響性格及行為</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="highlight highlight--info">
+                  <div class="highlight__content">
+                    <h4><i class="fas fa-chart-line"></i> 香港情況</h4>
+                    <p>
+                      根據統計，香港約有
+                      <strong>10萬名</strong
+                      >認知障礙症患者。隨著人口老化，預計2039年患者人數將增至
+                      <strong>30萬</strong>。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__header">
+                <i class="fas fa-walking card__icon"></i>
+                <h3 class="card__title">對身體功能的影響</h3>
+              </div>
+              <div class="card__body">
+                <p class="card__lead">
+                  認知障礙症不僅影響腦部，亦會導致身體功能衰退：
+                </p>
+
+                <div class="principle-grid">
+                  <article class="principle-card">
+                    <div class="principle-card__icon">
+                      <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="principle-card__title">平衡力下降</h3>
+                    <ul class="principle-card__list">
+                      <li>
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div>
+                          <p>跌倒風險增加 2-3 倍</p>
+                        </div>
+                      </li>
+                      <li>
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div>
+                          <p>空間感及方向感減弱</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </article>
+
+                  <article class="principle-card">
+                    <div class="principle-card__icon">
+                      <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="principle-card__title">肌力減弱</h3>
+                    <ul class="principle-card__list">
+                      <li>
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div>
+                          <p>活動量減少導致肌肉流失</p>
+                        </div>
+                      </li>
+                      <li>
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div>
+                          <p>日常活動能力下降</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </article>
+
+                  <article class="principle-card">
+                    <div class="principle-card__icon">
+                      <i class="fas fa-shoe-prints"></i>
+                    </div>
+                    <h3 class="principle-card__title">步態異常</h3>
+                    <ul class="principle-card__list">
+                      <li>
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div>
+                          <p>步伐變小、步速減慢</p>
+                        </div>
+                      </li>
+                      <li>
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div>
+                          <p>雙重任務時步態更不穩</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Benefits of Exercise -->
+      <section class="section section--alt" id="exercise-benefits">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__icon">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <div class="section__title-wrap">
+              <h2 class="section__title">運動對認知障礙症的好處</h2>
+            </div>
+          </div>
+
+          <p class="section__intro">
+            研究證實，恆常運動可改善認知障礙症患者的身體功能、減少行為問題，並可能延緩認知衰退。
+          </p>
+
+          <div class="section__content">
+            <article class="card">
+              <div class="card__header">
+                <i class="fas fa-check-circle card__icon"></i>
+                <h3 class="card__title">運動的多重益處</h3>
+              </div>
+              <div class="card__body">
+                <div class="synergy-demo">
+                  <div class="synergy-demo__item">
+                    <h4><i class="fas fa-brain"></i> 認知功能</h4>
+                    <p>維持及改善腦部功能</p>
+                    <ul>
+                      <li>促進腦部血液循環</li>
+                      <li>增加神經營養因子分泌</li>
+                      <li>可能延緩認知衰退速度</li>
+                      <li>改善注意力及執行功能</li>
+                    </ul>
+                    <p class="synergy-demo__note">有氧運動效果最顯著</p>
+                  </div>
+                  <div class="synergy-demo__item">
+                    <h4><i class="fas fa-walking"></i> 身體功能</h4>
+                    <p>維持活動能力及獨立性</p>
+                    <ul>
+                      <li>改善平衡力及步態</li>
+                      <li>減少跌倒風險</li>
+                      <li>維持肌力及關節活動度</li>
+                      <li>提升日常生活能力</li>
+                    </ul>
+                    <p class="synergy-demo__note">維持自理能力的關鍵</p>
+                  </div>
+                </div>
+
+                <div class="synergy-demo">
+                  <div class="synergy-demo__item">
+                    <h4><i class="fas fa-smile"></i> 情緒及行為</h4>
+                    <p>減少精神行為症狀</p>
+                    <ul>
+                      <li>減少焦慮及抑鬱</li>
+                      <li>改善睡眠質素</li>
+                      <li>減少遊走及激動行為</li>
+                      <li>提升整體生活質素</li>
+                    </ul>
+                    <p class="synergy-demo__note">減輕照顧者壓力</p>
+                  </div>
+                  <div class="synergy-demo__item">
+                    <h4><i class="fas fa-users"></i> 社交互動</h4>
+                    <p>維持社交連繫</p>
+                    <ul>
+                      <li>提供有意義的活動</li>
+                      <li>增加與他人互動機會</li>
+                      <li>維持日常作息規律</li>
+                      <li>提升自我價值感</li>
+                    </ul>
+                    <p class="synergy-demo__note">改善整體健康</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Exercise Types -->
+      <section class="section" id="exercise-types">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__icon">
+              <i class="fas fa-running"></i>
+            </div>
+            <div class="section__title-wrap">
+              <h2 class="section__title">適合的運動類型</h2>
+            </div>
+          </div>
+
+          <p class="section__intro">
+            針對認知障礙症患者，運動計劃需簡單易明、安全有趣，並配合患者的認知能力及身體狀況。
+          </p>
+
+          <div class="section__content">
+            <!-- Aerobic -->
+            <article class="card">
+              <div class="card__header">
+                <i class="fas fa-heart card__icon"></i>
+                <h3 class="card__title">有氧運動</h3>
+              </div>
+              <div class="card__body">
+                <p class="card__lead">有氧運動對認知功能的改善效果最為顯著。</p>
+
+                <div class="columns">
+                  <div class="column">
+                    <h4><i class="fas fa-walking"></i> 步行訓練</h4>
+                    <ul>
+                      <li>最簡單易行的有氧運動</li>
+                      <li>可在室內或戶外進行</li>
+                      <li>建議每日 20-30 分鐘</li>
+                      <li>使用助行器提高安全性</li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <h4><i class="fas fa-music"></i> 其他選擇</h4>
+                    <ul>
+                      <li><strong>踏步機：</strong>室內安全訓練</li>
+                      <li><strong>坐式健身單車：</strong>減少跌倒風險</li>
+                      <li><strong>跳舞：</strong>結合認知及身體訓練</li>
+                      <li><strong>太極：</strong>改善平衡及放鬆身心</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="highlight highlight--hope">
+                  <div class="highlight__content">
+                    <h4><i class="fas fa-lightbulb"></i> 運動建議</h4>
+                    <p>
+                      建議每週進行
+                      <strong>150 分鐘</strong>中等強度有氧運動。可分成每日
+                      20-30 分鐘，或每次 10 分鐘分段進行。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Strength -->
+            <article class="card">
+              <div class="card__header">
+                <i class="fas fa-dumbbell card__icon"></i>
+                <h3 class="card__title">肌力訓練</h3>
+              </div>
+              <div class="card__body">
+                <p class="card__lead">
+                  維持肌力對預防跌倒及保持日常活動能力非常重要。
+                </p>
+
+                <div class="synergy-demo">
+                  <div class="synergy-demo__item">
+                    <h4><i class="fas fa-chair"></i> 坐站訓練</h4>
+                    <p>強化下肢肌力</p>
+                    <ul>
+                      <li>從椅子站起坐下</li>
+                      <li>雙手可扶著椅子扶手</li>
+                      <li>每組 10 次，每日 2-3 組</li>
+                      <li>進階：減少手部輔助</li>
+                    </ul>
+                    <p class="synergy-demo__note">最功能性的肌力訓練</p>
+                  </div>
+                  <div class="synergy-demo__item">
+                    <h4><i class="fas fa-male"></i> 扶牆深蹲</h4>
+                    <p>安全的下肢訓練</p>
+                    <ul>
+                      <li>面向牆壁，雙手扶牆</li>
+                      <li>慢慢屈膝下蹲</li>
+                      <li>膝蓋不超過腳尖</li>
+                      <li>每組 10 次，每日 2-3 組</li>
+                    </ul>
+                    <p class="synergy-demo__note">需確保環境安全</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Balance -->
+            <article class="card">
+              <div class="card__header">
+                <i class="fas fa-balance-scale card__icon"></i>
+                <h3 class="card__title">平衡訓練</h3>
+              </div>
+              <div class="card__body">
+                <p class="card__lead">平衡訓練是預防跌倒的核心內容。</p>
+
+                <div class="columns">
+                  <div class="column">
+                    <h4><i class="fas fa-arrows-alt"></i> 重心轉移</h4>
+                    <ul>
+                      <li>站立時左右移動重心</li>
+                      <li>前後移動重心</li>
+                      <li>扶著穩固物件進行</li>
+                      <li>逐漸減少手部支撐</li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <h4><i class="fas fa-shoe-prints"></i> 步態訓練</h4>
+                    <ul>
+                      <li>沿直線行走</li>
+                      <li>側步行走</li>
+                      <li>跨越障礙物</li>
+                      <li>轉換方向行走</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="highlight highlight--important">
+                  <div class="highlight__content">
+                    <h4>
+                      <i class="fas fa-exclamation-triangle"></i> 安全提醒
+                    </h4>
+                    <p>
+                      平衡訓練時必須有人在旁看護，並確保環境安全（如移除地毯、確保光線充足）。如患者平衡較差，應在有扶手的環境進行。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Dual-Task -->
+            <article class="card">
+              <div class="card__header">
+                <i class="fas fa-tasks card__icon"></i>
+                <h3 class="card__title">雙重任務訓練</h3>
+              </div>
+              <div class="card__body">
+                <p class="card__lead">
+                  結合認知任務與運動，模擬日常生活中需同時處理多項事情的情況。
+                </p>
+
+                <div class="synergy-demo">
+                  <div class="synergy-demo__item">
+                    <h4><i class="fas fa-comment"></i> 邊行邊說</h4>
+                    <p>結合步行與認知任務</p>
+                    <ul>
+                      <li>步行時數數字（如倒數）</li>
+                      <li>步行時說出物件名稱</li>
+                      <li>步行時唱歌</li>
+                      <li>步行時回答簡單問題</li>
+                    </ul>
+                    <p class="synergy-demo__note">提升日常安全性</p>
+                  </div>
+                  <div class="synergy-demo__item">
+                    <h4><i class="fas fa-hand-paper"></i> 邊站邊玩</h4>
+                    <p>結合站立平衡與認知任務</p>
+                    <ul>
+                      <li>站立時拋接球</li>
+                      <li>站立時進行記憶遊戲</li>
+                      <li>站立時做手指操</li>
+                      <li>站立時辨認卡片</li>
+                    </ul>
+                    <p class="synergy-demo__note">增加趣味性</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Communication Tips -->
+      <section class="section section--alt" id="communication">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <div class="section__title-wrap">
+              <h2 class="section__title">訓練時的溝通技巧</h2>
+            </div>
+          </div>
+
+          <p class="section__intro">
+            與認知障礙症患者溝通需要特別技巧，以確保他們理解指示並積極參與。
+          </p>
+
+          <div class="section__content">
+            <article class="card">
+              <div class="card__header">
+                <i class="fas fa-lightbulb card__icon"></i>
+                <h3 class="card__title">有效溝通策略</h3>
+              </div>
+              <div class="card__body">
+                <div class="columns">
+                  <div class="column">
+                    <h4><i class="fas fa-check-circle"></i> 應該做</h4>
+                    <ul>
+                      <li>
+                        <strong>簡短清晰：</strong
+                        >使用簡單字句，一次只給一個指示
+                      </li>
+                      <li><strong>示範動作：</strong>邊說邊做，讓患者模仿</li>
+                      <li><strong>正面鼓勵：</strong>多讚賞、少批評</li>
+                      <li><strong>保持耐心：</strong>給予足夠時間反應</li>
+                      <li><strong>面對面溝通：</strong>確保患者看到你的表情</li>
+                      <li><strong>使用熟悉詞彙：</strong>用患者習慣的用語</li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <h4><i class="fas fa-times-circle"></i> 避免做</h4>
+                    <ul>
+                      <li>同時給予多個指示</li>
+                      <li>使用複雜或抽象的詞彙</li>
+                      <li>催促或表現不耐煩</li>
+                      <li>糾正或爭論</li>
+                      <li>在患者背後說話</li>
+                      <li>環境過於嘈雜或分散注意力</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="highlight highlight--hope">
+                  <div class="highlight__content">
+                    <h4><i class="fas fa-gamepad"></i> 遊戲化訓練</h4>
+                    <p>
+                      將運動設計成遊戲形式，如拋接球、踢球入龍門、音樂椅子遊戲等，可增加患者的參與意願及訓練樂趣。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Fall Prevention -->
+      <section class="section" id="fall-prevention">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="section__title-wrap">
+              <h2 class="section__title">預防跌倒</h2>
+            </div>
+          </div>
+
+          <p class="section__intro">
+            認知障礙症患者跌倒風險特別高，預防跌倒是物理治療的重要目標。
+          </p>
+
+          <div class="section__content">
+            <article class="card">
+              <div class="card__header">
+                <i class="fas fa-home card__icon"></i>
+                <h3 class="card__title">家居環境改善</h3>
+              </div>
+              <div class="card__body">
+                <div class="principle-grid">
+                  <article class="principle-card">
+                    <div class="principle-card__icon">
+                      <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="principle-card__title">光線</h3>
+                    <ul class="principle-card__list">
+                      <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                          <p>確保走廊及房間光線充足</p>
+                        </div>
+                      </li>
+                      <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                          <p>安裝夜燈方便晚間活動</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </article>
+
+                  <article class="principle-card">
+                    <div class="principle-card__icon">
+                      <i class="fas fa-door-open"></i>
+                    </div>
+                    <h3 class="principle-card__title">通道</h3>
+                    <ul class="principle-card__list">
+                      <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                          <p>移除地毯及雜物</p>
+                        </div>
+                      </li>
+                      <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                          <p>確保通道暢通無阻</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </article>
+
+                  <article class="principle-card">
+                    <div class="principle-card__icon">
+                      <i class="fas fa-toilet"></i>
+                    </div>
+                    <h3 class="principle-card__title">浴室</h3>
+                    <ul class="principle-card__list">
+                      <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                          <p>安裝扶手及防滑墊</p>
+                        </div>
+                      </li>
+                      <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                          <p>使用沐浴椅及加高廁板</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </article>
+
+                  <article class="principle-card">
+                    <div class="principle-card__icon">
+                      <i class="fas fa-shoe-prints"></i>
+                    </div>
+                    <h3 class="principle-card__title">鞋履</h3>
+                    <ul class="principle-card__list">
+                      <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                          <p>穿著合適的防滑鞋</p>
+                        </div>
+                      </li>
+                      <li>
+                        <i class="fas fa-check"></i>
+                        <div>
+                          <p>避免穿拖鞋或赤腳走動</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Home PT Advantages -->
+      <section class="section section--alt" id="home-pt">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__icon">
+              <i class="fas fa-house-user"></i>
+            </div>
+            <div class="section__title-wrap">
+              <h2 class="section__title">上門物理治療的優勢</h2>
+            </div>
+          </div>
+
+          <div class="section__content">
+            <div class="principle-grid">
+              <article class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-home"></i>
+                </div>
+                <h3 class="principle-card__title">熟悉環境</h3>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>減少混亂</strong>
+                      <p>在熟悉的環境中訓練，減少患者焦慮及混亂</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>功能性訓練</strong>
+                      <p>在實際生活環境中練習日常活動</p>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+
+              <article class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <h3 class="principle-card__title">環境評估</h3>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>識別跌倒風險</strong>
+                      <p>評估家居環境，提供改善建議</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>輔助工具建議</strong>
+                      <p>建議合適的扶手、防滑設備等</p>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+
+              <article class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-user-friends"></i>
+                </div>
+                <h3 class="principle-card__title">照顧者培訓</h3>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>運動指導</strong>
+                      <p>教導家人如何協助患者進行運動</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>安全處理</strong>
+                      <p>教導正確的攙扶及轉移位技巧</p>
+                    </div>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- References Section -->
+      <section class="references" id="references">
+        <div class="container">
+          <div class="references__header">
+            <div class="references__icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h2 class="references__title">參考文獻</h2>
+          </div>
+          <ol class="references__list">
+            <li class="references__item">
+              <p class="references__text">
+                Blankevoort, C. G., van Heuvelen, M. J., Boersma, F., Luning,
+                H., de Jong, J., & Scherder, E. J. (2010). Review of effects of
+                physical activity on strength, balance, mobility and ADL
+                performance in elderly subjects with dementia.
+                <em>Dementia and geriatric cognitive disorders</em>, 30(5),
+                392-402.
+                <a
+                  href="https://doi.org/10.1159/000321357"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://doi.org/10.1159/000321357</a
+                >
+              </p>
+            </li>
+            <li class="references__item">
+              <p class="references__text">
+                Forbes, D., Forbes, S. C., Blake, C. M., Thiessen, E. J., &
+                Forbes, S. (2015). Exercise programs for people with dementia.
+                <em>Cochrane Database of Systematic Reviews</em>, (4).
+                <a
+                  href="https://doi.org/10.1002/14651858.CD006489.pub4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://doi.org/10.1002/14651858.CD006489.pub4</a
+                >
+              </p>
+            </li>
+            <li class="references__item">
+              <p class="references__text">
+                Groot, C., Hooghiemstra, A. M., Raijmakers, P. G., van Berckel,
+                B. N., Scheltens, P., Scherder, E. J., ... & Ossenkoppele, R.
+                (2016). The effect of physical activity on cognitive function in
+                patients with dementia: A meta-analysis of randomized control
+                trials.
+                <em>Ageing research reviews</em>, 25, 13-23.
+                <a
+                  href="https://doi.org/10.1016/j.arr.2015.11.005"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://doi.org/10.1016/j.arr.2015.11.005</a
+                >
+              </p>
+            </li>
+            <li class="references__item">
+              <p class="references__text">
+                Burton, E., Cavalheri, V., Adams, R., Browne, C. O.,
+                Bovery-Spencer, P., Fenton, A. M., ... & Hill, K. D. (2015).
+                Effectiveness of exercise programs to reduce falls in older
+                people with dementia living in the community: a systematic
+                review and meta-analysis.
+                <em>Clinical interventions in aging</em>, 10, 421.
+                <a
+                  href="https://doi.org/10.2147/CIA.S71691"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://doi.org/10.2147/CIA.S71691</a
+                >
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Key Takeaway Summary -->
+      <section class="summary">
+        <div class="container">
+          <h2 class="summary__title">
+            <i class="fas fa-bookmark"></i> 重點總結
+          </h2>
+          <div class="summary__grid">
+            <div class="summary__item">
+              <span class="summary__num">1</span>
+              <p>
+                <strong>運動可延緩退化</strong>——有氧運動對認知功能改善最顯著
+              </p>
+            </div>
+            <div class="summary__item">
+              <span class="summary__num">2</span>
+              <p><strong>平衡及肌力訓練</strong>——預防跌倒的核心內容</p>
+            </div>
+            <div class="summary__item">
+              <span class="summary__num">3</span>
+              <p><strong>雙重任務訓練</strong>——結合認知與運動，模擬日常生活</p>
+            </div>
+            <div class="summary__item">
+              <span class="summary__num">4</span>
+              <p><strong>簡單清晰的指示</strong>——有效溝通是成功訓練的關鍵</p>
+            </div>
+            <div class="summary__item">
+              <span class="summary__num">5</span>
+              <p><strong>家居環境改善</strong>——減少跌倒風險</p>
+            </div>
+            <div class="summary__item">
+              <span class="summary__num">6</span>
+              <p><strong>上門訓練</strong>——在熟悉環境中進行，減少患者焦慮</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Section CTA -->
+      <section class="cta">
+        <div class="container">
+          <h2 class="cta__title">探索更多物理治療資訊</h2>
+          <div class="cta__buttons">
+            <a
+              href="physiotherapy-sarcopenia.html"
+              class="cta__btn cta__btn--primary"
+            >
+              <i class="fas fa-dumbbell"></i>
+              肌少症
+            </a>
+            <a
+              href="physiotherapy-other-diseases.html"
+              class="cta__btn cta__btn--outline"
+            >
+              <i class="fas fa-arrow-left"></i>
+              返回其他疾病
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Quick Contact Section -->
@@ -267,7 +1102,9 @@
             </div>
             <h3>發送電郵</h3>
             <p class="quick-contact__info">
-              電郵：<a href="mailto:info@novahealth.com.hk">info@novahealth.com.hk</a>
+              電郵：<a href="mailto:info@novahealth.com.hk"
+                >info@novahealth.com.hk</a
+              >
             </p>
           </article>
           <article class="quick-contact__item">
@@ -276,7 +1113,10 @@
             </div>
             <h3>即時聯天</h3>
             <p class="quick-contact__info">
-              WhatsApp：<a href="https://wa.me/85254736204" target="_blank" rel="noopener noreferrer"
+              WhatsApp：<a
+                href="https://wa.me/85254736204"
+                target="_blank"
+                rel="noopener noreferrer"
                 >5473 6204</a
               >
             </p>
@@ -289,19 +1129,19 @@
     <a
       href="https://wa.me/85254736204"
       class="whatsapp-float"
-      target="_blank" rel="noopener noreferrer"
+      target="_blank"
       rel="noopener noreferrer"
       aria-label="聯絡我們 WhatsApp"
     >
       <i class="fab fa-whatsapp"></i>
     </a>
 
-      <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer__grid">
           <div class="footer__gridbox">
-            <h3>Nova Health<br />芯凝物理治療及護理有限公司</h3>
+            <h3>Nova Health<br />芯凝護理及物理治療有限公司</h3>
             <p class="footer__tagline">專業．貼心．到戶</p>
           </div>
 
@@ -309,14 +1149,15 @@
             <h4>聯絡資訊</h4>
             <address class="footer__contact">
               <ul class="footer__contact">
-
                 <li class="footer__contact-item">
                   <i class="fas fa-phone"></i>
                   <a href="tel:+85254736204">+852 5473 6204</a>
                 </li>
                 <li class="footer__contact-item">
                   <i class="fas fa-envelope"></i>
-                  <a href="mailto:info@novahealth.com.hk">info@novahealth.com.hk</a>
+                  <a href="mailto:info@novahealth.com.hk"
+                    >info@novahealth.com.hk</a
+                  >
                 </li>
               </ul>
             </address>
@@ -327,7 +1168,6 @@
               <a href="#" class="footer__social-link" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
               </a>
-            </div>
             </div>
           </div>
         </div>
@@ -347,7 +1187,7 @@
           >
         </nav>
         <div class="footer__copyright">
-          <p>&copy; 2026 Nova Health 芯凝物理治療及護理有限公司. 版權所有.</p>
+          <p>&copy; 2026 Nova Health 芯凝護理及物理治療有限公司. 版權所有.</p>
         </div>
       </div>
     </footer>

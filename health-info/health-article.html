@@ -205,21 +205,21 @@
             </li>
             <li class="nav__item nav__item--has-submenu">
               <div class="nav__link">
-                其他服務 <i class="fas fa-chevron-down"></i>
+                護理員 <i class="fas fa-chevron-down"></i>
               </div>
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a
-                    href="../other-services/medical-escort.html"
+                    href="../home-care-worker/medical-escort.html"
                     class="nav__submenu-link"
                     >陪診</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../other-services/other-services.html"
+                    href="../home-care-worker/home-care-worker.html"
                     class="nav__submenu-link"
-                    >其他服務</a
+                    >護理員</a
                   >
                 </li>
               </ul>
@@ -244,53 +244,186 @@
     <main>
       <!-- Hero Section -->
       <section class="article-hero">
-        <div class="container">
-          <div class="article-hero__content">
-            <h1 class="article-hero__title">健康專欄</h1>
-            <p class="article-hero__subtitle">
-              專業醫療團隊分享最新健康資訊與護理知識
-            </p>
-          </div>
+        <div class="container article-hero__content">
+          <i class="fas fa-newspaper article-hero__icon"></i>
+          <h1 class="article-hero__title">健康專欄</h1>
+          <p class="article-hero__tagline">專業健康資訊，助您了解更多護理及復健知識</p>
         </div>
       </section>
 
-      <!-- Filter Section -->
-      <section class="article-filter">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="麵包屑導航">
         <div class="container">
-          <div class="article-filter__controls">
-            <button
-              class="article-filter__btn article-filter__btn--active"
-              data-category="all"
-            >
-              全部文章
-            </button>
-            <button class="article-filter__btn" data-category="physiotherapy">
-              物理治療
-            </button>
-            <button class="article-filter__btn" data-category="nursing">
-              護理
-            </button>
-            <button class="article-filter__btn" data-category="health-tips">
-              健康貼士
-            </button>
-            <button class="article-filter__btn" data-category="rehabilitation">
-              復康資訊
-            </button>
-          </div>
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a href="../index.html" class="breadcrumb__link">
+                <i class="fas fa-home"></i> 主頁
+              </a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="health-article.html" class="breadcrumb__link">健康資訊</a>
+            </li>
+            <li class="breadcrumb__item breadcrumb__item--active">
+              <span>健康專欄</span>
+            </li>
+          </ol>
         </div>
-      </section>
+      </nav>
 
-      <!-- Articles Grid -->
-      <section class="articles">
+      <!-- Article Listing Section -->
+      <section class="article-listing">
         <div class="container">
-          <div class="articles__grid" id="articles-grid">
-            <!-- Articles will be loaded here -->
+          <div class="article-listing__header">
+            <h2 class="article-listing__title">最新文章</h2>
+            <p class="article-listing__subtitle">瀏覽我們的健康專欄，獲取專業的護理及復健資訊</p>
+          </div>
+
+          <div class="article-grid" id="article-grid">
+            <!-- Article 7 (newest - displayed first) -->
+            <article class="article-card" data-article="7">
+              <div class="article-card__image">
+                <img src="../images/article-007-caregiver-burnout.webp" alt="照顧者疲勞示意圖" width="400" height="220" loading="lazy">
+                <span class="article-card__category article-card__category--health">健康知識</span>
+              </div>
+              <div class="article-card__body">
+                <h3 class="article-card__title">照顧者的慢性疲勞 (Burnout) 與喘息空間</h3>
+                <p class="article-card__excerpt">長期照顧家人可能導致身心俱疲，了解照顧者倦怠的警號，以及如何為自己創造喘息的空間。</p>
+                <div class="article-card__meta">
+                  <span class="article-card__date">
+                    <i class="fas fa-calendar-alt"></i> 2026年1月20日
+                  </span>
+                  <a href="article-007.html" class="article-card__link">
+                    閱讀更多 <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="article-card" data-article="6">
+              <div class="article-card__image">
+                <img src="../images/article-006-morning-stroke.webp" alt="清晨血壓晨峰與中風風險" width="400" height="220" loading="lazy">
+                <span class="article-card__category article-card__category--nursing">護理</span>
+              </div>
+              <div class="article-card__body">
+                <h3 class="article-card__title">為什麼清晨是中風的高風險期？護理師詳解「血壓晨峰」與生理時鐘的關聯</h3>
+                <p class="article-card__excerpt">研究顯示清晨6至12時是中風發生的高峰期，了解血壓晨峰現象及如何透過護理措施降低風險。</p>
+                <div class="article-card__meta">
+                  <span class="article-card__date">
+                    <i class="fas fa-calendar-alt"></i> 2026年1月15日
+                  </span>
+                  <a href="article-006.html" class="article-card__link">
+                    閱讀更多 <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="article-card" data-article="5">
+              <div class="article-card__image">
+                <img src="../images/article-005-fever-rhythm.webp" alt="晝夜節律與體溫變化" width="400" height="220" loading="lazy">
+                <span class="article-card__category article-card__category--nursing">護理</span>
+              </div>
+              <div class="article-card__body">
+                <h3 class="article-card__title">晝夜節律與體溫：為什麼傍晚時分的發燒，通常比早上的更令人擔心</h3>
+                <p class="article-card__excerpt">人體體溫隨晝夜節律波動，傍晚發燒往往意味著更嚴重的感染，護理師教您正確判讀體溫變化。</p>
+                <div class="article-card__meta">
+                  <span class="article-card__date">
+                    <i class="fas fa-calendar-alt"></i> 2026年1月10日
+                  </span>
+                  <a href="article-005.html" class="article-card__link">
+                    閱讀更多 <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="article-card" data-article="4">
+              <div class="article-card__image">
+                <img src="../images/article-004-moist-healing.webp" alt="濕性癒合傷口護理" width="400" height="220" loading="lazy">
+                <span class="article-card__category article-card__category--nursing">護理</span>
+              </div>
+              <div class="article-card__body">
+                <h3 class="article-card__title">傷口結痂才算好？其實「濕性癒合」能讓皮膚修復快上一倍</h3>
+                <p class="article-card__excerpt">打破傳統「讓傷口乾燥結痂」的迷思，現代傷口護理強調濕性癒合環境，加速皮膚再生。</p>
+                <div class="article-card__meta">
+                  <span class="article-card__date">
+                    <i class="fas fa-calendar-alt"></i> 2026年1月5日
+                  </span>
+                  <a href="article-004.html" class="article-card__link">
+                    閱讀更多 <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="article-card" data-article="3">
+              <div class="article-card__image">
+                <img src="../images/article-003-pressure-injury.webp" alt="深部組織損傷DTI壓瘡" width="400" height="220" loading="lazy">
+                <span class="article-card__category article-card__category--nursing">護理</span>
+              </div>
+              <div class="article-card__body">
+                <h3 class="article-card__title">壓瘡不只是「皮膚紅腫」：從深部組織損傷（DTI）看肉眼看不見的皮下危機</h3>
+                <p class="article-card__excerpt">壓瘡可能從深層組織開始壞死，表面看似正常實則暗藏危機，及早識別DTI至關重要。</p>
+                <div class="article-card__meta">
+                  <span class="article-card__date">
+                    <i class="fas fa-calendar-alt"></i> 2025年12月28日
+                  </span>
+                  <a href="article-003.html" class="article-card__link">
+                    閱讀更多 <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="article-card" data-article="2">
+              <div class="article-card__image">
+                <img src="../images/article-002-chronic-pain.webp" alt="慢性疼痛神經過度反應" width="400" height="220" loading="lazy">
+                <span class="article-card__category article-card__category--physio">物理治療</span>
+              </div>
+              <div class="article-card__body">
+                <h3 class="article-card__title">越不動越痛：為什麼慢性疼痛患者的痛覺神經會「過度反應」</h3>
+                <p class="article-card__excerpt">長期疼痛會改變神經系統的敏感度，形成「中樞敏感化」，物理治療如何打破這個惡性循環？</p>
+                <div class="article-card__meta">
+                  <span class="article-card__date">
+                    <i class="fas fa-calendar-alt"></i> 2025年12月20日
+                  </span>
+                  <a href="article-002.html" class="article-card__link">
+                    閱讀更多 <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 1 (oldest - displayed last, hidden initially if more than 6) -->
+            <article class="article-card" data-article="1" hidden>
+              <div class="article-card__image">
+                <img src="../images/article-001-gluteal-amnesia.webp" alt="臀大肌失憶症久坐" width="400" height="220" loading="lazy">
+                <span class="article-card__category article-card__category--physio">物理治療</span>
+              </div>
+              <div class="article-card__body">
+                <h3 class="article-card__title">屁股失憶症是真的？久坐族的臀大肌為何會忘記怎麼發力？</h3>
+                <p class="article-card__excerpt">長時間久坐會導致臀大肌「睡著」，影響步態和腰椎健康，物理治療師教您如何喚醒沉睡的臀肌。</p>
+                <div class="article-card__meta">
+                  <span class="article-card__date">
+                    <i class="fas fa-calendar-alt"></i> 2025年12月15日
+                  </span>
+                  <a href="article-001.html" class="article-card__link">
+                    閱讀更多 <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
           </div>
 
           <!-- Load More Button -->
-          <div class="articles__load-more">
-            <button class="button button--secondary" id="load-more-btn">
-              載入更多文章
+          <div class="load-more">
+            <button class="load-more__btn" id="load-more-btn" type="button">
+              <i class="fas fa-plus"></i> 載入更多
             </button>
           </div>
         </div>
@@ -406,6 +539,38 @@
     </footer>
 
     <script src="../script.js"></script>
-    <script src="article.js"></script>
+    <script>
+      // Load More Articles Functionality
+      (function() {
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        const articleGrid = document.getElementById('article-grid');
+        
+        if (!loadMoreBtn || !articleGrid) return;
+        
+        const hiddenArticles = articleGrid.querySelectorAll('.article-card[hidden]');
+        const articlesPerLoad = 6;
+        let currentIndex = 0;
+        
+        // Hide button if no hidden articles
+        if (hiddenArticles.length === 0) {
+          loadMoreBtn.hidden = true;
+        }
+        
+        loadMoreBtn.addEventListener('click', function() {
+          const articlesToShow = Array.from(hiddenArticles).slice(currentIndex, currentIndex + articlesPerLoad);
+          
+          articlesToShow.forEach(function(article) {
+            article.removeAttribute('hidden');
+          });
+          
+          currentIndex += articlesPerLoad;
+          
+          // Hide button when all articles are shown
+          if (currentIndex >= hiddenArticles.length) {
+            loadMoreBtn.hidden = true;
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

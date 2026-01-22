@@ -474,6 +474,182 @@
   content: "\f70c";
 }
 
+/* Additional icons for nursing pages */
+.fa-1::before {
+  content: "\31";
+}
+.fa-2::before {
+  content: "\32";
+}
+.fa-3::before {
+  content: "\33";
+}
+.fa-apple-alt::before {
+  content: "\f5d1";
+}
+.fa-band-aid::before {
+  content: "\f462";
+}
+.fa-bell::before {
+  content: "\f0f3";
+}
+.fa-book::before {
+  content: "\f02d";
+}
+.fa-book-medical::before {
+  content: "\f7e6";
+}
+.fa-box::before {
+  content: "\f466";
+}
+.fa-boxes::before {
+  content: "\f468";
+}
+.fa-burn::before {
+  content: "\f46a";
+}
+.fa-calendar-alt::before {
+  content: "\f073";
+}
+.fa-circle-notch::before {
+  content: "\f1ce";
+}
+.fa-clipboard-check::before {
+  content: "\f46c";
+}
+.fa-cut::before {
+  content: "\f0c4";
+}
+.fa-fire::before {
+  content: "\f06d";
+}
+.fa-first-aid::before {
+  content: "\f479";
+}
+.fa-flask::before {
+  content: "\f0c3";
+}
+.fa-graduation-cap::before {
+  content: "\f19d";
+}
+.fa-heart::before {
+  content: "\f004";
+}
+.fa-hourglass-start::before {
+  content: "\f251";
+}
+.fa-list::before {
+  content: "\f03a";
+}
+.fa-list-alt::before {
+  content: "\f022";
+}
+.fa-lock::before {
+  content: "\f023";
+}
+.fa-lungs::before {
+  content: "\f604";
+}
+.fa-medkit::before {
+  content: "\f0fa";
+}
+.fa-microscope::before {
+  content: "\f610";
+}
+.fa-palette::before {
+  content: "\f53f";
+}
+.fa-pills::before {
+  content: "\f484";
+}
+.fa-prescription::before {
+  content: "\f5b1";
+}
+.fa-pump-soap::before {
+  content: "\e06b";
+}
+.fa-q::before {
+  content: "\51";
+}
+.fa-ribbon::before {
+  content: "\f4d6";
+}
+.fa-ring::before {
+  content: "\f70b";
+}
+.fa-route::before {
+  content: "\f4d7";
+}
+.fa-ruler::before {
+  content: "\f545";
+}
+.fa-search::before {
+  content: "\f002";
+}
+.fa-seedling::before {
+  content: "\f4d8";
+}
+.fa-shapes::before {
+  content: "\f61f";
+}
+.fa-smile::before {
+  content: "\f118";
+}
+.fa-spray-can::before {
+  content: "\f5bd";
+}
+.fa-syringe::before {
+  content: "\f48e";
+}
+.fa-tachometer-alt::before {
+  content: "\f3fd";
+}
+.fa-tape::before {
+  content: "\f4db";
+}
+.fa-teeth::before {
+  content: "\f62e";
+}
+.fa-th::before {
+  content: "\f00a";
+}
+.fa-thermometer-half::before {
+  content: "\f2c9";
+}
+.fa-trash-alt::before {
+  content: "\f2ed";
+}
+.fa-user-graduate::before {
+  content: "\f501";
+}
+.fa-user-md::before {
+  content: "\f0f0";
+}
+.fa-user-nurse::before {
+  content: "\f82f";
+}
+.fa-user-shield::before {
+  content: "\f505";
+}
+.fa-users::before {
+  content: "\f0c0";
+}
+.fa-utensils::before {
+  content: "\f2e7";
+}
+.fa-vial::before {
+  content: "\f492";
+}
+.fa-virus-slash::before {
+  content: "\e075";
+}
+.fa-weight::before {
+  content: "\f496";
+}
+.fa-wind::before {
+  content: "\f72e";
+}
+
 /* ========================================
    CSS VARIABLES
    ======================================== */
