@@ -59,79 +59,6 @@
       href="images/news-1.webp"
       as="image"
     />
-
-    <style>
-      /* Critical CSS to prevent CLS - Mobile First */
-      /* Font fallback to prevent FOIT */
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          "Helvetica Neue", Arial, sans-serif;
-      }
-
-      /* Prevent CLS by reserving space for images - Mobile optimized */
-      .news-card__image {
-        position: relative;
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        overflow: hidden;
-        background: #f5f5f5;
-      }
-      .news-card__image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-      }
-      .template-gallery__container {
-        position: relative;
-        width: 100%;
-        aspect-ratio: 3 / 4;
-        background: #f5f5f5;
-        overflow: hidden;
-      }
-      .template-gallery__image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      /* Hero background to prevent layout shift - Mobile first */
-      .hero {
-        min-height: 350px;
-        background-color: #005f73;
-      }
-
-      /* Reserve space for header - Mobile */
-      .header {
-        min-height: 60px;
-      }
-
-      /* News card structure */
-      .news-card {
-        display: flex;
-        flex-direction: column;
-      }
-
-      /* Latest news wrapper */
-      .latest-news__wrapper {
-        overflow: hidden;
-      }
-
-      @media (min-width: 768px) {
-        .header {
-          min-height: 70px;
-        }
-      }
-
-      @media (min-width: 1201px) {
-        .hero {
-          min-height: 500px;
-        }
-      }
-    </style>
     <link
       rel="stylesheet"
       href="main.css"
@@ -353,7 +280,7 @@
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="home-care-worker/home-care-worker.html"
+                    href="home-care-worker/hcw.html"
                     class="nav__submenu-link"
                     >護理員</a
                   >

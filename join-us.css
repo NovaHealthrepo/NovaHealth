@@ -410,6 +410,7 @@
   font-weight: 700;
   color: var(--text-heading);
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .application__description {
@@ -430,6 +431,7 @@
   font-weight: 600;
   color: var(--text-heading);
   margin-bottom: 16px;
+  text-align: left;
 }
 
 .application__requirements ul {
@@ -483,6 +485,7 @@
   font-weight: 600;
   color: var(--text-heading);
   margin-bottom: 4px;
+  text-align: left;
 }
 
 .step__content p {
@@ -539,6 +542,7 @@
   font-weight: 600;
   color: var(--text-heading);
   margin-bottom: 4px;
+  text-align: left;
 }
 
 .contact-method__info p {
@@ -810,4 +814,21 @@
     margin-right: 0;
     margin-bottom: 12px;
   }
+}
+
+/* Icon Definitions - Missing icons for join-us page */
+.fa-graduation-cap::before {
+  content: "\f19d";
+}
+.fa-handshake::before {
+  content: "\f2b5";
+}
+.fa-hands-helping::before {
+  content: "\f4c4";
+}
+.fa-ambulance::before {
+  content: "\f0f9";
+}
+.fa-paper-plane::before {
+  content: "\f1d8";
 }

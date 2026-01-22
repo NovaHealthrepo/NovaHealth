@@ -1,14 +1,21 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant-HK">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="其他醫療服務" />
-    <meta name="keywords" content="護理員" />
+    <meta
+      name="description"
+      content="護理支援服務，包括日常護理、個人衛生照顧、生命體徵監測等專業服務"
+    />
+    <meta
+      name="keywords"
+      content="護理支援,日常護理,個人衛生,生命體徵,上門護理"
+    />
     <meta name="author" content="Nova Health 芯凝護理及物理治療有限公司" />
     <meta name="robots" content="index, follow" />
-    <title>護理員 | Nova Health 芯凝護理及物理治療有限公司</title>
+    <title>護理支援 | Nova Health 芯凝護理及物理治療有限公司</title>
     <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="hcw.css" />
   </head>
   <body>
     <!-- Header -->
@@ -216,7 +223,7 @@
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../home-care-worker/home-care-worker.html"
+                    href="../home-care-worker/hcw.html"
                     class="nav__submenu-link"
                     >護理員</a
                   >
@@ -241,7 +248,262 @@
 
     <!-- Main Content Area -->
     <main>
-      <!-- Add your page content here -->
+      <!-- Hero Section -->
+      <section class="hcw-hero">
+        <div class="container hcw-hero__content">
+          <i class="fas fa-user-nurse hcw-hero__icon"></i>
+          <h1 class="hcw-hero__title">護理支援</h1>
+          <p class="hcw-hero__tagline">專業日常護理，細心照顧每一刻</p>
+        </div>
+      </section>
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <div class="container">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a href="../index.html" class="breadcrumb__link">主頁</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="hcw.html" class="breadcrumb__link">護理員服務</a>
+            </li>
+            <li class="breadcrumb__item breadcrumb__item--active">
+              <span>護理支援</span>
+            </li>
+          </ol>
+        </div>
+      </nav>
+
+      <!-- Introduction Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__icon">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="section__title-wrap">
+              <h2 class="section__title">什麼是護理支援服務？</h2>
+            </div>
+          </div>
+          <div class="section__content">
+            <div class="card">
+              <div class="card__body">
+                <p>
+                  護理支援服務由經過專業培訓的護理員提供，協助有需要人士處理日常生活中的各種護理需求。我們的護理員接受過嚴格訓練，能夠在專業醫護人員的指導下，為服務使用者提供安全、貼心的照護服務。
+                </p>
+                <p>
+                  服務對象包括長者、術後康復者、長期病患者及有特殊護理需要的人士。我們致力於讓服務使用者在熟悉的家居環境中獲得優質的護理照顧。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__icon">
+              <i class="fas fa-clipboard-list"></i>
+            </div>
+            <div class="section__title-wrap">
+              <h2 class="section__title">護理支援服務內容</h2>
+            </div>
+          </div>
+          <div class="section__content">
+            <div class="principle-grid">
+              <div class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-bath"></i>
+                </div>
+                <h3 class="principle-card__title">個人衛生照顧</h3>
+                <p class="principle-card__subtitle">Personal Hygiene Care</p>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>沐浴協助</strong>
+                      <p>協助沐浴、抹身及更換衣物</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>口腔護理</strong>
+                      <p>協助刷牙、漱口及假牙清潔</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>皮膚護理</strong>
+                      <p>塗抹護膚品、預防褥瘡</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3 class="principle-card__title">生命體徵監測</h3>
+                <p class="principle-card__subtitle">Vital Signs Monitoring</p>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>血壓量度</strong>
+                      <p>定期量度並記錄血壓數值</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>血糖監測</strong>
+                      <p>協助量度血糖及記錄</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>體溫脈搏</strong>
+                      <p>監測體溫及脈搏變化</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <h3 class="principle-card__title">飲食照顧</h3>
+                <p class="principle-card__subtitle">Dietary Care</p>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>餵食協助</strong>
+                      <p>協助進食及餵食</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>膳食準備</strong>
+                      <p>按需要準備合適膳食</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>水份補充</strong>
+                      <p>確保足夠水份攝取</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-bed"></i>
+                </div>
+                <h3 class="principle-card__title">體位轉換</h3>
+                <p class="principle-card__subtitle">Positioning & Transfer</p>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>翻身服務</strong>
+                      <p>定時協助翻身，預防褥瘡</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>轉移協助</strong>
+                      <p>床椅轉移及安全扶抱</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>正確擺位</strong>
+                      <p>維持正確體位姿勢</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="section__title-wrap">
+              <h2 class="section__title">服務優勢</h2>
+            </div>
+          </div>
+          <div class="section__content">
+            <div class="card">
+              <div class="card__body">
+                <div class="columns">
+                  <div class="column">
+                    <h4><i class="fas fa-user-shield"></i> 專業培訓</h4>
+                    <ul>
+                      <li>所有護理員均完成認可培訓課程</li>
+                      <li>定期接受在職培訓及技能更新</li>
+                      <li>熟悉各類護理技巧及安全守則</li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <h4><i class="fas fa-heart"></i> 貼心照顧</h4>
+                    <ul>
+                      <li>一對一專屬服務</li>
+                      <li>了解個別需要，度身訂造服務計劃</li>
+                      <li>建立良好互信關係</li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <h4><i class="fas fa-home"></i> 居家護理</h4>
+                    <ul>
+                      <li>在熟悉環境中接受照顧</li>
+                      <li>減少住院需要</li>
+                      <li>促進身心健康</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta">
+        <div class="container">
+          <h2 class="cta__title">需要護理支援服務？</h2>
+          <div class="cta__buttons">
+            <a href="hcw.html" class="cta__btn cta__btn--outline">
+              <i class="fas fa-arrow-left"></i> 返回護理員服務
+            </a>
+            <a href="../contact.html" class="cta__btn cta__btn--primary">
+              <i class="fas fa-phone"></i> 立即預約諮詢
+            </a>
+            <a href="hcw-exercise.html" class="cta__btn cta__btn--secondary">
+              復康運動支援 <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Quick Contact Section -->
@@ -267,7 +529,9 @@
             </div>
             <h3>發送電郵</h3>
             <p class="quick-contact__info">
-              電郵：<a href="mailto:info@novahealth.com.hk">info@novahealth.com.hk</a>
+              電郵：<a href="mailto:info@novahealth.com.hk"
+                >info@novahealth.com.hk</a
+              >
             </p>
           </article>
           <article class="quick-contact__item">
@@ -276,7 +540,10 @@
             </div>
             <h3>即時聯天</h3>
             <p class="quick-contact__info">
-              WhatsApp：<a href="https://wa.me/85254736204" target="_blank" rel="noopener noreferrer"
+              WhatsApp：<a
+                href="https://wa.me/85254736204"
+                target="_blank"
+                rel="noopener noreferrer"
                 >5473 6204</a
               >
             </p>
@@ -289,14 +556,14 @@
     <a
       href="https://wa.me/85254736204"
       class="whatsapp-float"
-      target="_blank" rel="noopener noreferrer"
+      target="_blank"
       rel="noopener noreferrer"
       aria-label="聯絡我們 WhatsApp"
     >
       <i class="fab fa-whatsapp"></i>
     </a>
 
-      <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer__grid">
@@ -304,34 +571,40 @@
             <h3>Nova Health<br />芯凝護理及物理治療有限公司</h3>
             <p class="footer__tagline">專業．貼心．到戶</p>
           </div>
-
           <div class="footer__gridbox">
             <h4>聯絡資訊</h4>
             <address class="footer__contact">
               <ul class="footer__contact">
-
                 <li class="footer__contact-item">
                   <i class="fas fa-phone"></i>
                   <a href="tel:+85254736204">+852 5473 6204</a>
                 </li>
                 <li class="footer__contact-item">
                   <i class="fas fa-envelope"></i>
-                  <a href="mailto:info@novahealth.com.hk">info@novahealth.com.hk</a>
+                  <a href="mailto:info@novahealth.com.hk"
+                    >info@novahealth.com.hk</a
+                  >
                 </li>
               </ul>
             </address>
             <div class="footer__social-links">
-              <a href="https://www.facebook.com/share/1EmzWF2dpL/?mibextid=wwXIfr" class="footer__social-link" aria-label="Facebook">
+              <a
+                href="https://www.facebook.com/share/1EmzWF2dpL/?mibextid=wwXIfr"
+                class="footer__social-link"
+                aria-label="Facebook"
+              >
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.instagram.com/nova_health_ltd?igsh=MXhkamI2ZndibmZ0ZQ%3D%3D&utm_source=qr" class="footer__social-link" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/nova_health_ltd?igsh=MXhkamI2ZndibmZ0ZQ%3D%3D&utm_source=qr"
+                class="footer__social-link"
+                aria-label="Instagram"
+              >
                 <i class="fab fa-instagram"></i>
               </a>
             </div>
-            </div>
           </div>
         </div>
-
         <nav class="footer__nav">
           <a href="../footer/privacy-policy.html" class="footer__link"
             >隱私政策</a

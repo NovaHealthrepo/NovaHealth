@@ -1,5 +1,160 @@
 /* #region Pricing Page Styles - Mobile First Design */
 
+/* FontAwesome Icons as Pseudo-elements */
+.pricing-card__icon::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.pricing-card:nth-child(1) .pricing-card__icon::before {
+  content: "\f44b"; /* fa-dumbbell */
+}
+
+.pricing-card:nth-child(2) .pricing-card__icon::before {
+  content: "\f12e"; /* fa-puzzle-piece */
+}
+
+.pricing-card:nth-child(3) .pricing-card__icon::before {
+  content: "\f086"; /* fa-comments */
+}
+
+.pricing-card__feature::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f058"; /* fa-check-circle */
+  color: var(--secondary-color);
+  font-size: 16px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.monthly-package-card__hours::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f017"; /* fa-clock */
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.monthly-package-card__highlight-text::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f005"; /* fa-star */
+  color: var(--primary-color);
+  margin-right: 8px;
+}
+
+.monthly-package-card__feature::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f058"; /* fa-check-circle */
+  color: var(--secondary-color);
+  font-size: 16px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.pricing-faq__question::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f078"; /* fa-chevron-down */
+  color: var(--primary-color);
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+/* Promotion Section Icons */
+.promotion-card__badge::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 4px;
+}
+
+.promotion-card--special .promotion-card__badge::before {
+  content: "\f005"; /* fa-star */
+}
+
+.promotion-card:not(.promotion-card--special) .promotion-card__badge::before {
+  content: "\f02b"; /* fa-tag */
+}
+
+.promotion-card__icon::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.promotion-card--special .promotion-card__icon::before {
+  content: "\f5dc"; /* fa-brain */
+}
+
+.promotion-card:not(.promotion-card--special) .promotion-card__icon::before {
+  content: "\f0f0"; /* fa-user-md */
+}
+
+.promotion-card__feature::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f058"; /* fa-check-circle */
+  color: #10b981;
+  margin-right: 0.75rem;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.promotion-card__note::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #3b82f6;
+  margin-right: 0.5rem;
+}
+
+.promotion-card--special .promotion-card__note::before {
+  content: "\f05a"; /* fa-info-circle */
+}
+
+.promotion-card:not(.promotion-card--special) .promotion-card__note::before {
+  content: "\f017"; /* fa-clock */
+}
+
+.promotion__terms-title::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f15c"; /* fa-file-alt */
+  margin-right: 0.5rem;
+}
+
+/* Detailed Pricing Section Icons */
+.detailed-pricing-card__icon::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.detailed-pricing-card:nth-child(1) .detailed-pricing-card__icon::before {
+  content: "\f82f"; /* fa-user-nurse */
+}
+
+.detailed-pricing-card:nth-child(2) .detailed-pricing-card__icon::before {
+  content: "\f4c4"; /* fa-hands-helping */
+}
+
+.detailed-pricing-card:nth-child(3) .detailed-pricing-card__icon::before {
+  content: "\f0f9"; /* fa-ambulance */
+}
+
+.detailed-pricing__note-content::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f05a"; /* fa-info-circle */
+  color: #d97706;
+  font-size: 1.25rem;
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+}
+
 /* Page Hero */
 .page-hero {
   background: linear-gradient(135deg, #26d0ce 0%, #1a2980 60%, #0b90da 100%);

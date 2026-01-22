@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="言語訓練支援服務，包括口肌訓練、發音練習、PECS溝通訓練等專業服務"
+    />
+    <meta
+      name="keywords"
+      content="言語訓練,口肌訓練,發音練習,PECS,溝通訓練,吞嚥訓練"
+    />
+    <meta name="author" content="Nova Health 芯凝護理及物理治療有限公司" />
+    <meta name="robots" content="index, follow" />
+    <title>言語訓練支援 | Nova Health 芯凝護理及物理治療有限公司</title>
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="hcw.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="main-header">
+      <div class="container header__container">
+        <a href="../index.html" class="brand">
+          <div class="brand__icon"><i class="fas fa-heartbeat"></i></div>
+          <div class="brand__text">
+            <span class="brand__name">NOVA HEALTH</span>
+            <span class="brand__subtitle">芯凝護理及物理治療</span>
+          </div>
+        </a>
+        <button class="header__menu-toggle" aria-label="開啟選單">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="../index.html" class="nav__link">主頁</a>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <div class="nav__link">
+                關於我們 <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="../about-us/about-us.html" class="nav__submenu-link"
+                    >關於我們</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../about-us/news-001.html" class="nav__submenu-link"
+                    >最新消息</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../about-us/our-strengths.html"
+                    class="nav__submenu-link"
+                    >為何選擇芯凝</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <div class="nav__link">
+                健康資訊 <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a
+                    href="../health-info/case-sharing.html"
+                    class="nav__submenu-link"
+                    >個案分享</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../health-info/health-article.html"
+                    class="nav__submenu-link"
+                    >健康專欄</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <div class="nav__link">
+                物理治療 <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a
+                    href="../physiotherapy/physiotherapy-services.html"
+                    class="nav__submenu-link"
+                    >服務模式</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../physiotherapy/physiotherapy-stroke.html"
+                    class="nav__submenu-link"
+                    >中風康復</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../physiotherapy/physiotherapy-parkinson.html"
+                    class="nav__submenu-link"
+                    >柏金遜症</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../physiotherapy/physiotherapy-post-operation.html"
+                    class="nav__submenu-link"
+                    >術後康復</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../physiotherapy/physiotherapy-other-diseases.html"
+                    class="nav__submenu-link"
+                    >其他疾病</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <div class="nav__link">
+                職業及言語治療 <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a
+                    href="../occupational-speech-therapy/occupational-therapy.html"
+                    class="nav__submenu-link"
+                    >職業治療</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../occupational-speech-therapy/speech-therapy.html"
+                    class="nav__submenu-link"
+                    >言語治療</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../occupational-speech-therapy/play-therapy.html"
+                    class="nav__submenu-link"
+                    >遊戲治療</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../occupational-speech-therapy/communication-strategy.html"
+                    class="nav__submenu-link"
+                    >溝通技巧</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <div class="nav__link">
+                護理 <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a
+                    href="../nursing/chronic-disease.html"
+                    class="nav__submenu-link"
+                    >慢性疾病管理</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="../nursing/dialysis.html" class="nav__submenu-link"
+                    >腹膜透析護理</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../nursing/post-operation.html"
+                    class="nav__submenu-link"
+                    >術後護理</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../nursing/catheter-care.html"
+                    class="nav__submenu-link"
+                    >導管護理</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../nursing/medication-injection.html"
+                    class="nav__submenu-link"
+                    >藥物管理及注射治療</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../nursing/nutrition-care.html"
+                    class="nav__submenu-link"
+                    >營養護理</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item--has-submenu">
+              <div class="nav__link">
+                護理員 <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a
+                    href="../home-care-worker/medical-escort.html"
+                    class="nav__submenu-link"
+                    >陪診</a
+                  >
+                </li>
+                <li class="nav__submenu-item">
+                  <a
+                    href="../home-care-worker/hcw.html"
+                    class="nav__submenu-link"
+                    >護理員</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a href="../pricing.html" class="nav__link">收費</a>
+            </li>
+            <li class="nav__item">
+              <a href="../join-us.html" class="nav__link">加入我們</a>
+            </li>
+            <li class="nav__item">
+              <a href="../contact.html" class="nav__link nav__link--cta"
+                >聯絡我們</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hcw-hero">
+        <div class="container hcw-hero__content">
+          <i class="fas fa-comments hcw-hero__icon"></i>
+          <h1 class="hcw-hero__title">言語訓練支援</h1>
+          <p class="hcw-hero__tagline">
+            遵循言語治療師指引，改善溝通及口肌功能
+          </p>
+        </div>
+      </section>
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <div class="container">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a href="../index.html" class="breadcrumb__link">主頁</a>
+            </li>
+            <li class="breadcrumb__item">
+              <a href="hcw.html" class="breadcrumb__link">護理員服務</a>
+            </li>
+            <li class="breadcrumb__item breadcrumb__item--active">
+              <span>言語訓練支援</span>
+            </li>
+          </ol>
+        </div>
+      </nav>
+
+      <!-- Introduction Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__icon"><i class="fas fa-info-circle"></i></div>
+            <div class="section__title-wrap">
+              <h2 class="section__title">什麼是言語訓練支援？</h2>
+            </div>
+          </div>
+          <div class="section__content">
+            <div class="card">
+              <div class="card__body">
+                <p>
+                  言語訓練支援服務由經過言語治療師培訓的護理員提供，協助服務使用者進行日常的口肌訓練、發音練習及溝通技巧訓練。我們遵循言語治療師的專業指引，使用經過驗證的訓練工具及方法。
+                </p>
+                <p>
+                  適合對象包括中風後言語困難者、吞嚥困難患者、發音障礙人士及需要輔助溝通的人士。定期訓練有助改善口肌力量、發音清晰度及整體溝通能力。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Training Tools Section -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__icon"><i class="fas fa-tools"></i></div>
+            <div class="section__title-wrap">
+              <h2 class="section__title">言語訓練工具及活動</h2>
+            </div>
+          </div>
+          <div class="section__content">
+            <div class="principle-grid">
+              <!-- Straw Blowing -->
+              <div class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-wind"></i>
+                </div>
+                <h3 class="principle-card__title">飲管吹乒乓波</h3>
+                <p class="principle-card__subtitle">Straw Blowing Exercise</p>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>呼氣控制</strong>
+                      <p>訓練控制呼氣力度及持續時間</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>唇部閉合</strong>
+                      <p>加強嘴唇閉合及控制能力</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>趣味訓練</strong>
+                      <p>遊戲形式提高參與興趣</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>肺活量</strong>
+                      <p>增強呼吸肌肉力量</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Oral Motor Tools -->
+              <div class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-teeth"></i>
+                </div>
+                <h3 class="principle-card__title">牙膠訓練</h3>
+                <p class="principle-card__subtitle">Oral Motor Tools</p>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>咀嚼訓練</strong>
+                      <p>強化咀嚼肌肉力量</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>口腔感覺</strong>
+                      <p>提升口腔感覺意識</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>下顎穩定</strong>
+                      <p>改善下顎控制及穩定性</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>吞嚥準備</strong>
+                      <p>為安全進食做準備</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Articulation Workbook -->
+              <div class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <h3 class="principle-card__title">發音練習簿</h3>
+                <p class="principle-card__subtitle">Articulation Workbook</p>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>音節練習</strong>
+                      <p>由單音節到多音節循序漸進</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>詞語練習</strong>
+                      <p>練習常用詞語發音</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>句子練習</strong>
+                      <p>完整句子的發音訓練</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>圖文配對</strong>
+                      <p>看圖說話加強理解</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- PECS -->
+              <div class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-images"></i>
+                </div>
+                <h3 class="principle-card__title">PECS 圖片溝通系統</h3>
+                <p class="principle-card__subtitle">
+                  Picture Exchange Communication System
+                </p>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>圖片交換</strong>
+                      <p>用圖片表達需要及想法</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>主動溝通</strong>
+                      <p>鼓勵主動發起溝通</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>句子建構</strong>
+                      <p>組合圖片表達完整意思</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>減少挫敗</strong>
+                      <p>提供替代溝通方式</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Lip and Tongue Exercises -->
+              <div class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-kiss-wink-heart"></i>
+                </div>
+                <h3 class="principle-card__title">唇舌運動</h3>
+                <p class="principle-card__subtitle">Lip & Tongue Exercises</p>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>唇部運動</strong>
+                      <p>嘟嘴、微笑、吹氣等練習</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>舌頭運動</strong>
+                      <p>伸舌、捲舌、左右擺動</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>口腔操</strong>
+                      <p>系統性口肌運動練習</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>鏡子輔助</strong>
+                      <p>對鏡練習確保動作正確</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Other Activities -->
+              <div class="principle-card">
+                <div class="principle-card__icon">
+                  <i class="fas fa-music"></i>
+                </div>
+                <h3 class="principle-card__title">其他言語活動</h3>
+                <p class="principle-card__subtitle">Other Speech Activities</p>
+                <ul class="principle-card__list">
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>唱歌練習</strong>
+                      <p>透過熟悉歌曲練習發聲</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>朗讀練習</strong>
+                      <p>朗讀報紙、書籍內容</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>對話練習</strong>
+                      <p>日常對話情境練習</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                      <strong>命名練習</strong>
+                      <p>看圖說出物件名稱</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Training Methods Table -->
+      <section class="section">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__icon"><i class="fas fa-list-ol"></i></div>
+            <div class="section__title-wrap">
+              <h2 class="section__title">言語訓練方法概覽</h2>
+            </div>
+          </div>
+          <div class="section__content">
+            <div class="card">
+              <div class="card__body">
+                <div class="table-responsive">
+                  <table class="info-table">
+                    <thead>
+                      <tr>
+                        <th>訓練類別</th>
+                        <th>訓練工具</th>
+                        <th>主要功效</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>呼氣訓練</td>
+                        <td>飲管、乒乓波、羽毛、紙條</td>
+                        <td>控制呼氣力度、增強肺活量</td>
+                      </tr>
+                      <tr>
+                        <td>口肌訓練</td>
+                        <td>牙膠、口肌訓練器、壓舌板</td>
+                        <td>強化咀嚼肌、改善吞嚥</td>
+                      </tr>
+                      <tr>
+                        <td>發音訓練</td>
+                        <td>發音練習簿、圖卡、鏡子</td>
+                        <td>改善發音清晰度</td>
+                      </tr>
+                      <tr>
+                        <td>輔助溝通</td>
+                        <td>PECS圖卡、溝通板、指示卡</td>
+                        <td>提供替代溝通方式</td>
+                      </tr>
+                      <tr>
+                        <td>唇舌運動</td>
+                        <td>鏡子、棒棒糖、口肌操圖</td>
+                        <td>增強唇舌靈活度及力量</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section__header">
+            <div class="section__icon"><i class="fas fa-star"></i></div>
+            <div class="section__title-wrap">
+              <h2 class="section__title">言語訓練的好處</h2>
+            </div>
+          </div>
+          <div class="section__content">
+            <div class="card">
+              <div class="card__body">
+                <div class="columns">
+                  <div class="column">
+                    <h4><i class="fas fa-comments"></i> 溝通能力</h4>
+                    <ul>
+                      <li>改善發音清晰度</li>
+                      <li>增強表達能力</li>
+                      <li>提升溝通信心</li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <h4><i class="fas fa-utensils"></i> 進食安全</h4>
+                    <ul>
+                      <li>強化口肌力量</li>
+                      <li>改善吞嚥功能</li>
+                      <li>減少嗆咳風險</li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <h4><i class="fas fa-heart"></i> 生活質素</h4>
+                    <ul>
+                      <li>減少社交障礙</li>
+                      <li>增強自信心</li>
+                      <li>促進參與活動</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="highlight highlight--info">
+                  <div class="highlight__content">
+                    <h4>專業監督</h4>
+                    <p>
+                      所有言語訓練活動均由言語治療師設計及監督，護理員會定期向治療師匯報進度，確保訓練安全有效，並根據需要調整訓練內容。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta">
+        <div class="container">
+          <h2 class="cta__title">需要言語訓練支援？</h2>
+          <div class="cta__buttons">
+            <a href="hcw-finemotor.html" class="cta__btn cta__btn--outline">
+              <i class="fas fa-arrow-left"></i> 功能訓練支援
+            </a>
+            <a href="../contact.html" class="cta__btn cta__btn--primary">
+              <i class="fas fa-phone"></i> 立即預約諮詢
+            </a>
+            <a href="hcw.html" class="cta__btn cta__btn--secondary">
+              返回護理員服務 <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Quick Contact Section -->
+    <section class="quick-contact">
+      <div class="container">
+        <h2 class="quick-contact__title">與我們即時對話</h2>
+        <p class="quick-contact__subtitle">
+          還有其他問題嗎？我們的個案經理很樂意為您解答！
+        </p>
+        <div class="quick-contact__grid">
+          <article class="quick-contact__item">
+            <div class="quick-contact__icon"><i class="fas fa-phone"></i></div>
+            <h3>致電我們</h3>
+            <p class="quick-contact__info">
+              電話：<a href="tel:+85254736204">(852) 5473 6204</a>
+            </p>
+          </article>
+          <article class="quick-contact__item">
+            <div class="quick-contact__icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>發送電郵</h3>
+            <p class="quick-contact__info">
+              電郵：<a href="mailto:info@novahealth.com.hk"
+                >info@novahealth.com.hk</a
+              >
+            </p>
+          </article>
+          <article class="quick-contact__item">
+            <div class="quick-contact__icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>即時聯天</h3>
+            <p class="quick-contact__info">
+              WhatsApp：<a
+                href="https://wa.me/85254736204"
+                target="_blank"
+                rel="noopener noreferrer"
+                >5473 6204</a
+              >
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/85254736204"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="聯絡我們 WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__gridbox">
+            <h3>Nova Health<br />芯凝護理及物理治療有限公司</h3>
+            <p class="footer__tagline">專業．貼心．到戶</p>
+          </div>
+          <div class="footer__gridbox">
+            <h4>聯絡資訊</h4>
+            <address class="footer__contact">
+              <ul class="footer__contact">
+                <li class="footer__contact-item">
+                  <i class="fas fa-phone"></i
+                  ><a href="tel:+85254736204">+852 5473 6204</a>
+                </li>
+                <li class="footer__contact-item">
+                  <i class="fas fa-envelope"></i
+                  ><a href="mailto:info@novahealth.com.hk"
+                    >info@novahealth.com.hk</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="footer__social-links">
+              <a
+                href="https://www.facebook.com/share/1EmzWF2dpL/?mibextid=wwXIfr"
+                class="footer__social-link"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/nova_health_ltd?igsh=MXhkamI2ZndibmZ0ZQ%3D%3D&utm_source=qr"
+                class="footer__social-link"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <a href="../footer/privacy-policy.html" class="footer__link"
+            >隱私政策</a
+          >
+          <a href="../footer/terms-of-service.html" class="footer__link"
+            >客戶服務條款</a
+          >
+          <a href="../footer/terms-of-use.html" class="footer__link"
+            >使用條款</a
+          >
+          <a href="../footer/cookie-policy.html" class="footer__link"
+            >Cookies 設定</a
+          >
+        </nav>
+        <div class="footer__copyright">
+          <p>&copy; 2026 Nova Health 芯凝護理及物理治療有限公司. 版權所有.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

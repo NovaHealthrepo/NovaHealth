@@ -455,7 +455,7 @@
 .fa-shoulder::before {
   content: "\f553";
 }
-.fa-book::before{
+.fa-book::before {
   content: "\f02d";
 }
 .fa-angle-double-up::before {
@@ -2033,4 +2033,264 @@
     flex: 0 0 40%;
     max-width: 40%;
   }
+}
+
+/* ========================================
+   FONT AWESOME ICON DEFINITIONS
+   Icons used in physiotherapy pages
+   ======================================== */
+
+/* A */
+.fa-adjust::before {
+  content: "\f042";
+}
+.fa-ambulance::before {
+  content: "\f0f9";
+}
+.fa-angle-down::before {
+  content: "\f107";
+}
+.fa-angle-right::before {
+  content: "\f105";
+}
+.fa-apple-alt::before {
+  content: "\f5d1";
+}
+.fa-arrows-alt-h::before {
+  content: "\f337";
+}
+
+/* B */
+.fa-band-aid::before {
+  content: "\f462";
+}
+.fa-bell::before {
+  content: "\f0f3";
+}
+.fa-bicycle::before {
+  content: "\f206";
+}
+.fa-blanket::before {
+  content: "\f498"; /* bed */
+}
+.fa-body::before {
+  content: "\f183"; /* person */
+}
+.fa-briefcase::before {
+  content: "\f0b1";
+}
+.fa-broadcast-tower::before {
+  content: "\f519";
+}
+
+/* C */
+.fa-calculator::before {
+  content: "\f1ec";
+}
+.fa-calendar-day::before {
+  content: "\f783";
+}
+.fa-cane::before {
+  content: "\e53c"; /* person-cane */
+}
+.fa-car::before {
+  content: "\f1b9";
+}
+.fa-chalkboard-teacher::before {
+  content: "\f51c";
+}
+.fa-child::before {
+  content: "\f1ae";
+}
+.fa-clipboard-check::before {
+  content: "\f46c";
+}
+.fa-cloud::before {
+  content: "\f0c2";
+}
+.fa-cog::before {
+  content: "\f013";
+}
+.fa-comment::before {
+  content: "\f075";
+}
+.fa-compress::before {
+  content: "\f066";
+}
+
+/* D */
+.fa-disease::before {
+  content: "\f7fa";
+}
+.fa-drumstick-bite::before {
+  content: "\f6d7";
+}
+
+/* E */
+.fa-ear-listen::before {
+  content: "\f2a2"; /* assistive-listening-systems */
+}
+.fa-expand::before {
+  content: "\f065";
+}
+
+/* F */
+.fa-fan::before {
+  content: "\f863";
+}
+.fa-file-invoice-dollar::before {
+  content: "\f571";
+}
+.fa-fire::before {
+  content: "\f06d";
+}
+.fa-first-aid::before {
+  content: "\f479";
+}
+.fa-fish::before {
+  content: "\f578";
+}
+.fa-fist-raised::before {
+  content: "\f6de";
+}
+
+/* G */
+.fa-graduation-cap::before {
+  content: "\f19d";
+}
+
+/* H */
+.fa-hand-point-down::before {
+  content: "\f0a7";
+}
+.fa-head-side::before {
+  content: "\f6e9"; /* head-side-brain */
+}
+.fa-head-side-cough::before {
+  content: "\e061";
+}
+.fa-head-side-mask::before {
+  content: "\e063";
+}
+.fa-head-side-virus::before {
+  content: "\e064";
+}
+.fa-heart-broken::before {
+  content: "\f7a9";
+}
+
+/* L */
+.fa-leaf::before {
+  content: "\f06c";
+}
+.fa-leg::before {
+  content: "\f3be"; /* shoe-prints */
+}
+.fa-lips::before {
+  content: "\f600"; /* kiss */
+}
+.fa-list::before {
+  content: "\f03a";
+}
+
+/* M */
+.fa-magnet::before {
+  content: "\f076";
+}
+
+/* P */
+.fa-pencil-alt::before {
+  content: "\f303";
+}
+.fa-pills::before {
+  content: "\f484";
+}
+.fa-play-circle::before {
+  content: "\f144";
+}
+.fa-plus-circle::before {
+  content: "\f055";
+}
+.fa-praying-hands::before {
+  content: "\f684";
+}
+
+/* R */
+.fa-ruler::before {
+  content: "\f545";
+}
+.fa-ruler-combined::before {
+  content: "\f546";
+}
+
+/* S */
+.fa-screwdriver::before {
+  content: "\f54a";
+}
+.fa-search::before {
+  content: "\f002";
+}
+.fa-shower::before {
+  content: "\f2cc";
+}
+.fa-sliders-h::before {
+  content: "\f1de";
+}
+.fa-smile::before {
+  content: "\f118";
+}
+.fa-smoking-ban::before {
+  content: "\f54d";
+}
+.fa-steam::before {
+  content: "\f1b6";
+}
+.fa-sun::before {
+  content: "\f185";
+}
+.fa-swimming-pool::before {
+  content: "\f5c5";
+}
+
+/* T */
+.fa-tape::before {
+  content: "\f4db";
+}
+.fa-temperature-high::before {
+  content: "\f769";
+}
+.fa-thermometer-half::before {
+  content: "\f2c9";
+}
+.fa-thumbs-down::before {
+  content: "\f165";
+}
+.fa-tshirt::before {
+  content: "\f553";
+}
+
+/* U */
+.fa-user-shield::before {
+  content: "\f505";
+}
+.fa-utensils::before {
+  content: "\f2e7";
+}
+
+/* V */
+.fa-virus-slash::before {
+  content: "\e075";
+}
+.fa-volume-up::before {
+  content: "\f028";
+}
+
+/* W */
+.fa-water::before {
+  content: "\f773";
+}
+
+/* Y */
+.fa-yin-yang::before {
+  content: "\f6ad";
 }
