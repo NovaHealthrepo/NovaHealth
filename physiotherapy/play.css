@@ -3,7 +3,12 @@
    Mobile First Design
    Breakpoints: 768px, 1200px
    ============================================== */
-
+.fa-level-up-alt::before {
+  content: "\f3bf";
+}
+.fa-play-circle::before {
+  content: "\f144";
+}
 /* #region Hero Section */
 .hero {
   background: linear-gradient(145deg, #004d47 0%, #00847d 50%, #006d66 100%);

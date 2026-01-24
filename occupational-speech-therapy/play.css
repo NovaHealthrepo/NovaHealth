@@ -3,7 +3,12 @@
    Mobile First Design
    Breakpoints: 768px, 1200px
    ============================================== */
-
+.fa-level-up-alt::before {
+  content: "\f3bf";
+}
+.fa-play-circle::before {
+  content: "\f144";
+}
 /* #region Hero Section */
 .hero {
   background: linear-gradient(145deg, #004d47 0%, #00847d 50%, #006d66 100%);
@@ -204,6 +209,11 @@
   background: linear-gradient(135deg, #00847d 0%, #6c63ff 100%);
 }
 
+.play-category__tag--ot {
+  background: linear-gradient(135deg, #6c63ff 0%, #8b5cf6 100%);
+  box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+}
+
 .play-category__tag--speech {
   background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%);
   box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
@@ -292,6 +302,17 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.play-card__intro {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #f0f9f8 0%, #e8f5f4 100%);
+  border-radius: 8px;
+  border-left: 3px solid var(--primary-color);
 }
 
 .play-card__section {
