@@ -2,25 +2,34 @@ document.addEventListener("DOMContentLoaded", () => {
   // Set header height for mobile nav positioning - optimized to prevent forced reflow
   const header = document.querySelector(".header");
   if (header) {
+    // Cache the header height to avoid repeated reads
+    let cachedHeaderHeight = null;
+
     const setHeaderHeight = () => {
-      // Use requestAnimationFrame to batch DOM reads/writes
+      // Batch the layout read in one RAF
       requestAnimationFrame(() => {
         const headerHeight = header.offsetHeight;
-        requestAnimationFrame(() => {
-          document.documentElement.style.setProperty(
-            "--header-height",
-            `${headerHeight}px`
-          );
-        });
+        cachedHeaderHeight = headerHeight;
+
+        // Batch the DOM write in the same RAF
+        document.documentElement.style.setProperty(
+          "--header-height",
+          `${headerHeight}px`,
+        );
       });
     };
+
     setHeaderHeight();
 
     // Debounce resize event to reduce reflow frequency
     let resizeTimer;
     window.addEventListener("resize", () => {
       clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(setHeaderHeight, 150);
+      resizeTimer = setTimeout(() => {
+        // Invalidate cache on resize
+        cachedHeaderHeight = null;
+        setHeaderHeight();
+      }, 150);
     });
   }
 
@@ -145,8 +154,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalCards = newsCards.length;
     let currentIndex = 0;
 
+    // Cache viewport width to avoid repeated reads
+    let cachedViewportWidth = window.innerWidth;
+
     // Function to check screen size
-    const isMobile = () => window.innerWidth <= 900;
+    const isMobile = () => cachedViewportWidth <= 900;
 
     // Calculate max index based on screen size
     const getMaxIndex = () => {
@@ -154,17 +166,19 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const updateSlider = () => {
-      // Calculate transform based on current index
-      const gap = isMobile() ? 0 : 2.4; // Gap percentage
-      const moveAmount = isMobile()
-        ? currentIndex * 100
-        : currentIndex * (50 + gap);
+      // Batch all DOM writes in requestAnimationFrame
+      requestAnimationFrame(() => {
+        const gap = isMobile() ? 0 : 2.4; // Gap percentage
+        const moveAmount = isMobile()
+          ? currentIndex * 100
+          : currentIndex * (50 + gap);
 
-      newsTrack.style.transform = `translateX(-${moveAmount}%)`;
+        newsTrack.style.transform = `translateX(-${moveAmount}%)`;
 
-      // Update button states
-      prevBtn.disabled = currentIndex === 0;
-      nextBtn.disabled = currentIndex >= getMaxIndex();
+        // Update button states
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex >= getMaxIndex();
+      });
     };
 
     nextBtn.addEventListener("click", () => {
@@ -186,6 +200,9 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", () => {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
+        // Update cached viewport width
+        cachedViewportWidth = window.innerWidth;
+
         // Reset to first slide on resize to avoid display issues
         if (currentIndex > getMaxIndex()) {
           currentIndex = getMaxIndex();
@@ -224,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Show target content
         const targetContent = document.querySelector(
-          `.services-tabs__content[data-content="${targetTab}"]`
+          `.services-tabs__content[data-content="${targetTab}"]`,
         );
         if (targetContent) {
           targetContent.classList.add("services-tabs__content--active");
@@ -237,7 +254,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Use arrow keys to switch tabs
       if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
         const activeButton = document.querySelector(
-          ".services-tabs__btn--active"
+          ".services-tabs__btn--active",
         );
         if (!activeButton) return;
 
@@ -264,7 +281,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextArrow = document.querySelector(".template-gallery__arrow--right");
   const indicators = document.querySelectorAll(".template-gallery__indicator");
   const galleryContainer = document.querySelector(
-    ".template-gallery__container"
+    ".template-gallery__container",
   );
 
   let currentTemplateIndex = 0;
@@ -326,7 +343,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (galleryContainer) {
     galleryContainer.addEventListener("click", () => {
       const activeImage = document.querySelector(
-        ".template-gallery__image.active"
+        ".template-gallery__image.active",
       );
       if (activeImage) {
         openModal(activeImage.src, activeImage.alt);
