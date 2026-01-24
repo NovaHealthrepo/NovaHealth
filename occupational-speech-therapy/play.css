@@ -9,6 +9,27 @@
 .fa-play-circle::before {
   content: "\f144";
 }
+.fa-gamepad::before {
+  content: "\f11b";
+}
+.fa-coins::before {
+  content: "\f51e";
+}
+.fa-hand-sparkles::before {
+  content: "\e05d";
+}
+.fa-drum::before {
+  content: "\f569";
+}
+.fa-palette::before {
+  content: "\f53f";
+}
+.fa-comment-dots::before {
+  content: "\f4ad";
+}
+.fa-candy-cane::before {
+  content: "\f786";
+}
 /* #region Hero Section */
 .hero {
   background: linear-gradient(145deg, #004d47 0%, #00847d 50%, #006d66 100%);

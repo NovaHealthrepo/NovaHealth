@@ -9,6 +9,27 @@
 .fa-play-circle::before {
   content: "\f144";
 }
+.fa-gamepad::before {
+  content: "\f11b";
+}
+.fa-bowling-ball::before {
+  content: "\f436";
+}
+.fa-user-friends::before {
+  content: "\f500";
+}
+.fa-volleyball-ball::before {
+  content: "\f45f";
+}
+.fa-palette::before {
+  content: "\f53f";
+}
+.fa-music::before {
+  content: "\f001";
+}
+.fa-fist-raised::before {
+  content: "\f6de";
+}
 /* #region Hero Section */
 .hero {
   background: linear-gradient(145deg, #004d47 0%, #00847d 50%, #006d66 100%);
