@@ -1224,19 +1224,6 @@
   }
 }
 
-@media (max-width: 480px) {
-  .table-responsive {
-    margin: 0.75rem -0.5rem 1rem;
-    padding: 0 0.5rem;
-  }
-
-  .info-table thead th,
-  .info-table tbody td {
-    padding: 0.625rem 0.75rem;
-    font-size: 0.8rem;
-  }
-}
-
 .highlight {
   display: flex;
   gap: 1rem;
