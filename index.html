@@ -1254,5 +1254,272 @@
       </div>
 
     <script src="script.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        /* Testimonials Infinite Loop Logic */
+        const track = document.querySelector(".testimonials__track");
+        if (track) {
+          // Clone all children (cards) and append them to the end
+          // This creates the [Set A][Set A] structure needed for infinite scrolling
+          const cards = Array.from(track.children);
+          cards.forEach((card) => {
+            const clone = card.cloneNode(true);
+            // Ensure aria-hidden is true for clones to avoid screen reader duplication
+            clone.setAttribute("aria-hidden", "true");
+            track.appendChild(clone);
+          });
+        }
+
+        /* =========================================================================
+           Latest News Slider
+           ========================================================================= */
+        const newsTrack = document.querySelector(".latest-news__track");
+        const prevBtn = document.querySelector(".latest-news__btn--prev");
+        const nextBtn = document.querySelector(".latest-news__btn--next");
+
+        if (newsTrack && prevBtn && nextBtn) {
+          const newsCards = newsTrack.querySelectorAll(".news-card");
+          const totalCards = newsCards.length;
+          let currentIndex = 0;
+
+          // Cache viewport width to avoid repeated reads
+          let cachedViewportWidth = window.innerWidth;
+
+          // Function to check screen size
+          const isMobile = () => cachedViewportWidth <= 900;
+
+          // Calculate max index based on screen size
+          const getMaxIndex = () => {
+            return isMobile() ? totalCards - 1 : Math.max(0, totalCards - 2); // Mobile: last card, Desktop: last pair
+          };
+
+          const updateSlider = () => {
+            // Batch all DOM writes in requestAnimationFrame
+            requestAnimationFrame(() => {
+              const gap = isMobile() ? 0 : 2.4; // Gap percentage
+              const moveAmount = isMobile()
+                ? currentIndex * 100
+                : currentIndex * (50 + gap);
+
+              newsTrack.style.transform = `translateX(-${moveAmount}%)`;
+
+              // Update button states
+              prevBtn.disabled = currentIndex === 0;
+              nextBtn.disabled = currentIndex >= getMaxIndex();
+            });
+          };
+
+          nextBtn.addEventListener("click", () => {
+            if (currentIndex < getMaxIndex()) {
+              currentIndex++;
+              updateSlider();
+            }
+          });
+
+          prevBtn.addEventListener("click", () => {
+            if (currentIndex > 0) {
+              currentIndex--;
+              updateSlider();
+            }
+          });
+
+          // Reset on window resize
+          let resizeTimer;
+          window.addEventListener("resize", () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+              // Update cached viewport width
+              cachedViewportWidth = window.innerWidth;
+
+              // Reset to first slide on resize to avoid display issues
+              if (currentIndex > getMaxIndex()) {
+                currentIndex = getMaxIndex();
+              }
+              updateSlider();
+            }, 250);
+          });
+
+          // Initialize
+          updateSlider();
+        }
+
+        /* =========================================================================
+           Services Tabs Switching
+           ========================================================================= */
+        const tabButtons = document.querySelectorAll(".services-tabs__btn");
+        const tabContents = document.querySelectorAll(".services-tabs__content");
+
+        if (tabButtons.length > 0 && tabContents.length > 0) {
+          tabButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+              const targetTab = button.getAttribute("data-tab");
+
+              // Remove active class from all buttons
+              tabButtons.forEach((btn) => {
+                btn.classList.remove("services-tabs__btn--active");
+              });
+
+              // Add active class to clicked button
+              button.classList.add("services-tabs__btn--active");
+
+              // Hide all content
+              tabContents.forEach((content) => {
+                content.classList.remove("services-tabs__content--active");
+              });
+
+              // Show target content
+              const targetContent = document.querySelector(
+                `.services-tabs__content[data-content="${targetTab}"]`,
+              );
+              if (targetContent) {
+                targetContent.classList.add("services-tabs__content--active");
+              }
+            });
+          });
+
+          // Keyboard navigation for tabs
+          document.addEventListener("keydown", (e) => {
+            // Use arrow keys to switch tabs
+            if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+              const activeButton = document.querySelector(
+                ".services-tabs__btn--active",
+              );
+              if (!activeButton) return;
+
+              const buttons = Array.from(tabButtons);
+              const currentIndex = buttons.indexOf(activeButton);
+
+              let newIndex;
+              if (e.key === "ArrowRight") {
+                newIndex = (currentIndex + 1) % buttons.length;
+              } else {
+                newIndex = (currentIndex - 1 + buttons.length) % buttons.length;
+              }
+
+              buttons[newIndex].click();
+            }
+          });
+        }
+
+        /* =========================================================================
+           Template Gallery
+           ========================================================================= */
+        const templateImages = document.querySelectorAll(".template-gallery__image");
+        const prevArrow = document.querySelector(".template-gallery__arrow--left");
+        const nextArrow = document.querySelector(".template-gallery__arrow--right");
+        const indicators = document.querySelectorAll(".template-gallery__indicator");
+        const galleryContainer = document.querySelector(
+          ".template-gallery__container",
+        );
+
+        let currentTemplateIndex = 0;
+
+        function showTemplate(index) {
+          // Remove active class from all images and indicators
+          templateImages.forEach((img) => img.classList.remove("active"));
+          indicators.forEach((ind) => ind.classList.remove("active"));
+
+          // Add active class to current image and indicator
+          if (templateImages[index]) {
+            templateImages[index].classList.add("active");
+          }
+          if (indicators[index]) {
+            indicators[index].classList.add("active");
+          }
+
+          currentTemplateIndex = index;
+        }
+
+        function nextTemplate() {
+          const nextIndex = (currentTemplateIndex + 1) % templateImages.length;
+          showTemplate(nextIndex);
+        }
+
+        function prevTemplate() {
+          const nextIndex =
+            (currentTemplateIndex - 1 + templateImages.length) %
+            templateImages.length;
+          showTemplate(nextIndex);
+        }
+
+        // Arrow button events
+        if (nextArrow) {
+          nextArrow.addEventListener("click", nextTemplate);
+        }
+
+        if (prevArrow) {
+          prevArrow.addEventListener("click", prevTemplate);
+        }
+
+        // Indicator click events
+        indicators.forEach((indicator, index) => {
+          indicator.addEventListener("click", () => {
+            showTemplate(index);
+          });
+        });
+
+        // Keyboard navigation for template gallery
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowLeft") {
+            if (prevArrow) prevTemplate();
+          } else if (e.key === "ArrowRight") {
+            if (nextArrow) nextTemplate();
+          }
+        });
+
+        // Click to enlarge
+        if (galleryContainer) {
+          galleryContainer.addEventListener("click", () => {
+            const activeImage = document.querySelector(
+              ".template-gallery__image.active",
+            );
+            if (activeImage) {
+              openModal(activeImage.src, activeImage.alt);
+            }
+          });
+        }
+
+        // Modal functionality
+        function openModal(src, alt) {
+          // Create modal if it doesn't exist
+          let modal = document.querySelector(".template-modal");
+          if (!modal) {
+            modal = document.createElement("div");
+            modal.className = "template-modal";
+            modal.innerHTML = `
+              <button class="template-modal__close" aria-label="關閉">&times;</button>
+              <img class="template-modal__content" src="" alt="">
+            `;
+            document.body.appendChild(modal);
+
+            // Close modal on click
+            const closeBtn = modal.querySelector(".template-modal__close");
+            closeBtn.addEventListener("click", () => {
+              modal.classList.remove("active");
+            });
+
+            // Close modal on background click
+            modal.addEventListener("click", (e) => {
+              if (e.target === modal) {
+                modal.classList.remove("active");
+              }
+            });
+
+            // Close modal on Escape key
+            document.addEventListener("keydown", (e) => {
+              if (e.key === "Escape" && modal.classList.contains("active")) {
+                modal.classList.remove("active");
+              }
+            });
+          }
+
+          // Set image and show modal
+          const modalImg = modal.querySelector(".template-modal__content");
+          modalImg.src = src;
+          modalImg.alt = alt;
+          modal.classList.add("active");
+        }
+      });
+    </script>
   </body>
 </html>
