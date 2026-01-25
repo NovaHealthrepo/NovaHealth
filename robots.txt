@@ -1,0 +1,13 @@
+# robots.txt for Nova Health
+# https://www.novahealth.com.hk
+
+User-agent: *
+Allow: /
+
+# Disallow crawling of non-content files
+Disallow: /fonts/
+Disallow: /*.css$
+Disallow: /*.js$
+
+# Sitemap location
+Sitemap: https://www.novahealth.com.hk/sitemap.xml
