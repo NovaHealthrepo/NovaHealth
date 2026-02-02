@@ -99,7 +99,7 @@
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../physiotherapy/play-therapy.html"
+                    href="../physiotherapy/pt-play-therapy.html"
                     class="nav__submenu-link"
                     >遊戲治療</a
                   >
@@ -134,7 +134,7 @@
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../occupational-speech-therapy/play-therapy.html"
+                    href="../occupational-speech-therapy/otst-play-therapy.html"
                     class="nav__submenu-link"
                     >遊戲治療</a
                   >
