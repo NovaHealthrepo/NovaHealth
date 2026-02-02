@@ -6,8 +6,7 @@ Allow: /
 
 # Disallow crawling of non-content files
 Disallow: /fonts/
-Disallow: /*.css$
-Disallow: /*.js$
+Disallow: /cdn-cgi/
 
 # Sitemap location
 Sitemap: https://www.novahealth.com.hk/sitemap.xml
