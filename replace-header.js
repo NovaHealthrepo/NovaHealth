@@ -34,7 +34,7 @@ function findHtmlFiles(dir, fileList = []) {
       ) {
         findHtmlFiles(filePath, fileList);
       }
-    } else if (file.endsWith(".html")) {
+    } else if (file.endsWith("")) {
       fileList.push(filePath);
     }
   }
@@ -68,10 +68,10 @@ function adjustHeaderForFile(headerContent, htmlPath) {
   if (prefix === "./") {
     // Root level files: replace "../" with "./"
     return headerContent
-      .replace(/href="\.\.\/index\.html"/g, 'href="./index.html"')
-      .replace(/href="\.\.\/pricing\.html"/g, 'href="./pricing.html"')
-      .replace(/href="\.\.\/join-us\.html"/g, 'href="./join-us.html"')
-      .replace(/href="\.\.\/contact\.html"/g, 'href="./contact.html"')
+      .replace(/href="\.\.\/index\"/g, 'href="./index"')
+      .replace(/href="\.\.\/pricing\"/g, 'href="./pricing"')
+      .replace(/href="\.\.\/join-us\"/g, 'href="./join-us"')
+      .replace(/href="\.\.\/contact\"/g, 'href="./contact"')
       .replace(/href="\.\.\/about-us\//g, 'href="./about-us/')
       .replace(/href="\.\.\/health-info\//g, 'href="./health-info/')
       .replace(/href="\.\.\/physiotherapy\//g, 'href="./physiotherapy/')

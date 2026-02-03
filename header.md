@@ -1,6 +1,6 @@
     <header class="header" id="main-header">
       <div class="container header__container">
-        <a href="../index.html" class="brand">
+        <a href="../index" class="brand">
           <div class="brand__icon">
             <i class="fas fa-heartbeat"></i>
           </div>
@@ -17,7 +17,7 @@
         <nav class="nav" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="../index.html" class="nav__link">主頁</a>
+              <a href="../index" class="nav__link">主頁</a>
             </li>
             <li class="nav__item nav__item--has-submenu">
               <div class="nav__link">
@@ -25,18 +25,18 @@
               </div>
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
-                  <a href="../about-us/about-us.html" class="nav__submenu-link"
+                  <a href="../about-us/about-us" class="nav__submenu-link"
                     >關於我們</a
                   >
                 </li>
                 <li class="nav__submenu-item">
-                  <a href="../about-us/news-001.html" class="nav__submenu-link"
+                  <a href="../about-us/news-001" class="nav__submenu-link"
                     >最新消息</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../about-us/our-strengths.html"
+                    href="../about-us/our-strengths"
                     class="nav__submenu-link"
                     >為何選擇芯凝</a
                   >
@@ -50,14 +50,14 @@
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a
-                    href="../health-info/case-sharing.html"
+                    href="../health-info/case-sharing"
                     class="nav__submenu-link"
                     >個案分享</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../health-info/health-article.html"
+                    href="../health-info/health-article"
                     class="nav__submenu-link"
                     >健康專欄</a
                   >
@@ -71,42 +71,42 @@
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a
-                    href="../physiotherapy/physiotherapy-services.html"
+                    href="../physiotherapy/physiotherapy-services"
                     class="nav__submenu-link"
                     >服務模式</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../physiotherapy/physiotherapy-stroke.html"
+                    href="../physiotherapy/physiotherapy-stroke"
                     class="nav__submenu-link"
                     >中風康復</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../physiotherapy/physiotherapy-parkinson.html"
+                    href="../physiotherapy/physiotherapy-parkinson"
                     class="nav__submenu-link"
                     >柏金遜症</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../physiotherapy/physiotherapy-post-operation.html"
+                    href="../physiotherapy/physiotherapy-post-operation"
                     class="nav__submenu-link"
                     >術後康復</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../physiotherapy/pt-play-therapy.html"
+                    href="../physiotherapy/pt-play-therapy"
                     class="nav__submenu-link"
                     >遊戲治療</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../physiotherapy/physiotherapy-other-diseases.html"
+                    href="../physiotherapy/physiotherapy-other-diseases"
                     class="nav__submenu-link"
                     >其他疾病</a
                   >
@@ -120,28 +120,28 @@
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a
-                    href="../occupational-speech-therapy/occupational-therapy.html"
+                    href="../occupational-speech-therapy/occupational-therapy"
                     class="nav__submenu-link"
                     >職業治療</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../occupational-speech-therapy/speech-therapy.html"
+                    href="../occupational-speech-therapy/speech-therapy"
                     class="nav__submenu-link"
                     >言語治療</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../occupational-speech-therapy/otst-play-therapy.html"
+                    href="../occupational-speech-therapy/otst-play-therapy"
                     class="nav__submenu-link"
                     >遊戲治療</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../occupational-speech-therapy/communication-strategy.html"
+                    href="../occupational-speech-therapy/communication-strategy"
                     class="nav__submenu-link"
                     >溝通技巧</a
                   >
@@ -155,40 +155,40 @@
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a
-                    href="../nursing/chronic-disease.html"
+                    href="../nursing/chronic-disease"
                     class="nav__submenu-link"
                     >慢性疾病管理</a
                   >
                 </li>
                 <li class="nav__submenu-item">
-                  <a href="../nursing/dialysis.html" class="nav__submenu-link"
+                  <a href="../nursing/dialysis" class="nav__submenu-link"
                     >腹膜透析護理</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../nursing/post-operation.html"
+                    href="../nursing/post-operation"
                     class="nav__submenu-link"
                     >術後護理</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../nursing/catheter-care.html"
+                    href="../nursing/catheter-care"
                     class="nav__submenu-link"
                     >導管護理</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../nursing/medication-injection.html"
+                    href="../nursing/medication-injection"
                     class="nav__submenu-link"
                     >藥物管理及注射治療</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../nursing/nutrition-care.html"
+                    href="../nursing/nutrition-care"
                     class="nav__submenu-link"
                     >營養護理</a
                   >
@@ -202,14 +202,14 @@
               <ul class="nav__submenu">
                 <li class="nav__submenu-item">
                   <a
-                    href="../home-care-worker/medical-escort.html"
+                    href="../home-care-worker/medical-escort"
                     class="nav__submenu-link"
                     >陪診</a
                   >
                 </li>
                 <li class="nav__submenu-item">
                   <a
-                    href="../home-care-worker/hcw.html"
+                    href="../home-care-worker/hcw"
                     class="nav__submenu-link"
                     >護理員</a
                   >
@@ -217,13 +217,13 @@
               </ul>
             </li>
             <li class="nav__item">
-              <a href="../pricing.html" class="nav__link">收費</a>
+              <a href="../pricing" class="nav__link">收費</a>
             </li>
             <li class="nav__item">
-              <a href="../join-us.html" class="nav__link">加入我們</a>
+              <a href="../join-us" class="nav__link">加入我們</a>
             </li>
             <li class="nav__item">
-              <a href="../contact.html" class="nav__link nav__link--cta"
+              <a href="../contact" class="nav__link nav__link--cta"
                 >聯絡我們</a
               >
             </li>

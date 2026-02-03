@@ -1,8 +1,8 @@
 1. you can use style from main.css, but main.css is never edited
-2. physiotherapy-service.html contains header, quick contact, and footer, and they should not be removed
-3. create the skeleton of physiotherapy-services.html containing the following content
+2. physiotherapy-service contains header, quick contact, and footer, and they should not be removed
+3. create the skeleton of physiotherapy-services containing the following content
    (a) header(already created)
-   (b) section (hero, style copy from NovaHealth/about-us/about-us.html)
+   (b) section (hero, style copy from NovaHealth/about-us/about-us)
    (c) section(introduction, use ../images/ptservice-001.webp)
    物理治療個案經理
    i. 前線管理一體化(既是物理治療師又負責管理排程，跨專業合作)

@@ -1,4 +1,4 @@
-# Hero Section Styles (about-us.html)
+# Hero Section Styles (about-us)
 
 ## HTML Structure
 
@@ -15,11 +15,11 @@
       致力為長者提供優質上門復康護理服務
     </p>
     <div class="about-hero__actions">
-      <a href="../contact.html" class="button button--hero-primary">
+      <a href="../contact" class="button button--hero-primary">
         <i class="fas fa-phone-alt"></i>
         聯絡我們
       </a>
-      <a href="../pricing.html" class="button button--hero-outline">
+      <a href="../pricing" class="button button--hero-outline">
         <i class="fas fa-tags"></i>
         收費詳情
       </a>

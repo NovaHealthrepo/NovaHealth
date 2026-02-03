@@ -33,7 +33,7 @@ function findHtmlFiles(dir, fileList = []) {
       ) {
         findHtmlFiles(filePath, fileList);
       }
-    } else if (file.endsWith(".html")) {
+    } else if (file.endsWith("")) {
       fileList.push(filePath);
     }
   }

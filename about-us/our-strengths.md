@@ -10,7 +10,7 @@ mobile# Our Strengths 页面完整开发计划
 
 ### 1. Hero 区域
 
-- **背景**: 蓝色渐变 + 几何图案动画 (参考 about-us.html 的 .about-hero)
+- **背景**: 蓝色渐变 + 几何图案动画 (参考 about-us 的 .about-hero)
 - **动画**: 背景渐变流动动画
 - **副标题**: "数据驱动复康 · 科技赋能护理 · 透明追踪进度"
 - **CTA 按钮**: 在 Hero 区域即可
@@ -86,7 +86,7 @@ mobile# Our Strengths 页面完整开发计划
       数据驱动复康 · 科技赋能护理 · 透明追踪进度
     </p>
     <div class="about-hero__cta">
-      <a href="../contact.html" class="button button--primary">
+      <a href="../contact" class="button button--primary">
         <i class="fas fa-calendar-check"></i> 立即预约免费评估
       </a>
       <a href="#strengths" class="button button--outline smooth-scroll">
@@ -1140,7 +1140,7 @@ document.addEventListener("DOMContentLoaded", initGallery);
 
 ### 需要创建/修改的文件
 
-1. ✅ **our-strengths.html** - 主页面 HTML
+1. ✅ **our-strengths** - 主页面 HTML
 2. ✅ **our-strengths.css** - 页面专属样式
 3. ✅ **our-strengths.js** - 页面交互脚本
 
@@ -1231,7 +1231,7 @@ document.addEventListener("DOMContentLoaded", initGallery);
 
 ### Step 1: 基础结构 (1-2 小时)
 
-1. 复制 `our-strengths.html` 框架
+1. 复制 `our-strengths` 框架
 2. 添加 Hero 区域 HTML
 3. 添加 5 项优势区域 HTML
 4. 添加透明化系统区域 HTML
@@ -1286,7 +1286,7 @@ document.addEventListener("DOMContentLoaded", initGallery);
 
 准备好开始实施了吗？我会：
 
-1. 完整编写 `our-strengths.html`
+1. 完整编写 `our-strengths`
 2. 完整编写 `our-strengths.css`
 3. 完整编写 `our-strengths.js`
 
