@@ -6,6 +6,8 @@ h3 {
   text-align: left;
 }
 
+.quick-contact__item h3 {text-align: center;}
+
 /* Hero Section */
 .footer-page-hero {
   background: linear-gradient(135deg, #004d5a 0%, #005f73 100%);
