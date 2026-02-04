@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://www.novahealth.com.hk/index</loc>
+    <loc>https://novahealth.com.hk/index</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/contact</loc>
+    <loc>https://novahealth.com.hk/contact</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/pricing</loc>
+    <loc>https://novahealth.com.hk/pricing</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/join-us</loc>
+    <loc>https://novahealth.com.hk/join-us</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -28,49 +28,49 @@
 
   <!-- About Us Section -->
   <url>
-    <loc>https://www.novahealth.com.hk/about-us/about-us</loc>
+    <loc>https://novahealth.com.hk/about-us/about-us</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/about-us/our-strengths</loc>
+    <loc>https://novahealth.com.hk/about-us/our-strengths</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/about-us/news-001</loc>
+    <loc>https://novahealth.com.hk/about-us/news-001</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/about-us/news-002</loc>
+    <loc>https://novahealth.com.hk/about-us/news-002</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/about-us/news-003</loc>
+    <loc>https://novahealth.com.hk/about-us/news-003</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/about-us/news-004</loc>
+    <loc>https://novahealth.com.hk/about-us/news-004</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/about-us/news-005</loc>
+    <loc>https://novahealth.com.hk/about-us/news-005</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/about-us/news-006</loc>
+    <loc>https://novahealth.com.hk/about-us/news-006</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -78,55 +78,55 @@
 
   <!-- Health Info Section -->
   <url>
-    <loc>https://www.novahealth.com.hk/health-info/health-article</loc>
+    <loc>https://novahealth.com.hk/health-info/health-article</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/health-info/case-sharing</loc>
+    <loc>https://novahealth.com.hk/health-info/case-sharing</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/health-info/article-001</loc>
+    <loc>https://novahealth.com.hk/health-info/article-001</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/health-info/article-002</loc>
+    <loc>https://novahealth.com.hk/health-info/article-002</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/health-info/article-003</loc>
+    <loc>https://novahealth.com.hk/health-info/article-003</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/health-info/article-004</loc>
+    <loc>https://novahealth.com.hk/health-info/article-004</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/health-info/article-005</loc>
+    <loc>https://novahealth.com.hk/health-info/article-005</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/health-info/article-006</loc>
+    <loc>https://novahealth.com.hk/health-info/article-006</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/health-info/article-007</loc>
+    <loc>https://novahealth.com.hk/health-info/article-007</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -134,211 +134,211 @@
 
   <!-- Physiotherapy Section -->
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-services</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-services</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-stroke</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-stroke</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-stroke-advantage</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-stroke-advantage</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-stroke-caregiver</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-stroke-caregiver</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-stroke-case</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-stroke-case</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-stroke-equipments</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-stroke-equipments</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-stroke-mild</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-stroke-mild</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-stroke-moderate</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-stroke-moderate</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-stroke-severe</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-stroke-severe</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-stroke-theory</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-stroke-theory</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-stroke-UL-moderate</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-stroke-UL-moderate</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-stroke-UL-severe</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-stroke-UL-severe</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-parkinson</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-parkinson</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-parkinson-advantage</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-parkinson-advantage</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-parkinson-balance</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-parkinson-balance</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-parkinson-caregiver</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-parkinson-caregiver</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-parkinson-case</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-parkinson-case</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-parkinson-flexibility</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-parkinson-flexibility</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-parkinson-gait</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-parkinson-gait</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-parkinson-symptoms</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-parkinson-symptoms</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-parkinson-theory</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-parkinson-theory</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-dementia</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-dementia</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-neurodegeneration</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-neurodegeneration</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-osteoarthritis</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-osteoarthritis</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-muscle-pain</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-muscle-pain</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-copd</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-copd</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-sarcopenia</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-sarcopenia</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-respiratory</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-respiratory</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-regular-exercise</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-regular-exercise</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-post-operation</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-post-operation</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-post-operation-hip</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-post-operation-hip</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-post-operation-knee</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-post-operation-knee</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-post-operation-distalradius</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-post-operation-distalradius</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/physiotherapy-other-diseases</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/physiotherapy-other-diseases</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/physiotherapy/pt-play-therapy</loc>
+    <loc>https://novahealth.com.hk/physiotherapy/pt-play-therapy</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -346,109 +346,109 @@
 
   <!-- Occupational & Speech Therapy Section -->
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/occupational-therapy</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/occupational-therapy</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/ot-services</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/ot-services</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/ot-stroke</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/ot-stroke</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/ot-parkinson</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/ot-parkinson</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/ot-dementia</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/ot-dementia</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/ot-cognitive</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/ot-cognitive</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/ot-fine-motor</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/ot-fine-motor</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/ot-adl</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/ot-adl</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/ot-home-modification</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/ot-home-modification</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/ot-caregiver</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/ot-caregiver</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/speech-therapy</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/speech-therapy</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/speech-therapy-services</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/speech-therapy-services</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/speech-therapy-dysphagia</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/speech-therapy-dysphagia</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/speech-therapy-language</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/speech-therapy-language</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/speech-therapy-advantage</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/speech-therapy-advantage</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/speech-therapy-caregiver</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/speech-therapy-caregiver</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/communication-strategy</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/communication-strategy</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/occupational-speech-therapy/otst-play-therapy</loc>
+    <loc>https://novahealth.com.hk/occupational-speech-therapy/otst-play-therapy</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -456,37 +456,37 @@
 
   <!-- Nursing Section -->
   <url>
-    <loc>https://www.novahealth.com.hk/nursing/catheter-care</loc>
+    <loc>https://novahealth.com.hk/nursing/catheter-care</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/nursing/chronic-disease</loc>
+    <loc>https://novahealth.com.hk/nursing/chronic-disease</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/nursing/dialysis</loc>
+    <loc>https://novahealth.com.hk/nursing/dialysis</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/nursing/medication-injection</loc>
+    <loc>https://novahealth.com.hk/nursing/medication-injection</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/nursing/nutrition-care</loc>
+    <loc>https://novahealth.com.hk/nursing/nutrition-care</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/nursing/post-operation</loc>
+    <loc>https://novahealth.com.hk/nursing/post-operation</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -494,43 +494,43 @@
 
   <!-- Home Care Worker Section -->
   <url>
-    <loc>https://www.novahealth.com.hk/home-care-worker/hcw</loc>
+    <loc>https://novahealth.com.hk/home-care-worker/hcw</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/home-care-worker/hcw-cognitive</loc>
+    <loc>https://novahealth.com.hk/home-care-worker/hcw-cognitive</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/home-care-worker/hcw-exercise</loc>
+    <loc>https://novahealth.com.hk/home-care-worker/hcw-exercise</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/home-care-worker/hcw-finemotor</loc>
+    <loc>https://novahealth.com.hk/home-care-worker/hcw-finemotor</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/home-care-worker/hcw-nursing</loc>
+    <loc>https://novahealth.com.hk/home-care-worker/hcw-nursing</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/home-care-worker/hcw-speech</loc>
+    <loc>https://novahealth.com.hk/home-care-worker/hcw-speech</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/home-care-worker/medical-escort</loc>
+    <loc>https://novahealth.com.hk/home-care-worker/medical-escort</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -538,25 +538,25 @@
 
   <!-- Footer/Legal Pages -->
   <url>
-    <loc>https://www.novahealth.com.hk/footer/cookie-policy</loc>
+    <loc>https://novahealth.com.hk/footer/cookie-policy</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/footer/privacy-policy</loc>
+    <loc>https://novahealth.com.hk/footer/privacy-policy</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/footer/terms-of-service</loc>
+    <loc>https://novahealth.com.hk/footer/terms-of-service</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.novahealth.com.hk/footer/terms-of-use</loc>
+    <loc>https://novahealth.com.hk/footer/terms-of-use</loc>
     <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
