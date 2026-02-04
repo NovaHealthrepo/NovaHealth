@@ -1,12 +1,28 @@
+# Prevent directory listing
+Options -Indexes
+
+# Protect .htaccess file
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
 RewriteEngine On
 RewriteBase /
 
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove www from domain
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+# Redirect .html extension to extensionless URL
+RewriteCond %{THE_REQUEST} \s/+([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R=301]
 
+# Internally rewrite extensionless URLs to .html files
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
