@@ -46,6 +46,9 @@
     <title>
       晝夜節律與體溫：為什麼傍晚時分的發燒，通常比早上的更令人擔心 | Nova Health
     </title>
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="../fonts/noto-serif-tc/NotoSerifTC-SemiBold-Subset.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../fonts/fontawesome/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="article.css" />
   
@@ -102,6 +105,7 @@
     </script>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">跳到主要內容</a>
     <header class="header" id="main-header">
       <div class="container header__container">
         <a href="../" class="brand">
@@ -337,7 +341,7 @@
     </header>
 
     <!-- Main Content Area -->
-    <main>
+    <main id="main-content">
       <!-- Hero Section -->
       <section class="article-hero">
         <div class="container article-hero__content">
