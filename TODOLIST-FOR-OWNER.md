@@ -2,6 +2,28 @@
 
 > 這些是 Claude 無法自動完成的任務，需要你醒來後處理。
 
+## 緊急
+
+### 0. Cloudflare 設定問題 (需盡快處理)
+
+#### www 重定向故障
+- [ ] **www.novahealth.com.hk 回傳 Error 522 (Connection timed out)**
+- 原因：Cloudflare 的 www 子域未正確設定
+- 修復方法：在 Cloudflare Dashboard → DNS 添加 CNAME record: `www` → `novahealth.com.hk`
+- 或添加 Page Rule: `www.novahealth.com.hk/*` → 301 Redirect → `https://novahealth.com.hk/$1`
+
+#### 安全標頭 (Security Headers)
+- [ ] 在 Cloudflare → Rules → Transform Rules 添加以下 response headers:
+  - `X-Frame-Options: SAMEORIGIN`
+  - `Strict-Transport-Security: max-age=31536000; includeSubDomains`
+  - `Permissions-Policy: geolocation=(), microphone=(), camera=()`
+- 注意：`X-Content-Type-Options` 和 `Referrer-Policy` 已正確設定
+
+#### IndexNow 驗證
+- [ ] 已建立 IndexNow key 檔案（9adbc1a999994651978be94e0bf5da1e.txt）
+- [ ] 部署後到 https://www.bing.com/indexnow 提交首頁 URL 驗證
+- IndexNow 用途：通知 Bing、Yandex 即時更新索引
+
 ## 高優先級
 
 ### 1. Google Search Console 驗證 ✅ 已完成
