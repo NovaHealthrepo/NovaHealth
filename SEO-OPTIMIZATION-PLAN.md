@@ -412,6 +412,31 @@
 | 36 | 文章內文上下文連結 (連結到相關服務頁) | 7 個 HTML 檔 | DONE |
 | 37 | MedicalTherapy schema 增強 (url + relevantCondition) | 35 個 HTML 檔 | DONE |
 | 38 | 新增遺漏 MedicalTherapy schema | 17 個 HTML 檔 | DONE |
+| 39 | 修復 news Article headline (通用→具體標題) | 6 個 HTML 檔 | DONE |
+| 40 | 教育性頁面 Article schema (caregiver/advantage/case) | 11 個 HTML 檔 | DONE |
+| 41 | ContactPage schema + LocalBusiness | contact.html | DONE |
+| 42 | AboutPage schema | about-us.html | DONE |
+| 43 | JobPosting schema (4 職位) | join-us.html | DONE |
+| 44 | 薄弱 meta description 加強 (about-us, strengths, contact, PT services, other diseases) | 5 個 HTML 檔 | DONE |
+
+### 結構化資料覆蓋率 (2026-03-28)
+
+| Schema 類型 | 頁面數 |
+|-------------|--------|
+| BreadcrumbList | 91 |
+| MedicalBusiness | 63 |
+| MedicalTherapy | 56 |
+| Organization | 50 |
+| Article | 24 |
+| FAQPage | 4 |
+| JobPosting | 4 |
+| CollectionPage | 2 |
+| ContactPage | 1 |
+| AboutPage | 1 |
+| AggregateRating | 1 |
+| WebSite | 1 |
+
+**總計：92/92 頁面有結構化資料 (100% 覆蓋率)**
 
 ### 外部連結
 
