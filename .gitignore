@@ -9,6 +9,14 @@ claude-seo/
 .vscode/
 .playwright-mcp/
 
-# Temporary screenshots
+# Temporary files
 crosslinks-preview.png
 nul
+*.json.tmp
+lighthouse-*.json
+Userslok20*
+
+# Python temp scripts
+add-*.py
+fix-*.py
+enhance-*.py
