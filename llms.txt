@@ -1,0 +1,61 @@
+# Nova Health 芯凝護理及物理治療有限公司
+
+> Nova Health provides professional home-visit physiotherapy, occupational therapy, speech therapy, nursing, and home care worker services in Hong Kong. All services are delivered by registered healthcare professionals at the patient's home.
+
+Nova Health（芯凝護理及物理治療有限公司）是香港專業上門醫療服務機構，由註冊物理治療師、職業治療師、言語治療師及護士團隊主理，提供到戶復康及護理服務。
+
+## Services 服務
+
+### Physiotherapy 物理治療
+- [中風康復物理治療](https://novahealth.com.hk/physiotherapy/physiotherapy-stroke): 上門為中風患者提供肢體功能訓練、平衡力訓練、步態訓練
+- [柏金遜症物理治療](https://novahealth.com.hk/physiotherapy/physiotherapy-parkinson): 針對柏金遜症的步態、平衡、柔軟度訓練
+- [術後康復物理治療](https://novahealth.com.hk/physiotherapy/physiotherapy-post-operation): 髖關節、膝關節、脊椎、橈骨遠端骨折術後復康
+- [認知障礙症物理治療](https://novahealth.com.hk/physiotherapy/physiotherapy-dementia): 為認知障礙症患者提供身體功能維持訓練
+- [慢性阻塞性肺病](https://novahealth.com.hk/physiotherapy/physiotherapy-copd): 呼吸訓練及肺功能復康
+- [肌少症](https://novahealth.com.hk/physiotherapy/physiotherapy-sarcopenia): 肌力訓練和營養建議
+- [肌肉痛症](https://novahealth.com.hk/physiotherapy/physiotherapy-muscle-pain): 痛症管理及物理治療
+- [退化性關節炎](https://novahealth.com.hk/physiotherapy/physiotherapy-osteoarthritis): 關節保養及運動治療
+- [拍痰及呼吸機護理](https://novahealth.com.hk/physiotherapy/physiotherapy-respiratory): 呼吸系統護理
+- [遊戲治療（物理治療）](https://novahealth.com.hk/physiotherapy/pt-play-therapy): 透過趣味遊戲活動為長者提供訓練
+
+### Occupational Therapy 職業治療
+- [中風康復職業治療](https://novahealth.com.hk/occupational-speech-therapy/ot-stroke): 恢復日常生活功能及上肢訓練
+- [柏金遜症職業治療](https://novahealth.com.hk/occupational-speech-therapy/ot-parkinson): 功能維持及日常生活適應
+- [認知障礙症職業治療](https://novahealth.com.hk/occupational-speech-therapy/ot-dementia): 認知訓練及環境改造
+- [日常生活活動訓練](https://novahealth.com.hk/occupational-speech-therapy/ot-adl): 穿衣、進食、如廁等ADL訓練
+- [認知訓練](https://novahealth.com.hk/occupational-speech-therapy/ot-cognitive): 記憶力、注意力、執行功能訓練
+- [小肌肉及手部功能訓練](https://novahealth.com.hk/occupational-speech-therapy/ot-fine-motor): 手指靈活度及精細動作訓練
+- [家居改裝及輔助器具](https://novahealth.com.hk/occupational-speech-therapy/ot-home-modification): 無障礙環境改造建議
+
+### Speech Therapy 言語治療
+- [吞嚥困難治療](https://novahealth.com.hk/occupational-speech-therapy/speech-therapy-dysphagia): 吞嚥評估及訓練
+- [語言障礙治療](https://novahealth.com.hk/occupational-speech-therapy/speech-therapy-language): 失語症及語言復康
+- [溝通策略](https://novahealth.com.hk/occupational-speech-therapy/communication-strategy): 與失語症長者溝通技巧
+- [遊戲治療（言語治療）](https://novahealth.com.hk/occupational-speech-therapy/otst-play-therapy): 透過遊戲進行言語訓練
+
+### Nursing 護理服務
+- [術後居家護理](https://novahealth.com.hk/nursing/post-operation): 傷口護理、拆線、引流管護理
+- [導管護理](https://novahealth.com.hk/nursing/catheter-care): 尿管、鼻胃管、造口護理
+- [慢性疾病管理](https://novahealth.com.hk/nursing/chronic-disease): 糖尿病、高血壓等長期病管理
+- [藥物管理及注射](https://novahealth.com.hk/nursing/medication-injection): 皮下注射、靜脈注射、藥物管理
+- [腹膜透析護理](https://novahealth.com.hk/nursing/dialysis): 家居洗腎護理支援
+- [營養護理](https://novahealth.com.hk/nursing/nutrition-care): 營養評估及飲食建議
+
+### Home Care Worker 護理員服務
+- [護理員服務](https://novahealth.com.hk/home-care-worker/hcw): 起居照顧、個人衛生、陪伴
+- [陪診服務](https://novahealth.com.hk/home-care-worker/medical-escort): 陪同就醫、覆診
+- [復康運動支援](https://novahealth.com.hk/home-care-worker/hcw-exercise): 協助執行復康運動
+- [認知訓練支援](https://novahealth.com.hk/home-care-worker/hcw-cognitive): 認知刺激活動
+- [功能訓練支援](https://novahealth.com.hk/home-care-worker/hcw-finemotor): 日常功能訓練輔助
+
+## Company Information 公司資訊
+- Website: https://novahealth.com.hk
+- Service Area: Hong Kong (Hong Kong Island, Kowloon, New Territories)
+- Languages: Traditional Chinese (zh-Hant-HK), English
+- Phone: +852 5228 2205
+- Email: info@novahealth.com.hk
+- Hours: Mon-Fri 9:00-18:00, Sat 9:00-13:00
+
+## Health Information 健康資訊
+- [健康專欄](https://novahealth.com.hk/health-info/health-article): 由醫護專業人員撰寫的健康資訊文章
+- [個案分享](https://novahealth.com.hk/health-info/case-sharing): 真實個案康復歷程分享

@@ -8,5 +8,21 @@ Allow: /
 Disallow: /fonts/
 Disallow: /cdn-cgi/
 
-# Sitemap location
+# AI crawlers - allow access to content
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap and LLMs.txt
 Sitemap: https://novahealth.com.hk/sitemap.xml
