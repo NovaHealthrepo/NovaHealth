@@ -4,11 +4,27 @@
 
 ## 高優先級
 
-### 1. Google Search Console 驗證
-- [ ] 登入 Google Search Console (https://search.google.com/search-console)
-- [ ] 添加網站 `https://novahealth.com.hk`
-- [ ] 通過 DNS 或 HTML 驗證（Cloudflare DNS 添加 TXT 記錄最簡單）
-- [ ] 提交 sitemap：`https://novahealth.com.hk/sitemap.xml`
+### 1. Google Search Console 驗證 ✅ 已完成
+- [x] 登入 Google Search Console — 已登入 (info@novahealth.com.hk)
+- [x] 網站已通過 DNS 驗證 (sc-domain:novahealth.com.hk)
+- [x] 已提交 sitemap：`https://novahealth.com.hk/sitemap.xml`
+
+#### GSC 索引狀態 (2026-03-28):
+- **107 頁已索引** / **179 頁未索引**
+- 未索引原因：
+  - 129 頁 redirect（正常 — .html → clean URL 的 Cloudflare 重定向）
+  - 23 頁有 canonical tag（正常 — www → non-www 的標準化）
+  - 4 頁 404（暫時性，頁面已存在）
+  - 15 頁已爬取但未索引（需觀察）
+  - 8 頁已發現但未爬取（需等待 Google 爬取）
+- **建議動作：** 部署後 2-3 週觀察索引數據變化
+
+#### PageSpeed Insights (2026-03-28):
+- 效能: **92/100** | 無障礙: **97/100** | 最佳做法: **100/100** | SEO: **100/100**
+- LCP: 3.0s（可改善）| CLS: 0（完美）| TBT: 0ms（完美）
+
+#### 外部連結:
+- **GSC 顯示 0 條外部連結** — 建立外部連結是當前最重要的 SEO 優化方向（見任務 3）
 
 ### 2. Google Business Profile (GBP)
 - [ ] 如果還沒有，到 https://business.google.com 建立商家檔案
