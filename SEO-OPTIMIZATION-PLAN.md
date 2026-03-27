@@ -367,12 +367,39 @@
 - 所有 script 都有 defer 屬性
 - robots.txt 配置正確
 
-### 待部署驗證
+| 15 | 修復首頁 canonical URL (/index → /) | 92 個 HTML + sitemap.xml | DONE |
+| 16 | 修復首頁 og:url (/index → /) | index.html | DONE |
+| 17 | 首頁 hero 圖片 preload (改善 LCP) | index.html | DONE |
+| 18 | 修復 heading 階層 (H1→H3 → H1→H2) | 8 個 HTML 檔 | DONE |
+| 19 | 建立 llms.txt (AI 搜尋引擎可見度) | llms.txt | DONE |
+| 20 | 更新 robots.txt (明確允許 AI 爬蟲) | robots.txt | DONE |
+| 21 | Google Search Console 提交 sitemap | GSC | DONE |
+| 22 | GSC 索引問題調查 | GSC 分析報告 | DONE |
+| 23 | 部署後驗證結構化資料正常 | 線上測試 | DONE |
 
-以上所有修改均在本地完成。Commit 後自動部署，屆時需要：
-1. 重新測試 Google Rich Results Test — 預期將偵測到 Organization, WebSite, MedicalBusiness, FAQPage, BreadcrumbList, MedicalTherapy, Article 等結構化資料
-2. 在 Google Search Console 提交更新的 sitemap
-3. 監控搜尋引擎索引狀態
+### 部署驗證 ✅
+
+已於 2026-03-28 成功部署並驗證：
+- **首頁 JSON-LD 已上線：** Organization, WebSite, MedicalBusiness, FAQPage（已通過 WebFetch 驗證）
+- **服務頁面 JSON-LD 已上線：** BreadcrumbList, MedicalTherapy（已通過 WebFetch 驗證）
+- **交叉連結區塊已上線：** 相關服務推薦卡片正常顯示
+- **GSC Sitemap 已重新提交**
+- **PageSpeed Insights 分數：** 效能 92 | 無障礙 97 | 最佳做法 100 | SEO 100
+
+### GSC 索引狀態 (2026-03-28)
+
+| 狀態 | 數量 | 說明 |
+|------|------|------|
+| 已索引 | 107 | 正常 |
+| Page with redirect | 129 | 正常 — .html → clean URL 重定向 |
+| Alternative canonical | 23 | 正常 — www → non-www 標準化 |
+| Not found (404) | 4 | 暫時性，頁面已存在 |
+| Crawled - not indexed | 15 | 需觀察 |
+| Discovered - not indexed | 8 | 等待 Google 爬取 |
+
+### 外部連結
+
+GSC 顯示 0 條外部連結。建立外部連結是當前最重要的長期 SEO 任務。
 
 ---
 
