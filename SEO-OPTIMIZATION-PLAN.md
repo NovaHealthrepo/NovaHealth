@@ -397,6 +397,14 @@
 | Crawled - not indexed | 15 | 需觀察 |
 | Discovered - not indexed | 8 | 等待 Google 爬取 |
 
+| 24 | 高曝光零點擊頁面 title + meta description 優化 | 15 個 HTML 檔 | DONE |
+| 25 | 全站 title tag 縮短 (去掉完整公司名) | 73 個 HTML 檔 | DONE |
+| 26 | 全站薄弱 meta description 加強 | 7 個 HTML 檔 | DONE |
+| 27 | FAQPage schema (pricing 6題 + post-operation 3題 + article-004 3題) | 3 個 HTML 檔 | DONE |
+| 28 | 修復首頁內部連結 (./index → ./ 和 ../index → ../) | 92 個 HTML 檔 | DONE |
+| 29 | 添加遺漏交叉連結 (pt-play-therapy, otst-play-therapy, hcw) | 3 個 HTML 檔 | DONE |
+| 30 | 首頁 modal 圖片空 alt text 修復 | index.html | DONE |
+
 ### 外部連結
 
 GSC 顯示 0 條外部連結。建立外部連結是當前最重要的長期 SEO 任務。
