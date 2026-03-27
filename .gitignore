@@ -1,0 +1,14 @@
+# Claude SEO reference (not part of the website)
+claude-seo/
+
+# Environment variables (credentials)
+.env
+
+# IDE and tool directories
+.claude/
+.vscode/
+.playwright-mcp/
+
+# Temporary screenshots
+crosslinks-preview.png
+nul

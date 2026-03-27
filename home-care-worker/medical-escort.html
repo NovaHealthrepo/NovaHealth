@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-Hant-HK">
   <head>
     <meta charset="UTF-8" />
@@ -19,11 +19,60 @@
     <meta property="og:image" content="https://novahealth.com.hk/images/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content=芯凝護理及物理治療有限公司 />
+    <meta property="og:image:alt" content="芯凝護理及物理治療有限公司" />
     <meta property="og:url" content="https://novahealth.com.hk/home-care-worker/medical-escort" />
     <title>陪診服務 | Nova Health 芯凝護理及物理治療有限公司</title>
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="escort.css" />
+  
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "主頁",
+      "item": "https://novahealth.com.hk/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "護理員服務",
+      "item": "https://novahealth.com.hk/home-care-worker/hcw"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "陪診服務"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "MedicalTherapy",
+  "name": "陪診服務",
+  "description": "提供專業陪診服務，協助患者安全前往醫院或診所。",
+  "provider": {
+    "@type": "MedicalBusiness",
+    "name": "Nova Health 芯凝護理及物理治療有限公司",
+    "url": "https://novahealth.com.hk",
+    "telephone": "+852-5473-6204"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "香港"
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://novahealth.com.hk/contact",
+    "servicePhone": "+852-5473-6204"
+  }
+}
+    </script>
   </head>
   <body>
     <header class="header" id="main-header">
@@ -519,6 +568,39 @@
         </div>
       </section>
 
+    
+      <!-- Related Services Section -->
+      <section class="related-services">
+        <div class="container">
+          <h2 class="related-services__title">相關服務推薦</h2>
+          <div class="related-services__grid">
+      <a href="hcw" class="related-services__card">
+        <i class="fas fa-user-nurse related-services__icon"></i>
+        <div class="related-services__info">
+          <h3 class="related-services__name">護理員服務</h3>
+          <p class="related-services__desc">了解全面護理員服務</p>
+        </div>
+        <i class="fas fa-chevron-right related-services__arrow"></i>
+      </a>
+      <a href="../nursing/chronic-disease" class="related-services__card">
+        <i class="fas fa-heartbeat related-services__icon"></i>
+        <div class="related-services__info">
+          <h3 class="related-services__name">慢性疾病管理</h3>
+          <p class="related-services__desc">護士協助管理慢性疾病</p>
+        </div>
+        <i class="fas fa-chevron-right related-services__arrow"></i>
+      </a>
+      <a href="../physiotherapy/physiotherapy-services" class="related-services__card">
+        <i class="fas fa-person-walking related-services__icon"></i>
+        <div class="related-services__info">
+          <h3 class="related-services__name">物理治療服務模式</h3>
+          <p class="related-services__desc">了解上門物理治療服務</p>
+        </div>
+        <i class="fas fa-chevron-right related-services__arrow"></i>
+      </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Quick Contact Section -->
