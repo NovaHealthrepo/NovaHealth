@@ -404,6 +404,14 @@
 | 28 | 修復首頁內部連結 (./index → ./ 和 ../index → ../) | 92 個 HTML 檔 | DONE |
 | 29 | 添加遺漏交叉連結 (pt-play-therapy, otst-play-therapy, hcw) | 3 個 HTML 檔 | DONE |
 | 30 | 首頁 modal 圖片空 alt text 修復 | index.html | DONE |
+| 31 | 全站字體 preload (Noto Serif TC + Font Awesome) | 90 個 HTML 檔 | DONE |
+| 32 | 全站 skip navigation 無障礙連結 | 92 個 HTML 檔 + main.css | DONE |
+| 33 | 修復重複 H1 (article hero + news hero → p) | 13 個 HTML 檔 | DONE |
+| 34 | Article schema 增強 (inLanguage + wordCount) | 7 個 HTML 檔 | DONE |
+| 35 | CollectionPage schema (健康專欄 + 個案分享列表頁) | 2 個 HTML 檔 | DONE |
+| 36 | 文章內文上下文連結 (連結到相關服務頁) | 7 個 HTML 檔 | DONE |
+| 37 | MedicalTherapy schema 增強 (url + relevantCondition) | 35 個 HTML 檔 | DONE |
+| 38 | 新增遺漏 MedicalTherapy schema | 17 個 HTML 檔 | DONE |
 
 ### 外部連結
 
