@@ -418,8 +418,17 @@
 | 42 | AboutPage schema | about-us.html | DONE |
 | 43 | JobPosting schema (4 職位) | join-us.html | DONE |
 | 44 | 薄弱 meta description 加強 (about-us, strengths, contact, PT services, other diseases) | 5 個 HTML 檔 | DONE |
+| 45 | og:site_name 品牌標識 | 92 個 HTML 檔 | DONE |
+| 46 | Twitter Card tags (summary_large_image) | 92 個 HTML 檔 | DONE |
+| 47 | theme-color meta tag (#005f73) | 92 個 HTML 檔 | DONE |
+| 48 | 修復重複標題 (news 6頁 + play therapy 2頁) | 8 個 HTML 檔 | DONE |
+| 49 | 修復 HTTP mixed content (cookie-policy) | 1 個 HTML 檔 | DONE |
+| 50 | 主導航 aria-label="主導航" | 92 個 HTML 檔 | DONE |
+| 51 | @media print 列印樣式 | main.css | DONE |
+| 52 | FAQPage schema (Q&A 文章) | 4 個 HTML 檔 | DONE |
+| 53 | 薄弱 meta description 加強 第二輪 (26-34 字 → 55-80 字) | 21 個 HTML 檔 | DONE |
 
-### 結構化資料覆蓋率 (2026-03-28)
+### 結構化資料覆蓋率 (2026-03-28 更新)
 
 | Schema 類型 | 頁面數 |
 |-------------|--------|
@@ -428,7 +437,7 @@
 | MedicalTherapy | 56 |
 | Organization | 50 |
 | Article | 24 |
-| FAQPage | 4 |
+| FAQPage | 8 |
 | JobPosting | 4 |
 | CollectionPage | 2 |
 | ContactPage | 1 |
@@ -437,6 +446,23 @@
 | WebSite | 1 |
 
 **總計：92/92 頁面有結構化資料 (100% 覆蓋率)**
+
+### 社交媒體標籤覆蓋率
+
+| 標籤 | 覆蓋率 |
+|------|--------|
+| og:title | 92/92 |
+| og:description | 92/92 |
+| og:type | 92/92 |
+| og:locale | 92/92 |
+| og:image | 92/92 |
+| og:url | 92/92 |
+| og:site_name | 92/92 |
+| twitter:card | 92/92 |
+| twitter:title | 92/92 |
+| twitter:description | 92/92 |
+| twitter:image | 92/92 |
+| theme-color | 92/92 |
 
 ### 外部連結
 
