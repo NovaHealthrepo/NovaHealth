@@ -2,15 +2,41 @@
 
 > 這些是 Claude 無法自動完成的任務，需要你醒來後處理。
 
+---
+
+## URL 標準（所有頁面必須遵守）
+
+| 項目 | 標準格式 | 錯誤格式 |
+|------|----------|----------|
+| **域名** | `novahealth.com.hk` (non-www) | ~~www.novahealth.com.hk~~ |
+| **協議** | `https://` | ~~http://~~ |
+| **副檔名** | 無 `.html` | ~~pricing.html~~ |
+| **結尾斜線** | 無（除首頁 `/`） | ~~/pricing/~~ |
+
+**標準 URL 範例：**
+```
+https://novahealth.com.hk/                          ← 首頁
+https://novahealth.com.hk/pricing                   ← 收費
+https://novahealth.com.hk/physiotherapy/physiotherapy-stroke  ← 中風物理治療
+```
+
+**所有 canonical URL、sitemap URL、og:url、內部連結均已統一遵循此標準。**
+
+---
+
 ## 緊急
 
 ### 0. Cloudflare 設定問題 (需盡快處理)
 
-#### www 重定向故障
+#### www 重定向故障 ⚠️ 最影響 GSC 索引的問題
 - [ ] **www.novahealth.com.hk 回傳 Error 522 (Connection timed out)**
-- 原因：Cloudflare 的 www 子域未正確設定
-- 修復方法：在 Cloudflare Dashboard → DNS 添加 CNAME record: `www` → `novahealth.com.hk`
-- 或添加 Page Rule: `www.novahealth.com.hk/*` → 301 Redirect → `https://novahealth.com.hk/$1`
+- GSC 顯示 4 個 404 + 部分 129 個 redirect 都是因為 www 無法正確處理
+- **修復方法（二選一）：**
+  - **方法 A（推薦）：** Cloudflare Dashboard → Rules → Redirect Rules → 新增規則
+    - When: Hostname equals `www.novahealth.com.hk`
+    - Then: Dynamic redirect to `https://novahealth.com.hk${http.request.uri.path}` (301 Permanent)
+  - **方法 B：** Cloudflare → DNS → 添加 CNAME: `www` → `novahealth.github.io`（需確認 GitHub Pages 設定支援）
+- 修復後到 GSC 重新驗證 "Page with redirect" 和 "Not found (404)"
 
 #### 安全標頭 (Security Headers)
 - [ ] 在 Cloudflare → Rules → Transform Rules 添加以下 response headers:
@@ -31,15 +57,21 @@
 - [x] 網站已通過 DNS 驗證 (sc-domain:novahealth.com.hk)
 - [x] 已提交 sitemap：`https://novahealth.com.hk/sitemap.xml`
 
-#### GSC 索引狀態 (2026-03-28):
-- **107 頁已索引** / **179 頁未索引**
-- 未索引原因：
-  - 129 頁 redirect（正常 — .html → clean URL 的 Cloudflare 重定向）
-  - 23 頁有 canonical tag（正常 — www → non-www 的標準化）
-  - 4 頁 404（暫時性，頁面已存在）
-  - 15 頁已爬取但未索引（需觀察）
-  - 8 頁已發現但未爬取（需等待 Google 爬取）
-- **建議動作：** 部署後 2-3 週觀察索引數據變化
+#### GSC 索引狀態 (2026-03-28 檢查):
+- **107 頁已索引** / **179 頁未索引**（實際只有 92 個頁面）
+- 179 個「未索引」並非真正問題 — 大部分是重複 URL 的正常行為：
+
+| 原因 | 數量 | 說明 | 需要處理？ |
+|------|------|------|-----------|
+| Page with redirect | 129 | `.html` 結尾的 URL 被 redirect 到乾淨 URL；部分 `www` URL | 修復 www 後會減少 |
+| Alternative page with canonical | 23 | Google 發現了 www 版本，canonical 正確指向 non-www | 修復 www 後自動解決 |
+| Not found (404) | 4 | 全部是 `www.novahealth.com.hk` 的 URL（522 錯誤） | 修復 www 後解決 |
+| Crawled - not indexed | 15 | Google 已爬取但選擇不索引（可能是內容薄的頁面） | 觀察，考慮擴充內容 |
+| Discovered - not indexed | 8 | Google 已發現但尚未爬取 | 等待，無需操作 |
+
+- **實際問題只有 www 和 .html redirect**，修復 Cloudflare www redirect 後數字會大幅改善
+- `.html` redirect 是 GitHub Pages 正常行為，無法避免，不影響 SEO
+- **建議：** 修復 www 後等 2-3 週，再到 GSC 驗證改善
 
 #### PageSpeed Insights (2026-03-28):
 - 效能: **92/100** | 無障礙: **97/100** | 最佳做法: **100/100** | SEO: **100/100**
