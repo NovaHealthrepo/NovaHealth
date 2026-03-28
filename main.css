@@ -1582,3 +1582,57 @@ h2 {
   }
 }
 /* #endregion */
+
+/* #region Print Styles */
+@media print {
+  .header,
+  .skip-link,
+  .whatsapp-float,
+  .footer,
+  .breadcrumb,
+  .related-services,
+  .cta-section,
+  .cta-banner {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555;
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript"]::after,
+  a[href^="tel"]::after,
+  a[href^="whatsapp"]::after {
+    content: "";
+  }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  .section, .card {
+    page-break-inside: avoid;
+  }
+}
+/* #endregion */
