@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#005f73" />
+    <meta name="description" content="找不到您要的頁面。返回 Nova Health 芯凝護理及物理治療主頁，瀏覽我們的上門物理治療、護理及職業治療服務。" />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:title" content="頁面未找到 | Nova Health" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_HK" />
+    <meta property="og:site_name" content="Nova Health 芯凝護理及物理治療" />
+    <title>頁面未找到 | Nova Health</title>
+    <link rel="preload" href="/fonts/noto-serif-tc/NotoSerifTC-SemiBold-Subset.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/fontawesome/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/main.css" />
+    <style>
+      .error-page {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+      }
+      .error-page__code {
+        font-size: 6rem;
+        font-weight: 700;
+        color: var(--primary-color, #005f73);
+        line-height: 1;
+        margin-bottom: 1rem;
+      }
+      .error-page__title {
+        font-size: 1.5rem;
+        color: var(--text-dark, #1a1a2e);
+        margin-bottom: 1rem;
+      }
+      .error-page__message {
+        color: var(--text-medium, #555);
+        margin-bottom: 2rem;
+        max-width: 500px;
+      }
+      .error-page__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+      .error-page__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.2s;
+      }
+      .error-page__link--primary {
+        background: var(--primary-color, #005f73);
+        color: #fff;
+      }
+      .error-page__link--primary:hover {
+        background: var(--primary-color-dark, #004d5a);
+      }
+      .error-page__link--secondary {
+        border: 2px solid var(--primary-color, #005f73);
+        color: var(--primary-color, #005f73);
+      }
+      .error-page__link--secondary:hover {
+        background: var(--primary-color, #005f73);
+        color: #fff;
+      }
+      .error-page__services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: left;
+      }
+      .error-page__service {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        text-decoration: none;
+        color: var(--text-dark, #1a1a2e);
+        border-radius: 4px;
+        transition: background 0.2s;
+      }
+      .error-page__service:hover {
+        background: var(--bg-light, #f0f0f0);
+      }
+      .error-page__service i {
+        color: var(--primary-color, #005f73);
+        width: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">跳到主要內容</a>
+
+    <main id="main-content">
+      <div class="error-page">
+        <div>
+          <div class="error-page__code">404</div>
+          <h1 class="error-page__title">找不到您要的頁面</h1>
+          <p class="error-page__message">
+            很抱歉，您訪問的頁面可能已被移動或不存在。請使用以下連結瀏覽我們的服務。
+          </p>
+
+          <div class="error-page__links">
+            <a href="/" class="error-page__link error-page__link--primary">
+              <i class="fas fa-home"></i> 返回主頁
+            </a>
+            <a href="/contact" class="error-page__link error-page__link--secondary">
+              <i class="fas fa-phone"></i> 聯絡我們
+            </a>
+          </div>
+
+          <div class="error-page__services">
+            <a href="/physiotherapy/physiotherapy-services" class="error-page__service">
+              <i class="fas fa-walking"></i> 物理治療服務
+            </a>
+            <a href="/nursing/chronic-disease" class="error-page__service">
+              <i class="fas fa-stethoscope"></i> 護理服務
+            </a>
+            <a href="/occupational-speech-therapy/occupational-therapy" class="error-page__service">
+              <i class="fas fa-hands"></i> 職業治療服務
+            </a>
+            <a href="/occupational-speech-therapy/speech-therapy" class="error-page__service">
+              <i class="fas fa-comments"></i> 言語治療服務
+            </a>
+            <a href="/home-care-worker/hcw" class="error-page__service">
+              <i class="fas fa-hand-holding-heart"></i> 護理員服務
+            </a>
+            <a href="/pricing" class="error-page__service">
+              <i class="fas fa-tag"></i> 服務收費
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>
