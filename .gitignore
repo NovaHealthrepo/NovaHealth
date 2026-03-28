@@ -16,7 +16,6 @@ nul
 lighthouse-*.json
 Userslok20*
 
-# Python temp scripts
-add-*.py
-fix-*.py
-enhance-*.py
+# Python temp scripts and reports
+*.py
+*-report.txt
